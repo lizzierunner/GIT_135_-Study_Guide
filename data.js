@@ -1,0 +1,1836 @@
+// Study Data for GIT 135 Quiz 01
+// Adobe Essentials and Point Line Plane
+
+// ========== ADOBE ESSENTIALS DATA ==========
+const adobeFlashcards = [
+  {
+    id: "1",
+    topic: "Adobe Essentials",
+    question: "What are the three main Adobe applications and what are they used for?",
+    answer: "Illustrator = vector graphics (logos, icons). InDesign = layouts (magazines, posters). Photoshop = images (raster/photos). Memory hack: Illustrator = DRAW, InDesign = LAYOUT, Photoshop = PHOTOS.",
+    color: "#3b82f6"
+  },
+  {
+    id: "2",
+    topic: "Adobe Essentials",
+    question: "What's the difference between Vector and Raster?",
+    answer: "Vector = scalable graphics using paths and anchor points (Illustrator). Raster = pixel-based images (Photoshop). Vectors can scale infinitely without losing quality, while raster images become pixelated when enlarged.",
+    color: "#3b82f6"
+  },
+  {
+    id: "3",
+    topic: "Adobe Essentials",
+    question: "What are the 4 main parts of the Adobe interface?",
+    answer: "Toolbar (left side), Panels (right side), Menu (top), Workspace (center). These are consistent across all Adobe applications.",
+    color: "#3b82f6"
+  },
+  {
+    id: "4",
+    topic: "Adobe Essentials",
+    question: "What are the core skills needed in Adobe applications?",
+    answer: "Layers (organizing elements), Selection tools (moving/editing objects), Color (fill vs stroke), and Exporting (saving in different formats).",
+    color: "#3b82f6"
+  },
+  {
+    id: "5",
+    topic: "Adobe Essentials",
+    question: "What color modes should you use for digital vs print?",
+    answer: "RGB (Red, Green, Blue) for digital/screens. CMYK (Cyan, Magenta, Yellow, Black) for print. RGB uses light, CMYK uses ink.",
+    color: "#a855f7"
+  },
+  {
+    id: "6",
+    topic: "Illustrator",
+    question: "What is Illustrator used for and what are vectors made of?",
+    answer: "Used for logos, icons, and digital art using vectors. Vectors are made of paths and anchor points (mathematical points), making them scalable without quality loss.",
+    color: "#f97316"
+  },
+  {
+    id: "7",
+    topic: "Illustrator",
+    question: "What are the 5 important Illustrator tools and their shortcuts?",
+    answer: "Selection tool (V), Shape tools, Pen tool (P), Type tool (T), Eyedropper (I). These are the essential tools for creating vector graphics.",
+    color: "#f97316"
+  },
+  {
+    id: "8",
+    topic: "Illustrator",
+    question: "What is the Pathfinder tool used for?",
+    answer: "Pathfinder is used to combine shapes together. You can unite, subtract, intersect, or exclude shapes to create complex designs from simple shapes.",
+    color: "#f97316"
+  },
+  {
+    id: "9",
+    topic: "Illustrator",
+    question: "What's the difference between Fill and Stroke?",
+    answer: "Fill is the color inside a shape or path. Stroke is the outline or border around a shape. Both can have different colors and can be turned on/off independently.",
+    color: "#f97316"
+  },
+  {
+    id: "10",
+    topic: "Illustrator",
+    question: "What export formats should you use for Illustrator files?",
+    answer: "PNG for web (raster with transparency), PDF for print (high quality), AI for editable files (Illustrator's native format for future editing).",
+    color: "#f97316"
+  },
+  {
+    id: "11",
+    topic: "Illustrator",
+    question: "Why are Layers important in Illustrator?",
+    answer: "Layers help organize your designs by separating different elements. You can show/hide, lock, and rearrange layers to keep complex projects organized and easy to edit.",
+    color: "#f97316"
+  },
+  {
+    id: "12",
+    topic: "InDesign",
+    question: "What is InDesign used for?",
+    answer: "InDesign is used for layouts like posters, magazines, brochures, and multi-page documents. It's the best tool for combining text and images in professional page layouts.",
+    color: "#ec4899"
+  },
+  {
+    id: "13",
+    topic: "InDesign",
+    question: "What are the 3 important InDesign tools?",
+    answer: "Selection tool (V), Type tool (T), and Frame tools. These tools help you select, create text, and create frames for images and text.",
+    color: "#ec4899"
+  },
+  {
+    id: "14",
+    topic: "InDesign",
+    question: "What are frames in InDesign and why are they important?",
+    answer: "Everything in InDesign goes inside frames - both text and images. Frames are containers that hold your content and can be resized, moved, and styled.",
+    color: "#ec4899"
+  },
+  {
+    id: "15",
+    topic: "InDesign",
+    question: "What are the key typography terms in InDesign?",
+    answer: "Font (typeface style), Size (how big the text is), Leading (space between lines), and Tracking (space between letters). These control how your text looks.",
+    color: "#ec4899"
+  },
+  {
+    id: "16",
+    topic: "InDesign",
+    question: "What is the Pages panel used for?",
+    answer: "The Pages panel manages multiple pages in your document. You can add, delete, rearrange, and navigate between pages for multi-page projects like magazines or booklets.",
+    color: "#ec4899"
+  },
+  {
+    id: "17",
+    topic: "InDesign",
+    question: "How do you align elements in InDesign?",
+    answer: "Use guides and grids for alignment. Guides are draggable lines you pull from rulers, and grids provide a consistent structure. These help create clean, professional layouts.",
+    color: "#ec4899"
+  },
+  {
+    id: "18",
+    topic: "InDesign",
+    question: "What format should you export InDesign files as?",
+    answer: "Export as PDF. This preserves your layout and can be used for both print and digital distribution while maintaining quality and fonts.",
+    color: "#ec4899"
+  },
+  {
+    id: "21",
+    topic: "InDesign Setup",
+    question: "What are the standard document setup settings for InDesign?",
+    answer: "8.5 x 11 inches (Portrait), Margins: 0.5 inches, Columns: 2, Gutter: 0.25 inches. Memory trick: 12 pt, 2 columns, 0.5 margin, 0.25 gutter, PDF print.",
+    color: "#ec4899"
+  },
+  {
+    id: "22",
+    topic: "InDesign Setup",
+    question: "What does overset text mean in InDesign?",
+    answer: "Overset text shows a red + symbol, which means there's more text than can fit in the frame. You need to resize the frame or link to another frame to show all the text.",
+    color: "#ec4899"
+  },
+  {
+    id: "23",
+    topic: "InDesign Setup",
+    question: "How do you access the Character Panel and what's the shortcut?",
+    answer: "Character Panel controls font, size, and spacing. Shortcut: Command + T (Mac) or Ctrl + T (Windows). Your assignment uses 12 pt font size.",
+    color: "#ec4899"
+  },
+  {
+    id: "24",
+    topic: "InDesign Setup",
+    question: "What are the proper export settings for InDesign?",
+    answer: "File → Export → Adobe PDF (Print). Preset: High Quality Print. Scale: 100%. No printer marks. This creates a professional print-ready PDF.",
+    color: "#ec4899"
+  },
+  {
+    id: "25",
+    topic: "InDesign Setup",
+    question: "How do you use guides in InDesign?",
+    answer: "Guides help align layout elements. Access them through View → Grids & Guides. You can drag guides from rulers or create them from the menu for precise alignment.",
+    color: "#ec4899"
+  },
+  {
+    id: "26",
+    topic: "InDesign Setup",
+    question: "What's the difference between margins and gutters?",
+    answer: "Margins: 0.5 inches - space around the edge of the page. Gutter: 0.25 inches - space between columns. Gutters only appear when you have multiple columns.",
+    color: "#ec4899"
+  },
+  {
+    id: "27",
+    topic: "InDesign Setup",
+    question: "What alignment should you use for body text in InDesign?",
+    answer: "Use left alignment for body text and keep spacing consistent throughout your document. This creates a clean, professional, easy-to-read layout.",
+    color: "#ec4899"
+  },
+  {
+    id: "19",
+    topic: "Quick Comparison",
+    question: "Quick comparison: Illustrator vs InDesign",
+    answer: "Illustrator = DRAWING (creating graphics, logos, icons). InDesign = LAYOUT (arranging content, multi-page documents). Use Illustrator to create elements, InDesign to arrange them.",
+    color: "#22c55e"
+  },
+  {
+    id: "20",
+    topic: "Quick Comparison",
+    question: "When would you use each Adobe application?",
+    answer: "Illustrator: Create a logo. InDesign: Create a magazine or poster with text and images. Photoshop: Edit photos and create raster images. Each tool has a specific purpose!",
+    color: "#22c55e"
+  }
+];
+
+const adobeQuizQuestions = [
+  {
+    id: "q1",
+    question: "Which Adobe application would you use to create a logo?",
+    options: ["Photoshop", "InDesign", "Illustrator", "Acrobat"],
+    correctAnswer: 2,
+    explanation: "Illustrator is used for vector graphics like logos and icons. Logos need to be scalable, which makes vector graphics perfect.",
+    topic: "Adobe Essentials"
+  },
+  {
+    id: "q2",
+    question: "What is the main advantage of vector graphics over raster images?",
+    options: [
+      "Better colors",
+      "Scalable without losing quality",
+      "Smaller file size",
+      "Easier to create"
+    ],
+    correctAnswer: 1,
+    explanation: "Vector graphics are scalable - they can be resized infinitely without losing quality because they use paths and anchor points, not pixels.",
+    topic: "Adobe Essentials"
+  },
+  {
+    id: "q3",
+    question: "Where is the Toolbar located in Adobe applications?",
+    options: ["Top", "Bottom", "Left side", "Right side"],
+    correctAnswer: 2,
+    explanation: "The Toolbar is on the left side, Panels on the right, Menu at the top, and Workspace in the center.",
+    topic: "Interface"
+  },
+  {
+    id: "q4",
+    question: "Which color mode should you use for printing?",
+    options: ["RGB", "CMYK", "HSB", "Grayscale"],
+    correctAnswer: 1,
+    explanation: "CMYK (Cyan, Magenta, Yellow, Black) is used for printing because it represents ink colors. RGB is for digital/screens.",
+    topic: "Color Modes"
+  },
+  {
+    id: "q5",
+    question: "What is the difference between Fill and Stroke?",
+    options: [
+      "Fill is inside, Stroke is the outline",
+      "Fill is for text, Stroke is for shapes",
+      "Fill is RGB, Stroke is CMYK",
+      "They are the same thing"
+    ],
+    correctAnswer: 0,
+    explanation: "Fill is the color inside a shape or path, while Stroke is the outline or border around it.",
+    topic: "Core Skills"
+  },
+  {
+    id: "q6",
+    question: "What keyboard shortcut activates the Selection tool in Illustrator?",
+    options: ["S", "V", "A", "M"],
+    correctAnswer: 1,
+    explanation: "V is the keyboard shortcut for the Selection tool, used to select and move objects.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q7",
+    question: "What tool is used to combine shapes in Illustrator?",
+    options: ["Shape Builder", "Pathfinder", "Pen tool", "Unite tool"],
+    correctAnswer: 1,
+    explanation: "Pathfinder is used to combine shapes - you can unite, subtract, intersect, or exclude shapes.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q8",
+    question: "What keyboard shortcut activates the Pen tool?",
+    options: ["V", "T", "P", "E"],
+    correctAnswer: 2,
+    explanation: "P is the keyboard shortcut for the Pen tool, used to create custom paths and shapes.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q9",
+    question: "What file format should you use to export an Illustrator file for the web?",
+    options: ["AI", "PDF", "PNG", "PSD"],
+    correctAnswer: 2,
+    explanation: "PNG is best for web use - it's a raster format that supports transparency and works on all browsers.",
+    topic: "Illustrator Export"
+  },
+  {
+    id: "q10",
+    question: "What are vectors made of in Illustrator?",
+    options: [
+      "Pixels",
+      "Paths and anchor points",
+      "Layers",
+      "Colors"
+    ],
+    correctAnswer: 1,
+    explanation: "Vectors are made of paths and anchor points (mathematical coordinates), which allows them to scale infinitely.",
+    topic: "Illustrator Concepts"
+  },
+  {
+    id: "q11",
+    question: "What is the Eyedropper tool (I) used for?",
+    options: [
+      "Drawing shapes",
+      "Selecting colors from existing objects",
+      "Creating gradients",
+      "Measuring distances"
+    ],
+    correctAnswer: 1,
+    explanation: "The Eyedropper tool (I) picks up colors and attributes from existing objects so you can apply them to other objects.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q11b",
+    question: "When setting up a new Illustrator file for a poster, which unit of measurement should you use?",
+    options: ["Pica", "Pixels", "Points", "Inches"],
+    correctAnswer: 3,
+    explanation: "Inches should be used for posters and other print materials. Pixels are for web/digital, points and picas are for typography.",
+    topic: "Illustrator Concepts"
+  },
+  {
+    id: "q11c",
+    question: "Which Adobe program is best for creating multi-page documents like magazines or brochures?",
+    options: ["Acrobat", "InDesign", "Illustrator", "Photoshop"],
+    correctAnswer: 1,
+    explanation: "InDesign is specifically designed for multi-page layouts like magazines, brochures, books, and catalogs. It excels at combining text and images across multiple pages.",
+    topic: "Adobe Essentials"
+  },
+  {
+    id: "q11d",
+    question: "Why are layers important in Illustrator and InDesign?",
+    options: [
+      "They resize text",
+      "They organize artwork and allow for easy editing",
+      "They change the color of shapes",
+      "They export images to PDF"
+    ],
+    correctAnswer: 1,
+    explanation: "Layers organize artwork by separating different elements, making it easy to show/hide, lock, and edit specific parts of your design without affecting others.",
+    topic: "Core Skills"
+  },
+  {
+    id: "q11e",
+    question: "What is the function of the Pen tool?",
+    options: [
+      "Draw multi-sided shapes like triangles, hexagons, or octagons",
+      "Create custom paths and curves",
+      "Combine or subtract shapes",
+      "Organize and control object stacking"
+    ],
+    correctAnswer: 1,
+    explanation: "The Pen tool (P) is used to create custom paths and curves by placing anchor points and adjusting their handles.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q11f",
+    question: "What is the function of the Polygon tool?",
+    options: [
+      "Create custom paths and curves",
+      "Organize and control object stacking",
+      "Draw multi-sided shapes like triangles, hexagons, or octagons",
+      "Combine or subtract shapes"
+    ],
+    correctAnswer: 2,
+    explanation: "The Polygon tool is used to draw multi-sided shapes like triangles, hexagons, or octagons quickly and easily.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q11g",
+    question: "What is the function of the Shape Builder tool?",
+    options: [
+      "Draw multi-sided shapes",
+      "Create custom paths and curves",
+      "Organize and control object stacking",
+      "Combine or subtract shapes"
+    ],
+    correctAnswer: 3,
+    explanation: "The Shape Builder tool allows you to combine or subtract shapes by clicking and dragging across them, making it easy to create complex shapes.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q11h",
+    question: "What is the function of the Layers panel?",
+    options: [
+      "Combine or subtract shapes",
+      "Create custom paths and curves",
+      "Organize and control object stacking",
+      "Draw multi-sided shapes"
+    ],
+    correctAnswer: 2,
+    explanation: "The Layers panel is used to organize and control object stacking, allowing you to show/hide, lock, and arrange different elements in your design.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q12",
+    question: "What is InDesign primarily used for?",
+    options: [
+      "Photo editing",
+      "Creating logos",
+      "Page layouts and multi-page documents",
+      "Video editing"
+    ],
+    correctAnswer: 2,
+    explanation: "InDesign is for layouts - magazines, posters, brochures, and any multi-page documents.",
+    topic: "InDesign Basics"
+  },
+  {
+    id: "q13",
+    question: "In InDesign, what must text and images be placed inside?",
+    options: ["Layers", "Frames", "Panels", "Pages"],
+    correctAnswer: 1,
+    explanation: "Everything in InDesign goes inside frames - both text and images need frames to contain them.",
+    topic: "InDesign Concepts"
+  },
+  {
+    id: "q14",
+    question: "What typography term describes the space between lines of text?",
+    options: ["Tracking", "Kerning", "Leading", "Spacing"],
+    correctAnswer: 2,
+    explanation: "Leading is the space between lines of text. Tracking is space between letters.",
+    topic: "InDesign Typography"
+  },
+  {
+    id: "q15",
+    question: "What file format should you export InDesign documents as?",
+    options: ["INDD", "PNG", "PDF", "JPEG"],
+    correctAnswer: 2,
+    explanation: "Export InDesign files as PDF for both print and digital use. PDF preserves your layout and quality.",
+    topic: "InDesign Export"
+  },
+  {
+    id: "q16",
+    question: "What helps you align elements in InDesign?",
+    options: ["Frames", "Guides and grids", "Panels", "Layers"],
+    correctAnswer: 1,
+    explanation: "Guides and grids help you align elements precisely for clean, professional layouts.",
+    topic: "InDesign Tools"
+  },
+  {
+    id: "q17",
+    question: "What panel in InDesign manages multiple pages?",
+    options: ["Layers panel", "Pages panel", "Tools panel", "Properties panel"],
+    correctAnswer: 1,
+    explanation: "The Pages panel manages multiple pages - you can add, delete, rearrange, and navigate pages.",
+    topic: "InDesign Interface"
+  },
+  {
+    id: "q18",
+    question: "Using the memory hack: What does Illustrator = ?",
+    options: ["PHOTOS", "LAYOUT", "DRAW", "EDIT"],
+    correctAnswer: 2,
+    explanation: "Illustrator = DRAW (creating graphics), InDesign = LAYOUT (arranging content), Photoshop = PHOTOS (editing images).",
+    topic: "Quick Comparison"
+  },
+  {
+    id: "q19",
+    question: "Which application would you use to create a magazine layout?",
+    options: ["Illustrator", "Photoshop", "InDesign", "Premiere"],
+    correctAnswer: 2,
+    explanation: "InDesign is for layouts - it's perfect for magazines, brochures, and multi-page documents.",
+    topic: "Quick Comparison"
+  },
+  {
+    id: "q20",
+    question: "What type of images does Photoshop work with?",
+    options: ["Vector", "Raster", "Both", "Neither"],
+    correctAnswer: 1,
+    explanation: "Photoshop works with raster images (pixels) - photos and pixel-based graphics.",
+    topic: "Adobe Essentials"
+  },
+  {
+    id: "q21",
+    question: "What are the standard document dimensions for InDesign assignments?",
+    options: ["11 x 17 inches", "8.5 x 11 inches", "8 x 10 inches", "A4 size"],
+    correctAnswer: 1,
+    explanation: "8.5 x 11 inches (Portrait) is the standard document size for assignments.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q22",
+    question: "What is the standard margin size for InDesign documents?",
+    options: ["0.25 inches", "0.5 inches", "1 inch", "0.75 inches"],
+    correctAnswer: 1,
+    explanation: "Margins should be 0.5 inches on all sides of the document.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q23",
+    question: "How many columns should you use in the standard InDesign setup?",
+    options: ["1", "2", "3", "4"],
+    correctAnswer: 1,
+    explanation: "Use 2 columns for the standard document layout.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q24",
+    question: "What is the gutter size between columns?",
+    options: ["0.25 inches", "0.5 inches", "0.125 inches", "0.75 inches"],
+    correctAnswer: 0,
+    explanation: "The gutter (space between columns) should be 0.25 inches.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q25",
+    question: "What does the red + symbol mean in a text frame?",
+    options: [
+      "Text is bold",
+      "Text is selected",
+      "Overset text (more text than fits)",
+      "Text needs spell check"
+    ],
+    correctAnswer: 2,
+    explanation: "A red + indicates overset text - there's more text than can fit in the frame.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q26",
+    question: "What is the keyboard shortcut to open the Character Panel?",
+    options: ["Command/Ctrl + T", "Command/Ctrl + P", "Command/Ctrl + C", "Command/Ctrl + K"],
+    correctAnswer: 0,
+    explanation: "Command + T (Mac) or Ctrl + T (Windows) opens the Character Panel.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q27",
+    question: "What font size should you use for the assignment?",
+    options: ["10 pt", "11 pt", "12 pt", "14 pt"],
+    correctAnswer: 2,
+    explanation: "The assignment uses 12 pt font size.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q28",
+    question: "How do you access guides in InDesign?",
+    options: [
+      "Edit → Guides",
+      "View → Grids & Guides",
+      "Window → Guides",
+      "File → Guides"
+    ],
+    correctAnswer: 1,
+    explanation: "Go to View → Grids & Guides to access and manage guides in InDesign.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q29",
+    question: "What preset should you use when exporting to PDF for print?",
+    options: [
+      "Smallest File Size",
+      "High Quality Print",
+      "Press Quality",
+      "Standard"
+    ],
+    correctAnswer: 1,
+    explanation: "Use the 'High Quality Print' preset when exporting Adobe PDF (Print).",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q30",
+    question: "What scale should you use when exporting InDesign documents?",
+    options: ["50%", "75%", "100%", "125%"],
+    correctAnswer: 2,
+    explanation: "Always export at 100% scale to maintain the correct document size.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q31",
+    question: "Should you include printer marks when exporting for assignment?",
+    options: [
+      "Yes, always",
+      "No",
+      "Only for print",
+      "Only for digital"
+    ],
+    correctAnswer: 1,
+    explanation: "No printer marks should be included in the export for assignments.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q32",
+    question: "What's the memory trick for InDesign setup?",
+    options: [
+      "8.5 x 11, 2 columns, 0.5 margin",
+      "12 pt, 2 columns, 0.5 margin, 0.25 gutter, PDF print",
+      "2 columns, PDF, 12 pt",
+      "Portrait, 2 columns, guides"
+    ],
+    correctAnswer: 1,
+    explanation: "Memory trick: 12 pt, 2 columns, 0.5 margin, 0.25 gutter, PDF print - covers all the key settings!",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q33",
+    question: "What do columns help you do in InDesign?",
+    options: [
+      "Apply gradients",
+      "Create paths",
+      "Divide the page into sections for text and layout",
+      "Align objects horizontally"
+    ],
+    correctAnswer: 2,
+    explanation: "Columns divide the page into vertical sections, making it easier to organize text and layout elements. The standard setup uses 2 columns with a 0.25 inch gutter between them.",
+    topic: "InDesign Setup"
+  },
+  {
+    id: "q34",
+    question: "Which panel is used to adjust font related settings like font size, style, leading, and tracking?",
+    options: [
+      "Layers panel",
+      "Character panel",
+      "Paragraph panel",
+      "Glyphs panel"
+    ],
+    correctAnswer: 1,
+    explanation: "The Character panel (Command/Ctrl + T) controls font-related settings including font, size, style, leading (line spacing), and tracking (letter spacing).",
+    topic: "InDesign Typography"
+  },
+  {
+    id: "q35",
+    question: "What is the purpose of guides in InDesign?",
+    options: [
+      "To export layouts",
+      "To align and position elements precisely",
+      "To measure the page",
+      "To crop images"
+    ],
+    correctAnswer: 1,
+    explanation: "Guides help you align and position elements precisely, creating clean and professional layouts. You can access them through View → Grids & Guides or drag them from the rulers.",
+    topic: "InDesign Tools"
+  },
+  {
+    id: "q36",
+    question: "The Ellipse Tool is used to:",
+    options: [
+      "Draw circles and ovals",
+      "Convert text into outlines",
+      "Round the corners of rectangles",
+      "Draw curved paths"
+    ],
+    correctAnswer: 0,
+    explanation: "The Ellipse Tool is a shape tool used to draw circles and ovals (ellipses) in Illustrator. Hold Shift while dragging to create perfect circles.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q37",
+    question: "Which of the following is a benefit of the Shape Builder Tool?",
+    options: [
+      "Automatically exports shapes to PNG",
+      "Select which parts of shapes to combine or remove",
+      "Change the color mode of a document",
+      "Create gradients across shapes"
+    ],
+    correctAnswer: 1,
+    explanation: "The Shape Builder Tool lets you select which parts of shapes to combine or remove by clicking and dragging. It's an intuitive way to create complex shapes from simple ones.",
+    topic: "Illustrator Tools"
+  },
+  {
+    id: "q38",
+    question: "Margins in InDesign help define safe areas for text and layout.",
+    options: ["True", "False"],
+    correctAnswer: 0,
+    explanation: "True! Margins (0.5 inches in your setup) create safe areas around the edges of the page, keeping text and layout elements away from the edge for a professional, clean appearance.",
+    topic: "InDesign Setup"
+  }
+];
+
+// ========== MODULE 1: POINT LINE PLANE DATA (Pages 32-47) ==========
+const plpFlashcards = [
+  {
+    id: "plp1",
+    topic: "Core Concepts",
+    question: "What is the core idea of Point, Line, Plane?",
+    answer: "All design is built from: Point → Line → Plane. Points create lines, lines create planes, and planes create all visual design. Lupton calls these the 'grammar of visual design' — like learning ABCs before writing essays! 🔤",
+    color: "#6366f1"
+  },
+  {
+    id: "plp2",
+    topic: "Point",
+    question: "What is a Point in design?",
+    answer: "A point marks a position in space. It has NO actual size — it's purely a LOCATION. But we see it as a dot. A single point = focal point. Many points = lines, textures, shading. In typography, a period is a point. Think: 📍 on a map!",
+    color: "#a855f7"
+  },
+  {
+    id: "plp2b",
+    topic: "Point",
+    question: "How do points create a sense of movement or direction? (p.32-33)",
+    answer: "When you scatter points across a page, your eye connects them — like connect-the-dots! 🧠 Your brain AUTOMATICALLY links nearby points into lines and shapes. Closer points = stronger connection. This is called 'implied line.' Designers use this to guide where your eye goes!",
+    color: "#a855f7"
+  },
+  {
+    id: "plp2c",
+    topic: "Point",
+    question: "What is a 'point' in typography according to Lupton? (p.33)",
+    answer: "Every letter/character is a POINT when seen as part of a larger field of text. A period (.) is the most literal point. But zoom out and each letter becomes a point in the overall texture of a paragraph. It's all about SCALE — a city on a map is a point too! 🏙️➡️📍",
+    color: "#a855f7"
+  },
+  {
+    id: "plp3",
+    topic: "Line",
+    question: "What is a Line in design?",
+    answer: "A line is the path of a moving point — a series of connected points. It has LENGTH but no width (theoretically). Lines show direction, emotion, and structure. Thick lines = bold/strong. Thin lines = delicate. Wavy lines = calm. Jagged lines = chaos! 〰️⚡",
+    color: "#3b82f6"
+  },
+  {
+    id: "plp3b",
+    topic: "Line",
+    question: "What are the different things lines can DO in design? (p.36-37)",
+    answer: "Lines can: 1) DIVIDE space 2) EXPRESS emotion 3) DESCRIBE edges & structure 4) DEFINE shapes (when closed) 5) Create TEXTURE (when repeated) 6) Show MOVEMENT & direction 7) Build PLANES (when multiplied). Lines are the Swiss Army knife of design! 🔪✨",
+    color: "#3b82f6"
+  },
+  {
+    id: "plp3c",
+    topic: "Line",
+    question: "How are lines used in mapping and information design? (p.38)",
+    answer: "Lines connect DATA POINTS — think subway maps 🗺️, family trees, or flowcharts. They show RELATIONSHIPS between things. In maps, lines become borders, roads, and rivers. Different line styles (dashed, dotted, thick, thin) encode different TYPES of information.",
+    color: "#3b82f6"
+  },
+  {
+    id: "plp3d",
+    topic: "Line",
+    question: "What is the 'line' of text in graphic design? (p.39)",
+    answer: "A line of text is literally a LINE — it moves your eye horizontally across the page. The baseline (invisible line text sits on) is a structural line. Lines of text stacked = a plane/block. Designers control the 'color' of text blocks through weight, spacing, and size! 📝",
+    color: "#3b82f6"
+  },
+  {
+    id: "plp4",
+    topic: "Plane",
+    question: "What is a Plane in design?",
+    answer: "A plane is a flat surface with HEIGHT and WIDTH (2D). It forms when a line closes to create a shape or gains breadth. Every shape you see — rectangle, circle, blob — is a plane. Planes are the BUILDING BLOCKS of layouts! 🧱",
+    color: "#06b6d4"
+  },
+  {
+    id: "plp4b",
+    topic: "Plane",
+    question: "What are examples of planes in real graphic design? (p.40-42)",
+    answer: "Planes are EVERYWHERE: a block of text, a photograph, a colored box, a page itself, a wall, a floor, a window. Even a field of text is a plane! If it's flat and has area, it's a plane. NOT a plane: light (energy), a person (3D volume). 📄📸🟦",
+    color: "#06b6d4"
+  },
+  {
+    id: "plp4c",
+    topic: "Plane",
+    question: "How do planes create depth and layers in design? (p.42-43)",
+    answer: "Overlapping planes create the illusion of DEPTH — like shuffling cards 🃏. The plane 'on top' appears closer. Transparency lets you see through planes, creating complex layered effects. Designers stack, overlap, and arrange planes to build visual HIERARCHY.",
+    color: "#06b6d4"
+  },
+  {
+    id: "plp5",
+    topic: "Space & Volume",
+    question: "What is the difference between Linear Perspective and Axonometric?",
+    answer: "Linear perspective = REALISTIC depth (things shrink as they go back, vanishing point). Like looking down train tracks 🛤️. Axonometric = FLAT 3D (no size change, parallel lines stay parallel). Used in tech drawings, video games 🎮, and diagrams.",
+    color: "#14b8a6"
+  },
+  {
+    id: "plp5b",
+    topic: "Space & Volume",
+    question: "How do designers create the illusion of 3D on a 2D surface? (p.44-45)",
+    answer: "Tricks to fake 3D: 1) OVERLAP (front covers back) 2) SIZE (bigger = closer) 3) SHADING (light/shadow) 4) PERSPECTIVE (converging lines) 5) TRANSPARENCY 6) COLOR (warm = close, cool = far). Your brain is easily fooled! 🧠✨",
+    color: "#14b8a6"
+  },
+  {
+    id: "plp6",
+    topic: "Space & Volume",
+    question: "What is Volume in design?",
+    answer: "Volume = 3D object with height, width, AND DEPTH. On a 2D surface, volume is an ILLUSION created by shading, perspective, and rendering. A circle is a plane; add shading and it becomes a sphere (volume)! ⚪➡️🔮",
+    color: "#14b8a6"
+  },
+  {
+    id: "plp7",
+    topic: "Texture & Patterns",
+    question: "How are textures and patterns created from points and lines? (p.46-47)",
+    answer: "Repeat points → texture/tone. Repeat lines → patterns/hatching. The DENSITY of elements controls darkness. Tight dots = dark, sparse dots = light. This is literally how newspaper photos work (halftone)! The eye blends individual elements into continuous tone. 🖨️",
+    color: "#22c55e"
+  },
+  {
+    id: "plp8",
+    topic: "Printing",
+    question: "What is the halftone process and why does it matter?",
+    answer: "Halftone = printing trick using DOTS of varying size/spacing to fake continuous shading. Big/close dots = DARK ⬛. Small/far dots = LIGHT ⬜. Your eyes blend them together. This is how ALL printed photos work — zoom in on a newspaper photo and you'll see the dots!",
+    color: "#f59e0b"
+  },
+  {
+    id: "plp9",
+    topic: "Bézier Curves",
+    question: "What are Bézier curves and why should you care?",
+    answer: "Bézier curves = the math behind EVERY curve in vector graphics! Defined by: ANCHOR points (where curve starts/ends) + CONTROL points (handles that shape the curve). Used in Illustrator's Pen tool. Named after Pierre Bézier (car designer at Renault 🚗). Master these = master the Pen tool!",
+    color: "#f97316"
+  },
+  {
+    id: "plp10",
+    topic: "Quick Cram",
+    question: "⚡ SPEED ROUND: Point, Line, Plane, Perspective, Axonometric, Bézier",
+    answer: "Point = dot/location 📍 | Line = movement/connection 〰️ | Plane = surface/shape 🟦 | Perspective = realistic depth 🛤️ | Axonometric = flat 3D 🎮 | Bézier = controlled curve 🖊️ — THESE BUILD ALL OF DESIGN!",
+    color: "#ef4444"
+  },
+  {
+    id: "plp11",
+    topic: "Core Concepts",
+    question: "What does Lupton mean by 'the grammar of visual design'? (p.32)",
+    answer: "Just like sentences need nouns, verbs, and grammar — DESIGN needs points, lines, and planes as its fundamental grammar. Every poster, logo, website, and magazine breaks down to these 3 elements. Learn the grammar → speak design fluently! 🗣️🎨",
+    color: "#6366f1"
+  }
+];
+
+// ========== MODULE 2: RHYTHM, BALANCE, SCALE, TEXTURE, COLOR, FIGURE/GROUND (Pages 48-67) ==========
+const mod2Flashcards = [
+  {
+    id: "m2_1",
+    topic: "Rhythm & Balance",
+    question: "What is RHYTHM in graphic design? (p.48-49)",
+    answer: "Rhythm = repeating visual elements to create PATTERN and MOVEMENT. Like a beat in music! 🥁 Repeating shapes, colors, or lines across a design creates visual rhythm. It guides the eye and creates unity. Think: columns of text, rows of icons, repeated motifs.",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_2",
+    topic: "Rhythm & Balance",
+    question: "What is BALANCE in design and what are the two main types? (p.50-51)",
+    answer: "Balance = visual weight is distributed so design feels STABLE. Two types: 1) SYMMETRICAL — mirror image, formal, calm ⚖️ 2) ASYMMETRICAL — unequal but balanced, dynamic, energetic 🌊. Asymmetry is MORE interesting but HARDER to pull off!",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_3",
+    topic: "Rhythm & Balance",
+    question: "What's the difference between symmetrical and asymmetrical balance? (p.50-51)",
+    answer: "SYMMETRICAL: fold it in half, both sides match. Think: butterfly 🦋, wedding invite. Feels formal & stable. ASYMMETRICAL: sides are DIFFERENT but still feel balanced. A big dark shape on one side balances several small light shapes on the other. Feels dynamic & modern! ⚡",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_4",
+    topic: "Rhythm & Balance",
+    question: "How does visual weight work in asymmetrical balance? (p.51)",
+    answer: "Visual weight = how much an element 'pulls' your eye. Things that are HEAVIER: bigger size, darker color, complex texture, isolation (alone on page), bright/warm color. Balance heavy vs light elements like a seesaw! 🎪 Big dark circle on left = several small shapes on right.",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_5",
+    topic: "Scale",
+    question: "What is SCALE in design? (p.52-53)",
+    answer: "Scale = the SIZE of an element relative to other elements or to the page itself. It's not just 'big' or 'small' — it's about RELATIONSHIPS. A tiny dot on a huge page feels different than the same dot crammed with other elements. Scale creates drama, hierarchy, and emphasis! 🔍🔭",
+    color: "#ec4899"
+  },
+  {
+    id: "m2_6",
+    topic: "Scale",
+    question: "How do designers use scale to create HIERARCHY? (p.54-55)",
+    answer: "Bigger = MORE important (usually). Headlines are BIG, body text is small. A giant photo grabs attention first, then you read the caption. Scale differences tell viewers: 'LOOK HERE FIRST! 👀 Then here. Then here.' Without scale contrast, everything competes and nothing wins.",
+    color: "#ec4899"
+  },
+  {
+    id: "m2_7",
+    topic: "Scale",
+    question: "What is the difference between scale and proportion? (p.53)",
+    answer: "SCALE = size relative to something else (a giant letter on a small page). PROPORTION = internal size relationships within an object (the ratio of width to height). A rectangle can be at any scale but keep the same proportions. Think: resizing a photo — proportion stays, scale changes! 📐",
+    color: "#ec4899"
+  },
+  {
+    id: "m2_8",
+    topic: "Scale",
+    question: "What happens when you play with UNEXPECTED scale? (p.55-57)",
+    answer: "Unexpected scale = SURPRISE and IMPACT! 💥 Making something tiny huge (or vice versa) creates visual tension and interest. A giant paperclip next to a tiny skyscraper? Surreal and attention-grabbing. Designers use scale shifts to challenge expectations and create memorable designs.",
+    color: "#ec4899"
+  },
+  {
+    id: "m2_9",
+    topic: "Texture",
+    question: "What is TEXTURE in graphic design? (p.60-61)",
+    answer: "Texture = the surface quality of a design element. Can be ACTUAL (physical texture you can touch, like embossing 🤚) or VISUAL (texture that only LOOKS textured, created with patterns, photos, or marks 👁️). Texture adds richness and depth to otherwise flat designs!",
+    color: "#22c55e"
+  },
+  {
+    id: "m2_10",
+    topic: "Texture",
+    question: "What's the difference between actual texture and visual texture? (p.60-61)",
+    answer: "ACTUAL texture: you can FEEL it — embossed paper, rough canvas, bumpy screen print 🤚. VISUAL texture: LOOKS textured but is flat — a photo of wood grain, a pattern of tiny dots, hatched lines 👁️. In digital design, almost all texture is visual (screens are smooth!).",
+    color: "#22c55e"
+  },
+  {
+    id: "m2_11",
+    topic: "Texture",
+    question: "How do points and lines create texture in design? (p.61-62)",
+    answer: "Remember Point → Line → Plane? Repeat tiny points = stippled texture. Repeat thin lines = hatched texture. The DENSITY, SIZE, and SPACING of elements control how dark/light and rough/smooth it appears. This connects directly back to Module 1! Full circle! 🔄",
+    color: "#22c55e"
+  },
+  {
+    id: "m2_12",
+    topic: "Color",
+    question: "What are the basic properties of COLOR? (p.62-63)",
+    answer: "Three properties: 1) HUE = the color name (red, blue, green 🌈) 2) SATURATION = intensity/purity (vivid vs muted/gray 🎨) 3) VALUE = lightness/darkness (tint = add white, shade = add black 🌗). Master these 3 and you master color!",
+    color: "#f59e0b"
+  },
+  {
+    id: "m2_13",
+    topic: "Color",
+    question: "What's the difference between RGB and CMYK color? (p.63-64)",
+    answer: "RGB = light (screens 💻). Red+Green+Blue. ADDITIVE — more color = brighter (all = white). CMYK = ink (print 🖨️). Cyan+Magenta+Yellow+blacK. SUBTRACTIVE — more ink = darker (all = muddy black). ALWAYS check: is this for screen or print?",
+    color: "#f59e0b"
+  },
+  {
+    id: "m2_14",
+    topic: "Color",
+    question: "What are warm vs cool colors and why do they matter? (p.64-65)",
+    answer: "WARM colors (red, orange, yellow 🔥) = energy, passion, attention, come FORWARD. COOL colors (blue, green, purple 🧊) = calm, trust, depth, recede BACKWARD. Warm/cool contrast creates depth! A warm object on a cool background POPS forward. Sneaky design trick! 👀",
+    color: "#f59e0b"
+  },
+  {
+    id: "m2_15",
+    topic: "Color",
+    question: "What is color contrast and why is it important? (p.65-66)",
+    answer: "Color contrast = difference between colors placed together. HIGH contrast (black on white) = easy to read, bold ⬛⬜. LOW contrast (light gray on white) = subtle, hard to read. Contrast is essential for READABILITY and ACCESSIBILITY. If people can't read it, it doesn't matter how pretty it is! 📖",
+    color: "#f59e0b"
+  },
+  {
+    id: "m2_16",
+    topic: "Figure/Ground",
+    question: "What is FIGURE/GROUND in design? (p.66-67)",
+    answer: "Figure = the object/element you focus on (the SUBJECT 🎯). Ground = the background/space behind it. Your brain ALWAYS tries to separate figure from ground. Good designers play with this relationship — sometimes making it ambiguous on PURPOSE for visual interest! 🧠",
+    color: "#06b6d4"
+  },
+  {
+    id: "m2_17",
+    topic: "Figure/Ground",
+    question: "What are the three figure/ground relationships? (p.66-67)",
+    answer: "1) STABLE: clearly figure vs ground, no confusion (text on white page 📄) 2) REVERSIBLE: figure and ground can swap — think of the vase/faces illusion! 🏺👤 3) AMBIGUOUS: can't tell which is figure and which is ground — visually complex and dynamic! 🤯",
+    color: "#06b6d4"
+  },
+  {
+    id: "m2_18",
+    topic: "Figure/Ground",
+    question: "Why is NEGATIVE SPACE important? (p.67)",
+    answer: "Negative space = the 'empty' ground around and between figures. It's NOT empty — it's an active design element! 🎨 Think: the arrow hidden in the FedEx logo, or the bear in the Toblerone mountain. Great designers use negative space as a SECRET second design. Mind = blown! 🤯",
+    color: "#06b6d4"
+  },
+  {
+    id: "m2_19",
+    topic: "Quick Cram",
+    question: "⚡ MODULE 2 SPEED ROUND: All key terms!",
+    answer: "Rhythm = visual beat 🥁 | Balance = visual weight ⚖️ | Symmetry = mirror 🦋 | Asymmetry = dynamic balance ⚡ | Scale = relative size 🔭 | Texture = surface quality 🤚 | Hue/Sat/Value = color properties 🌈 | Figure/Ground = subject vs background 🎯 | Negative space = active emptiness 🤯",
+    color: "#ef4444"
+  },
+  {
+    id: "m2_20",
+    topic: "Rhythm & Balance",
+    question: "What is RADIAL balance? (p.51)",
+    answer: "Radial balance = elements radiate outward from a CENTER point, like a sunburst ☀️ or a flower 🌸. It naturally draws your eye to the middle. Think: mandalas, clock faces, pizza slices. It's a third type of balance beyond symmetrical and asymmetrical!",
+    color: "#8b5cf6"
+  }
+];
+
+const plpQuizQuestions = [
+  {
+    id: "plpq1",
+    question: "What is the fundamental building block of all design?",
+    options: ["Line", "Point", "Plane", "Shape"],
+    correctAnswer: 1,
+    explanation: "Point is the fundamental building block. All design is built from Point → Line → Plane. Lupton calls these the 'grammar of visual design.'",
+    topic: "Core Concepts"
+  },
+  {
+    id: "plpq2",
+    question: "What is the correct order of design elements building upon each other?",
+    options: [
+      "Plane → Line → Point",
+      "Line → Point → Plane",
+      "Point → Line → Plane",
+      "Point → Plane → Line"
+    ],
+    correctAnswer: 2,
+    explanation: "The correct order is Point → Line → Plane. Points create lines, lines create planes. This is the foundation of ALL visual design.",
+    topic: "Core Concepts"
+  },
+  {
+    id: "plpq33",
+    question: "Every complex design results at some level from the interaction of:",
+    options: [
+      "Color, value, and texture",
+      "Layers, transparency, and contrast",
+      "Space, shape, and form",
+      "Points, lines, and planes"
+    ],
+    correctAnswer: 3,
+    explanation: "Points, lines, and planes! All complex design is built from these fundamental elements. Point → Line → Plane is the foundation of all visual design.",
+    topic: "Core Concepts"
+  },
+  {
+    id: "plpq_new1",
+    question: "According to Lupton, what does she mean by the 'grammar of visual design'? (p.32)",
+    options: [
+      "The rules of typography",
+      "Points, lines, and planes are the fundamental vocabulary that all design is built from",
+      "The color wheel and its relationships",
+      "The grid system for page layout"
+    ],
+    correctAnswer: 1,
+    explanation: "Just like language has grammar (nouns, verbs, sentences), DESIGN has grammar — points, lines, and planes. Master these building blocks and you can create anything!",
+    topic: "Core Concepts"
+  },
+  {
+    id: "plpq34",
+    question: "A line is _________.",
+    options: [
+      "A flat surface",
+      "A series of points",
+      "A three-dimensional object",
+      "A single dot"
+    ],
+    correctAnswer: 1,
+    explanation: "A series of points! A line is formed when points connect together. It has length but no width.",
+    topic: "Line"
+  },
+  {
+    id: "plpq35",
+    question: "Which of the following are 'things' lines 'can do'?",
+    options: [
+      "Express emotion, describe structure and edges, define a shape",
+      "Express color and tone",
+      "Define transparency and contrast",
+      "Describe hierarchy and scale"
+    ],
+    correctAnswer: 0,
+    explanation: "Lines can express emotions (jagged = chaos, wavy = calm), describe structure and edges, and when closed, define shapes. Lines can also turn and multiply to describe planes!",
+    topic: "Line"
+  },
+  {
+    id: "plpq36",
+    question: "A plane is the path of a moving line; it is a line with breadth.",
+    options: ["True", "False"],
+    correctAnswer: 0,
+    explanation: "True! A plane is formed when a line moves through space or gains breadth/thickness. This is how lines build up to create planes.",
+    topic: "Plane"
+  },
+  {
+    id: "plpq37",
+    question: "Which of the following can be a plane and which cannot be a plane?",
+    options: [
+      "CAN be planes: field of text, ceiling/walls/floors/windows, contents of a photograph, 2D shape. CANNOT be planes: light, a person",
+      "CAN be planes: light, a person, 2D shape. CANNOT be planes: field of text, ceiling/walls/floors/windows",
+      "All of them can be planes",
+      "Only 2D shapes can be planes"
+    ],
+    correctAnswer: 0,
+    explanation: "Planes are flat surfaces! Text blocks, architectural surfaces, photographs, and 2D shapes are all planes. Light is energy (not a plane), and a person is a 3D volume/form (not a plane).",
+    topic: "Plane"
+  },
+  {
+    id: "plpq3",
+    question: "What characteristic does a point have?",
+    options: [
+      "It has length and width",
+      "It has no size but marks a position",
+      "It has depth",
+      "It has only length"
+    ],
+    correctAnswer: 1,
+    explanation: "A point marks a position in space and has no size, though it appears as a dot. It's purely a LOCATION.",
+    topic: "Point"
+  },
+  {
+    id: "plpq4",
+    question: "What happens when many points are grouped together?",
+    options: [
+      "They create volume",
+      "They create shapes only",
+      "They create lines, textures, and shading",
+      "They disappear"
+    ],
+    correctAnswer: 2,
+    explanation: "Many points create lines, textures, and shading depending on how they're arranged. Your brain automatically connects nearby points!",
+    topic: "Point"
+  },
+  {
+    id: "plpq5",
+    question: "In typography, what is an example of a point?",
+    options: ["A comma", "A period", "A letter", "A word"],
+    correctAnswer: 1,
+    explanation: "In typography, a period is a point — it marks a position and appears as a dot.",
+    topic: "Point"
+  },
+  {
+    id: "plpq31",
+    question: "In typography, each character in a field of text is a singular element, and thus a kind of ____________.",
+    options: ["Point", "Line", "Plane", "Shape"],
+    correctAnswer: 0,
+    explanation: "Point! Each character is a singular element that marks a position in space, just like a point. It's all about scale — zoom out and letters become points in the texture of a paragraph.",
+    topic: "Point"
+  },
+  {
+    id: "plpq32",
+    question: "Fill in the blank: Points mark a position in _________.",
+    options: ["Space", "Time", "Color", "Texture"],
+    correctAnswer: 0,
+    explanation: "Space! A point marks a position in space. It has no size but appears as a dot to indicate location.",
+    topic: "Point"
+  },
+  {
+    id: "plpq_new2",
+    question: "When you scatter points across a page, what does your brain automatically do? (p.32-33)",
+    options: [
+      "Ignores them",
+      "Connects them into implied lines and shapes",
+      "Sees them as colors",
+      "Groups them by size only"
+    ],
+    correctAnswer: 1,
+    explanation: "Your brain automatically connects nearby points into implied lines and shapes — like connect-the-dots! Designers use this to guide where your eye goes.",
+    topic: "Point"
+  },
+  {
+    id: "plpq6",
+    question: "What is a line made of?",
+    options: [
+      "A series of planes",
+      "A series of points",
+      "A series of shapes",
+      "A single point"
+    ],
+    correctAnswer: 1,
+    explanation: "A line is a series of points. It has length but no width.",
+    topic: "Line"
+  },
+  {
+    id: "plpq7",
+    question: "What dimensions does a line have?",
+    options: [
+      "Length and width",
+      "Length only",
+      "Width and height",
+      "Length, width, and depth"
+    ],
+    correctAnswer: 1,
+    explanation: "A line has length but no width. It's one-dimensional.",
+    topic: "Line"
+  },
+  {
+    id: "plpq8",
+    question: "What can lines show in design?",
+    options: [
+      "Only direction",
+      "Only emotion",
+      "Direction, emotion, and structure",
+      "Only structure"
+    ],
+    correctAnswer: 2,
+    explanation: "Lines show direction, emotion, and structure. Thick = bold, thin = delicate, wavy = calm, jagged = chaos!",
+    topic: "Line"
+  },
+  {
+    id: "plpq9",
+    question: "What happens when lines build up?",
+    options: [
+      "They create points",
+      "They create planes",
+      "They create volume",
+      "They create texture"
+    ],
+    correctAnswer: 1,
+    explanation: "When lines build up, they create planes — the next level in the design hierarchy (Point → Line → Plane).",
+    topic: "Line"
+  },
+  {
+    id: "plpq_new3",
+    question: "In information design (like subway maps), what role do lines play? (p.38)",
+    options: [
+      "They add decoration",
+      "They connect data points and show relationships",
+      "They fill empty space",
+      "They only create borders"
+    ],
+    correctAnswer: 1,
+    explanation: "Lines connect data points and show relationships! In maps, lines become borders, roads, and rivers. Different line styles (dashed, dotted, thick) encode different types of information.",
+    topic: "Line"
+  },
+  {
+    id: "plpq_new4",
+    question: "A thick line conveys _______ while a thin line conveys _______. (p.36-37)",
+    options: [
+      "Calm; chaos",
+      "Boldness/strength; delicacy",
+      "Sadness; happiness",
+      "Depth; flatness"
+    ],
+    correctAnswer: 1,
+    explanation: "Thick lines feel bold and strong, while thin lines feel delicate and refined. Line weight is a key way to express emotion in design!",
+    topic: "Line"
+  },
+  {
+    id: "plpq10",
+    question: "What is a plane?",
+    options: [
+      "A 3D object",
+      "A flat surface with height and width",
+      "A curved line",
+      "A series of points"
+    ],
+    correctAnswer: 1,
+    explanation: "A plane is a flat surface with height and width. It's two-dimensional.",
+    topic: "Plane"
+  },
+  {
+    id: "plpq11",
+    question: "How is a plane formed?",
+    options: [
+      "When points connect",
+      "When lines enclose space or gain thickness",
+      "When shapes overlap",
+      "When colors blend"
+    ],
+    correctAnswer: 1,
+    explanation: "A plane is formed when lines enclose space or gain thickness. It's the next step: Point → Line → Plane.",
+    topic: "Plane"
+  },
+  {
+    id: "plpq12",
+    question: "What are shapes in terms of design elements?",
+    options: ["Points", "Lines", "Planes", "Volumes"],
+    correctAnswer: 2,
+    explanation: "Shapes are planes — they have height and width but no depth.",
+    topic: "Plane"
+  },
+  {
+    id: "plpq_new5",
+    question: "How do overlapping planes create the illusion of depth? (p.42-43)",
+    options: [
+      "By changing colors",
+      "By creating a layered effect where the 'top' plane appears closer",
+      "By using only dark colors",
+      "By making all planes the same size"
+    ],
+    correctAnswer: 1,
+    explanation: "Overlapping planes create depth — like shuffling cards. The plane 'on top' appears closer. Add transparency and you get even more complex layered effects!",
+    topic: "Plane"
+  },
+  {
+    id: "plpq13",
+    question: "What is volume in design?",
+    options: [
+      "A flat surface",
+      "3D space with height, width, and depth",
+      "A series of lines",
+      "A type of texture"
+    ],
+    correctAnswer: 1,
+    explanation: "Volume is 3D space with height, width, and depth — it's three-dimensional. On a 2D surface, it's always an ILLUSION created by shading and perspective.",
+    topic: "Space & Volume"
+  },
+  {
+    id: "plpq14",
+    question: "What is linear perspective used for?",
+    options: [
+      "Creating flat designs",
+      "Creating realistic depth where things get smaller",
+      "Creating diagrams",
+      "Creating patterns"
+    ],
+    correctAnswer: 1,
+    explanation: "Linear perspective creates realistic depth where things get smaller as they recede into the distance — like looking down train tracks!",
+    topic: "Space & Volume"
+  },
+  {
+    id: "plpq15",
+    question: "What is axonometric perspective?",
+    options: [
+      "Perspective with no size change, used in diagrams and games",
+      "Perspective where things get smaller",
+      "Perspective used only in photos",
+      "A curved perspective"
+    ],
+    correctAnswer: 0,
+    explanation: "Axonometric perspective has no size change and is used in diagrams, technical drawings, and games for flat 3D representation.",
+    topic: "Space & Volume"
+  },
+  {
+    id: "plpq16",
+    question: "Which type of perspective makes objects appear smaller as they recede?",
+    options: ["Axonometric", "Isometric", "Linear perspective", "Flat perspective"],
+    correctAnswer: 2,
+    explanation: "Linear perspective makes objects appear smaller as they recede into the distance, creating realistic depth.",
+    topic: "Space & Volume"
+  },
+  {
+    id: "plpq_new6",
+    question: "Which of these is NOT a way designers create the illusion of 3D on a 2D surface? (p.44-45)",
+    options: [
+      "Overlap and shading",
+      "Linear perspective",
+      "Changing the font",
+      "Size differences (bigger = closer)"
+    ],
+    correctAnswer: 2,
+    explanation: "Changing the font doesn't create 3D illusion! But overlap, shading, perspective, size differences, transparency, and color temperature (warm = close, cool = far) all do.",
+    topic: "Space & Volume"
+  },
+  {
+    id: "plpq17",
+    question: "How are texture and tone created in design?",
+    options: [
+      "By using color only",
+      "By repeating points and lines",
+      "By using large shapes",
+      "By using gradients"
+    ],
+    correctAnswer: 1,
+    explanation: "Repeating points and lines create texture and tone. The density and pattern determine the visual effect — tight dots = dark, sparse dots = light.",
+    topic: "Texture & Patterns"
+  },
+  {
+    id: "plpq18",
+    question: "What is the halftone process?",
+    options: [
+      "Using lines to create shading",
+      "Using dots to simulate shading",
+      "Using colors to create gradients",
+      "Using shapes to create patterns"
+    ],
+    correctAnswer: 1,
+    explanation: "The halftone process uses dots (points) to simulate shading and grayscale images in printing. This is how ALL printed photos work!",
+    topic: "Printing"
+  },
+  {
+    id: "plpq19",
+    question: "In halftone printing, what creates darker areas?",
+    options: [
+      "Smaller, farther apart dots",
+      "Lighter colored dots",
+      "Closer/larger dots",
+      "Fewer dots"
+    ],
+    correctAnswer: 2,
+    explanation: "Closer/larger dots create darker areas, while farther/smaller dots create lighter areas in halftone printing.",
+    topic: "Printing"
+  },
+  {
+    id: "plpq20",
+    question: "What are Bézier curves defined by?",
+    options: [
+      "Pixels and colors",
+      "Anchor points (ends) and control points (shape)",
+      "Lines and planes",
+      "Dots and dashes"
+    ],
+    correctAnswer: 1,
+    explanation: "Bézier curves are defined by anchor points (ends) and control points (shape). They're the math behind every curve in vector graphics — and the Pen tool!",
+    topic: "Bézier Curves"
+  },
+  {
+    id: "plpq21",
+    question: "Where are Bézier curves commonly used?",
+    options: [
+      "Raster images",
+      "Vector graphics",
+      "Photographs",
+      "Textures"
+    ],
+    correctAnswer: 1,
+    explanation: "Bézier curves are used in vector graphics to create smooth, scalable curves that maintain quality at any size.",
+    topic: "Bézier Curves"
+  },
+  {
+    id: "plpq22",
+    question: "Using the quick cram: What does 'Point' represent?",
+    options: ["Movement", "Surface", "Dot", "Depth"],
+    correctAnswer: 2,
+    explanation: "Point = dot. It's the simplest element that marks a position.",
+    topic: "Quick Cram"
+  },
+  {
+    id: "plpq23",
+    question: "Using the quick cram: What does 'Line' represent?",
+    options: ["Dot", "Movement", "Surface", "Flat 3D"],
+    correctAnswer: 1,
+    explanation: "Line = movement. Lines show direction and movement through space.",
+    topic: "Quick Cram"
+  },
+  {
+    id: "plpq24",
+    question: "Using the quick cram: What does 'Plane' represent?",
+    options: ["Dot", "Movement", "Surface", "Depth"],
+    correctAnswer: 2,
+    explanation: "Plane = surface. Planes are flat surfaces with height and width.",
+    topic: "Quick Cram"
+  },
+  {
+    id: "plpq25",
+    question: "Using the quick cram: What does 'Perspective' represent?",
+    options: ["Depth", "Flat 3D", "Controlled curve", "Surface"],
+    correctAnswer: 0,
+    explanation: "Perspective = depth. It creates the illusion of three-dimensional space.",
+    topic: "Quick Cram"
+  },
+  {
+    id: "plpq26",
+    question: "Using the quick cram: What does 'Axonometric' represent?",
+    options: ["Depth", "Flat 3D", "Movement", "Dot"],
+    correctAnswer: 1,
+    explanation: "Axonometric = flat 3D. It shows 3D objects without size change based on distance.",
+    topic: "Quick Cram"
+  },
+  {
+    id: "plpq27",
+    question: "Using the quick cram: What does 'Bézier' represent?",
+    options: ["Controlled curve", "Flat 3D", "Depth", "Movement"],
+    correctAnswer: 0,
+    explanation: "Bézier = controlled curve. Bézier curves are defined by anchor and control points.",
+    topic: "Quick Cram"
+  },
+  {
+    id: "plpq28",
+    question: "A point has both length and width.",
+    options: ["True", "False"],
+    correctAnswer: 1,
+    explanation: "False! A point has no size — it only marks a position in space.",
+    topic: "Point"
+  },
+  {
+    id: "plpq29",
+    question: "Lines can show emotion and structure in design.",
+    options: ["True", "False"],
+    correctAnswer: 0,
+    explanation: "True! Lines show direction, emotion, and structure — thick = bold, thin = delicate, wavy = calm, jagged = chaos!",
+    topic: "Line"
+  },
+  {
+    id: "plpq30",
+    question: "Axonometric perspective makes objects appear smaller as they recede.",
+    options: ["True", "False"],
+    correctAnswer: 1,
+    explanation: "False! Axonometric has no size change. Linear perspective makes objects smaller as they recede.",
+    topic: "Space & Volume"
+  }
+];
+
+// ========== MODULE 2: RHYTHM, BALANCE, SCALE, TEXTURE, COLOR, FIGURE/GROUND QUIZ (Pages 48-67) ==========
+const mod2QuizQuestions = [
+  {
+    id: "m2q1",
+    question: "What is RHYTHM in graphic design? (p.48-49)",
+    options: [
+      "Using only one color throughout a design",
+      "Repeating visual elements to create pattern and movement",
+      "Making everything the same size",
+      "Using only straight lines"
+    ],
+    correctAnswer: 1,
+    explanation: "Rhythm = repeating visual elements (shapes, colors, lines) to create pattern and movement — like a beat in music! 🥁",
+    topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q2",
+    question: "What are the TWO main types of balance in design? (p.50-51)",
+    options: [
+      "Horizontal and vertical",
+      "Light and dark",
+      "Symmetrical and asymmetrical",
+      "Big and small"
+    ],
+    correctAnswer: 2,
+    explanation: "Symmetrical (mirror image, formal, calm ⚖️) and Asymmetrical (unequal but balanced, dynamic, energetic ⚡). There's also radial balance!",
+    topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q3",
+    question: "Symmetrical balance means both sides of a design are mirror images of each other.",
+    options: ["True", "False"],
+    correctAnswer: 0,
+    explanation: "True! Symmetrical balance = fold it in half and both sides match. Think: butterfly, wedding invite. Formal and stable!",
+    topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q4",
+    question: "In asymmetrical balance, a large dark shape on one side can be balanced by:",
+    options: [
+      "An identical dark shape on the other side",
+      "Nothing — it can't be balanced",
+      "Several smaller, lighter shapes on the other side",
+      "Only another large dark shape"
+    ],
+    correctAnswer: 2,
+    explanation: "Asymmetrical balance uses DIFFERENT elements that feel equal in visual weight — a big dark shape can be balanced by several small light shapes, like a seesaw!",
+    topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q5",
+    question: "Which of these creates MORE visual weight? (p.51)",
+    options: [
+      "Small size, light color, simple texture",
+      "Bigger size, darker color, complex texture, isolation on page",
+      "Being centered on the page",
+      "Using only cool colors"
+    ],
+    correctAnswer: 1,
+    explanation: "Visual weight increases with: bigger size, darker color, complex texture, isolation (alone on the page), and bright/warm colors. These elements 'pull' your eye more!",
+    topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q6",
+    question: "What is RADIAL balance? (p.51)",
+    options: [
+      "Balance along a horizontal line",
+      "Elements radiating outward from a center point",
+      "Balance between text and images",
+      "Using only circular shapes"
+    ],
+    correctAnswer: 1,
+    explanation: "Radial balance = elements radiate outward from a center point, like a sunburst ☀️, mandala, or flower 🌸. Naturally draws your eye to the middle!",
+    topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q7",
+    question: "Asymmetrical balance feels more _______ than symmetrical balance.",
+    options: [
+      "Boring and static",
+      "Dynamic and energetic",
+      "Formal and traditional",
+      "Confusing and messy"
+    ],
+    correctAnswer: 1,
+    explanation: "Asymmetrical balance feels dynamic and energetic! It's more visually interesting (but harder to pull off) than the calm formality of symmetrical balance.",
+    topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q8",
+    question: "What is SCALE in design? (p.52-53)",
+    options: [
+      "The weight of an object",
+      "The color of an element",
+      "The size of an element relative to other elements or the page",
+      "The number of elements in a design"
+    ],
+    correctAnswer: 2,
+    explanation: "Scale = size RELATIVE to something else. It's about relationships! A tiny dot on a huge page is very different from the same dot crammed among other elements.",
+    topic: "Scale"
+  },
+  {
+    id: "m2q9",
+    question: "How do designers use scale to create hierarchy? (p.54-55)",
+    options: [
+      "Making everything the same size",
+      "Using only small elements",
+      "Making more important elements BIGGER to draw attention first",
+      "Putting everything in alphabetical order"
+    ],
+    correctAnswer: 2,
+    explanation: "Bigger = more important (usually)! Headlines are BIG, body text is small. Scale differences tell viewers: 'LOOK HERE FIRST!' Without scale contrast, everything competes.",
+    topic: "Scale"
+  },
+  {
+    id: "m2q10",
+    question: "What's the difference between SCALE and PROPORTION? (p.53)",
+    options: [
+      "They are the same thing",
+      "Scale = size relative to something else; Proportion = internal size relationships within an object",
+      "Scale is for print; Proportion is for digital",
+      "Proportion is bigger than scale"
+    ],
+    correctAnswer: 1,
+    explanation: "Scale = size relative to other things. Proportion = internal ratios (width to height). You can resize a photo (change scale) while keeping the same proportions!",
+    topic: "Scale"
+  },
+  {
+    id: "m2q11",
+    question: "What effect does UNEXPECTED scale create? (p.55-57)",
+    options: [
+      "It makes the design look broken",
+      "It creates surprise, visual tension, and memorable impact",
+      "It always looks unprofessional",
+      "It only works in photography"
+    ],
+    correctAnswer: 1,
+    explanation: "Unexpected scale = surprise and impact! Making something tiny huge (or vice versa) creates visual tension and grabs attention. Designers use this to challenge expectations!",
+    topic: "Scale"
+  },
+  {
+    id: "m2q12",
+    question: "Without scale contrast in a design, what happens?",
+    options: [
+      "The design looks perfect",
+      "Everything competes for attention and nothing wins",
+      "The viewer reads faster",
+      "Colors appear brighter"
+    ],
+    correctAnswer: 1,
+    explanation: "Without scale contrast, everything is the same visual importance — so nothing stands out! The viewer doesn't know where to look first. Scale creates visual hierarchy.",
+    topic: "Scale"
+  },
+  {
+    id: "m2q13",
+    question: "What is TEXTURE in graphic design? (p.60-61)",
+    options: [
+      "Only the color of a surface",
+      "The surface quality of a design element (actual or visual)",
+      "The size of an element",
+      "The number of layers in a design"
+    ],
+    correctAnswer: 1,
+    explanation: "Texture = surface quality! Can be ACTUAL (you can feel it — embossing) or VISUAL (only looks textured — pattern of dots, photo of wood grain). Adds richness to flat designs!",
+    topic: "Texture"
+  },
+  {
+    id: "m2q14",
+    question: "What's the difference between actual texture and visual texture? (p.60-61)",
+    options: [
+      "Actual texture is colorful; visual texture is gray",
+      "Actual texture = physical, you can feel it; Visual texture = appears textured but is flat",
+      "They are the same thing",
+      "Visual texture is only for digital; actual texture is only for print"
+    ],
+    correctAnswer: 1,
+    explanation: "Actual texture = tactile, you can FEEL it (embossed paper, rough canvas). Visual texture = LOOKS textured but is flat (photo of wood, pattern of dots). In digital design, almost all texture is visual!",
+    topic: "Texture"
+  },
+  {
+    id: "m2q15",
+    question: "How do points and lines from Module 1 connect to texture? (p.61-62)",
+    options: [
+      "They don't connect at all",
+      "Repeated tiny points = stippled texture; repeated thin lines = hatched texture",
+      "Points make color and lines make shapes",
+      "Texture replaces points and lines"
+    ],
+    correctAnswer: 1,
+    explanation: "Full circle! 🔄 Repeat tiny points = stippled texture. Repeat thin lines = hatched texture. The density, size, and spacing control how dark/light and rough/smooth it appears. Module 1 → Module 2!",
+    topic: "Texture"
+  },
+  {
+    id: "m2q16",
+    question: "What are the THREE basic properties of color? (p.62-63)",
+    options: [
+      "RGB, CMYK, and Hex",
+      "Primary, secondary, and tertiary",
+      "Hue, Saturation, and Value",
+      "Warm, cool, and neutral"
+    ],
+    correctAnswer: 2,
+    explanation: "Hue = color name (red, blue). Saturation = intensity/purity (vivid vs muted). Value = lightness/darkness (tint = add white, shade = add black). Master these 3 = master color!",
+    topic: "Color"
+  },
+  {
+    id: "m2q17",
+    question: "What is HUE? (p.62)",
+    options: [
+      "How light or dark a color is",
+      "The name of the color (red, blue, green, etc.)",
+      "How vivid a color is",
+      "The transparency of a color"
+    ],
+    correctAnswer: 1,
+    explanation: "Hue = the actual color name. Red, blue, green, yellow — these are all hues. It's the most basic identifier of a color!",
+    topic: "Color"
+  },
+  {
+    id: "m2q18",
+    question: "What is SATURATION? (p.62-63)",
+    options: [
+      "The lightness or darkness of a color",
+      "The name of a color",
+      "The intensity or purity of a color (vivid vs muted/gray)",
+      "The temperature of a color"
+    ],
+    correctAnswer: 2,
+    explanation: "Saturation = how vivid or muted a color is. Full saturation = pure, vivid color. Low saturation = washed out, grayish. Desaturated colors feel calmer; saturated colors pop!",
+    topic: "Color"
+  },
+  {
+    id: "m2q19",
+    question: "What is VALUE in color? (p.63)",
+    options: [
+      "How expensive the ink is",
+      "The lightness or darkness of a color (tint vs shade)",
+      "The name of the color",
+      "How vivid the color is"
+    ],
+    correctAnswer: 1,
+    explanation: "Value = lightness/darkness. Add white to a color = tint (lighter). Add black = shade (darker). Value is crucial for creating contrast and readability!",
+    topic: "Color"
+  },
+  {
+    id: "m2q20",
+    question: "RGB color is _______ (adding light) and CMYK is _______ (adding ink). (p.63-64)",
+    options: [
+      "Subtractive; Additive",
+      "Additive; Subtractive",
+      "Digital; Analog",
+      "Print; Screen"
+    ],
+    correctAnswer: 1,
+    explanation: "RGB = ADDITIVE (more color = brighter, all colors = white). CMYK = SUBTRACTIVE (more ink = darker, all colors = muddy black). RGB for screens, CMYK for print!",
+    topic: "Color"
+  },
+  {
+    id: "m2q21",
+    question: "Warm colors (red, orange, yellow) tend to _______ while cool colors (blue, green) tend to _______. (p.64-65)",
+    options: [
+      "Recede backward; come forward",
+      "Look smaller; look bigger",
+      "Come forward; recede backward",
+      "Look dimmer; look brighter"
+    ],
+    correctAnswer: 2,
+    explanation: "Warm colors ADVANCE (come forward) and cool colors RECEDE (go backward). Warm on cool background = the warm element POPS forward! Sneaky depth trick!",
+    topic: "Color"
+  },
+  {
+    id: "m2q22",
+    question: "Why is color CONTRAST important for design? (p.65-66)",
+    options: [
+      "It makes designs look expensive",
+      "It's essential for readability and accessibility",
+      "It only matters in print design",
+      "It's purely decorative"
+    ],
+    correctAnswer: 1,
+    explanation: "Color contrast is essential for READABILITY and ACCESSIBILITY. High contrast (black on white) = easy to read. Low contrast (light gray on white) = hard to read. If people can't read it, it doesn't matter how pretty it is!",
+    topic: "Color"
+  },
+  {
+    id: "m2q23",
+    question: "What is FIGURE/GROUND in design? (p.66-67)",
+    options: [
+      "The frame around a picture",
+      "Figure = the object you focus on; Ground = the background behind it",
+      "The top and bottom of a page",
+      "The difference between digital and print"
+    ],
+    correctAnswer: 1,
+    explanation: "Figure = the subject your eye focuses on 🎯. Ground = the background/space behind it. Your brain ALWAYS tries to separate figure from ground!",
+    topic: "Figure/Ground"
+  },
+  {
+    id: "m2q24",
+    question: "What are the THREE figure/ground relationships? (p.66-67)",
+    options: [
+      "Big, medium, and small",
+      "Stable, reversible, and ambiguous",
+      "Light, medium, and dark",
+      "Simple, complex, and abstract"
+    ],
+    correctAnswer: 1,
+    explanation: "STABLE = clear figure vs ground. REVERSIBLE = figure and ground can swap (vase/faces illusion!). AMBIGUOUS = can't tell which is which. Each creates a different visual effect!",
+    topic: "Figure/Ground"
+  },
+  {
+    id: "m2q25",
+    question: "In a STABLE figure/ground relationship, what happens?",
+    options: [
+      "Figure and ground keep swapping",
+      "You can't tell which is figure and which is ground",
+      "The figure is clearly distinct from the ground — no confusion",
+      "The ground disappears"
+    ],
+    correctAnswer: 2,
+    explanation: "Stable = figure is clearly separate from the ground. Like black text on a white page — no confusion about what's the subject and what's the background!",
+    topic: "Figure/Ground"
+  },
+  {
+    id: "m2q26",
+    question: "The classic 'vase and two faces' illusion is an example of what type of figure/ground relationship?",
+    options: [
+      "Stable",
+      "Reversible",
+      "Ambiguous",
+      "Transparent"
+    ],
+    correctAnswer: 1,
+    explanation: "Reversible! The figure and ground swap — sometimes you see a vase, sometimes you see two faces 🏺👤. Your brain flips between the two interpretations!",
+    topic: "Figure/Ground"
+  },
+  {
+    id: "m2q27",
+    question: "What is NEGATIVE SPACE and why is it important? (p.67)",
+    options: [
+      "Empty, wasted space that should be filled",
+      "Active design element — the 'empty' space around and between figures",
+      "Space that doesn't have any color",
+      "The margin of a page"
+    ],
+    correctAnswer: 1,
+    explanation: "Negative space is NOT empty — it's an active design element! Think: the hidden arrow in the FedEx logo, or the bear in the Toblerone mountain. Great designers use negative space intentionally!",
+    topic: "Figure/Ground"
+  },
+  {
+    id: "m2q28",
+    question: "A tint is created by adding _______ to a color, while a shade is created by adding _______.",
+    options: [
+      "Black; white",
+      "White; black",
+      "Gray; color",
+      "Saturation; hue"
+    ],
+    correctAnswer: 1,
+    explanation: "Tint = color + white (lighter). Shade = color + black (darker). These create different VALUES of the same hue!",
+    topic: "Color"
+  },
+  {
+    id: "m2q29",
+    question: "Which design principle helps guide the viewer's eye through repeating visual elements?",
+    options: [
+      "Scale",
+      "Balance",
+      "Rhythm",
+      "Figure/Ground"
+    ],
+    correctAnswer: 2,
+    explanation: "Rhythm! Repeating visual elements (shapes, colors, lines) creates pattern and movement that guides the eye through the design — like a visual beat!",
+    topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q30",
+    question: "In the FedEx logo, the arrow between the E and x is an example of:",
+    options: [
+      "Asymmetrical balance",
+      "Negative space used as an active design element",
+      "Visual rhythm",
+      "Color contrast"
+    ],
+    correctAnswer: 1,
+    explanation: "The FedEx arrow is a brilliant use of NEGATIVE SPACE! The 'empty' space between letters forms a hidden arrow — negative space used as a secret second design!",
+    topic: "Figure/Ground"
+  },
+  {
+    id: "m2q31",
+    question: "Desaturated colors feel _______ while highly saturated colors feel _______.",
+    options: [
+      "Energetic; calm",
+      "Calm/muted; vivid/attention-grabbing",
+      "Dark; light",
+      "Warm; cool"
+    ],
+    correctAnswer: 1,
+    explanation: "Desaturated (less vivid) colors feel calm and muted. Highly saturated (vivid) colors feel energetic and grab attention. Saturation controls the intensity!",
+    topic: "Color"
+  },
+  {
+    id: "m2q32",
+    question: "Which statement about texture in digital design is TRUE? (p.60-61)",
+    options: [
+      "Digital designs can only use actual texture",
+      "Almost all texture in digital design is VISUAL texture because screens are smooth",
+      "Texture can't be used in digital design",
+      "Digital texture is always 3D"
+    ],
+    correctAnswer: 1,
+    explanation: "Since screens are smooth/flat, almost all texture in digital design is VISUAL texture — it looks textured but you can't feel it. Actual texture (tactile) is mainly for print!",
+    topic: "Texture"
+  }
+];
