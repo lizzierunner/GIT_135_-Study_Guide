@@ -2223,5 +2223,18 @@ const mod2QuizQuestions = [
     correctAnswer: 1,
     explanation: "FALSE! Repetition is seen EVERYWHERE in the human environment — from brick walls and floor tiles to rows of windows, keyboard keys, and grocery store shelves. It's one of the most common visual principles around us!",
     topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q7f",
+    question: "Rhythm and pacing is most often utilized in what kind of print design?",
+    options: [
+      "Social media graphics",
+      "Multi-page spreads or documents",
+      "Packaging",
+      "Posters and billboards"
+    ],
+    correctAnswer: 1,
+    explanation: "Rhythm and pacing shine in MULTI-PAGE SPREADS or DOCUMENTS — think magazines, books, and brochures where a reader moves through sequential pages. The designer controls tempo across pages, creating visual rhythm from spread to spread!",
+    topic: "Rhythm & Balance"
   }
 ];
