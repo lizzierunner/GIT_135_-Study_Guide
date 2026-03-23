@@ -1615,6 +1615,19 @@ const mod2QuizQuestions = [
     topic: "Rhythm & Balance"
   },
   {
+    id: "m2q7b",
+    question: "Balance is a catalyst for form that ________ and ________ elements in space.",
+    options: [
+      "Hides and reveals",
+      "Arranges and stabilizes",
+      "Enlarges and reduces",
+      "Colors and textures"
+    ],
+    correctAnswer: 1,
+    explanation: "Balance is a catalyst for form that ARRANGES and STABILIZES elements in space. It's the principle that determines how visual weight is distributed so a design feels intentional and cohesive!",
+    topic: "Rhythm & Balance"
+  },
+  {
     id: "m2q8",
     question: "What is SCALE in design? (p.52-53)",
     options: [
