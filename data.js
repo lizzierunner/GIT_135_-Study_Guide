@@ -2236,5 +2236,18 @@ const mod2QuizQuestions = [
     correctAnswer: 1,
     explanation: "Rhythm and pacing shine in MULTI-PAGE SPREADS or DOCUMENTS — think magazines, books, and brochures where a reader moves through sequential pages. The designer controls tempo across pages, creating visual rhythm from spread to spread!",
     topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q7g",
+    question: "Playing with scale can create which of the following? (Select the BEST answer)",
+    options: [
+      "Spatial illusions and conceptual relationships only",
+      "Information hierarchies and visual layers only",
+      "Modular grids only",
+      "Spatial illusions, conceptual relationships, information hierarchies, visual layers, AND modular grids"
+    ],
+    correctAnswer: 3,
+    explanation: "ALL of them! Playing with scale can create spatial illusions, conceptual relationships, information hierarchies, visual layers, AND modular grids. Scale is incredibly versatile — it affects how we perceive depth, meaning, importance, layering, and structure!",
+    topic: "Scale"
   }
 ];
