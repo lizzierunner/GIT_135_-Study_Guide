@@ -1628,6 +1628,32 @@ const mod2QuizQuestions = [
     topic: "Rhythm & Balance"
   },
   {
+    id: "m2q7c",
+    question: "Match the definition: SYMMETRY uses ________ elements on at least two sides along a common axis.",
+    options: [
+      "Different",
+      "Identical",
+      "Random",
+      "Overlapping"
+    ],
+    correctAnswer: 1,
+    explanation: "SYMMETRY = IDENTICAL elements on at least two sides along a common axis (mirror image). ASYMMETRY = DIFFERENT elements on at least two sides along a common axis. Same axis, different approach!",
+    topic: "Rhythm & Balance"
+  },
+  {
+    id: "m2q7d",
+    question: "Match the definition: ASYMMETRY uses ________ elements on at least two sides along a common axis.",
+    options: [
+      "Identical",
+      "Overlapping",
+      "Different",
+      "Mirrored"
+    ],
+    correctAnswer: 2,
+    explanation: "ASYMMETRY = DIFFERENT elements on at least two sides along a common axis. Unlike symmetry (identical/mirrored), asymmetry achieves balance through contrast — different elements that still feel visually equal!",
+    topic: "Rhythm & Balance"
+  },
+  {
     id: "m2q8",
     question: "What is SCALE in design? (p.52-53)",
     options: [
