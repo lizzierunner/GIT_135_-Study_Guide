@@ -2212,5 +2212,16 @@ const mod2QuizQuestions = [
     correctAnswer: 1,
     explanation: "Jules Chéret designed the Les Girard poster (Art Nouveau rhythm), Müller-Brockmann designed the Beethoven poster (International Style), and Paula Scher designed the Public Theater poster (postmodern maximalism)!",
     topic: "Design History (Lecture)"
+  },
+  {
+    id: "m2q7e",
+    question: "True or False: Repetition is rarely seen in the human environment.",
+    options: [
+      "True",
+      "False"
+    ],
+    correctAnswer: 1,
+    explanation: "FALSE! Repetition is seen EVERYWHERE in the human environment — from brick walls and floor tiles to rows of windows, keyboard keys, and grocery store shelves. It's one of the most common visual principles around us!",
+    topic: "Rhythm & Balance"
   }
 ];
