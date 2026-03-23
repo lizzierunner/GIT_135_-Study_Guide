@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIT 135 Study App - ADHD Friendly</title>
+    <title>GIT 135 Study App - ADHD Friendly 🧠✨</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Motivational Toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- XP Popup -->
+    <div id="xpPopup" class="xp-popup">+10 XP ⭐</div>
+
     <!-- Main Container -->
     <div id="app">
         <!-- Navigation Header -->
         <header id="header" class="header">
             <div class="container">
                 <div class="header-content">
-                    <button id="backBtn" class="btn-back" style="display: none;">
+                    <button id="backBtn" class="btn-back" style="display: none;" aria-label="Go back">
                         ← Back
                     </button>
                     <h1 id="headerTitle">GIT 135 Study App</h1>
-                    <div id="headerStats" class="header-stats" style="display: none;">
-                        <span id="streakDisplay">🔥 0</span>
-                        <span id="pointsDisplay">⭐ 0</span>
+                    <div class="header-right">
+                        <div id="headerStats" class="header-stats" style="display: none;">
+                            <span id="streakDisplay" class="stat-pill">�� 0</span>
+                            <span id="pointsDisplay" class="stat-pill">⭐ 0</span>
+                            <span id="levelDisplay" class="stat-pill level-pill">Lv 1</span>
+                        </div>
+                        <button id="darkModeToggle" class="dark-mode-btn" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+                            🌙
+                        </button>
                     </div>
                 </div>
             </div>
@@ -28,11 +43,24 @@
         <!-- Main Content Area -->
         <main class="main-content">
             <div class="container">
-                <!-- Dashboard View -->
+
+                <!-- ==================== DASHBOARD VIEW ==================== -->
                 <div id="dashboardView" class="view">
                     <div class="welcome-section">
-                        <h2 class="welcome-title">Welcome Back! 👋</h2>
-                        <p class="welcome-subtitle">Let's ace GIT 135 together! 📖 Modules 1 & 2 loaded!</p>
+                        <h2 class="welcome-title" id="welcomeTitle">Welcome Back! 👋</h2>
+                        <p class="welcome-subtitle" id="welcomeSubtitle">Let's ace GIT 135 together!</p>
+                        <div class="motivation-banner" id="motivationBanner"></div>
+                    </div>
+
+                    <!-- Level Progress -->
+                    <div class="level-section">
+                        <div class="level-info">
+                            <span class="level-badge" id="dashLevel">Level 1 🌱</span>
+                            <span class="level-next" id="dashNextLevel">50 XP to Level 2</span>
+                        </div>
+                        <div class="level-bar">
+                            <div class="level-fill" id="levelFill" style="width: 0%;"></div>
+                        </div>
                     </div>
 
                     <!-- Stats Cards -->
@@ -45,7 +73,7 @@
                         <div class="stat-card">
                             <div class="stat-icon">⭐</div>
                             <div class="stat-value" id="dashPointsValue">0</div>
-                            <div class="stat-label">Total Points</div>
+                            <div class="stat-label">Total XP</div>
                         </div>
                         <div class="stat-card">
                             <div class="stat-icon">✅</div>
@@ -61,54 +89,89 @@
 
                     <!-- Quick Actions -->
                     <div class="section">
-                        <h3 class="section-title">Quick Start</h3>
+                        <h3 class="section-title">⚡ Quick Start</h3>
+                        <p class="section-hint">Pick one. Just one. You got this. 💪</p>
                         <div class="quick-actions">
-                            <button class="action-btn" onclick="navigateTo('quizSelection')">
+                            <button class="action-btn action-quiz" onclick="navigateTo('quizSelection')">
                                 <span class="action-icon">📝</span>
                                 <span class="action-text">Take a Quiz</span>
+                                <span class="action-hint">Test yourself</span>
                             </button>
-                            <button class="action-btn" onclick="navigateTo('quizSelection')">
+                            <button class="action-btn action-flash" onclick="navigateTo('quizSelection')">
                                 <span class="action-icon">🗂️</span>
-                                <span class="action-text">Study Flashcards</span>
+                                <span class="action-text">Flashcards</span>
+                                <span class="action-hint">Quick review</span>
                             </button>
-                            <button class="action-btn" onclick="showTimer()">
+                            <button class="action-btn action-random" onclick="startRandomQuiz()">
+                                <span class="action-icon">🎲</span>
+                                <span class="action-text">Random 5</span>
+                                <span class="action-hint">Just 5 questions!</span>
+                            </button>
+                            <button class="action-btn action-timer" onclick="showTimer()">
                                 <span class="action-icon">⏱️</span>
-                                <span class="action-text">Study Timer</span>
+                                <span class="action-text">Focus Timer</span>
+                                <span class="action-hint">Pomodoro mode</span>
                             </button>
                         </div>
                     </div>
 
-                    <!-- Study Timer (Hidden by default) -->
+                    <!-- Study Timer -->
                     <div id="timerSection" class="timer-section" style="display: none;">
-                        <h3 class="section-title">Study Timer</h3>
+                        <h3 class="section-title">⏱️ Pomodoro Timer</h3>
+                        <p class="section-hint">ADHD hack: short bursts → reward yourself! 🎁</p>
                         <div class="timer-card">
-                            <div class="timer-display" id="timerDisplay">25:00</div>
+                            <div class="timer-ring-container">
+                                <svg class="timer-ring" viewBox="0 0 200 200">
+                                    <circle class="timer-ring-bg" cx="100" cy="100" r="90"/>
+                                    <circle class="timer-ring-progress" id="timerRingProgress" cx="100" cy="100" r="90"/>
+                                </svg>
+                                <div class="timer-display" id="timerDisplay">25:00</div>
+                            </div>
+                            <div class="timer-status" id="timerStatus">Ready to focus! 🎯</div>
                             <div class="timer-controls">
-                                <button class="btn-primary" id="startTimerBtn" onclick="startTimer()">Start</button>
-                                <button class="btn-secondary" id="pauseTimerBtn" onclick="pauseTimer()" style="display: none;">Pause</button>
-                                <button class="btn-secondary" onclick="resetTimer()">Reset</button>
+                                <button class="btn-primary btn-lg" id="startTimerBtn" onclick="startTimer()">▶ Start Focus</button>
+                                <button class="btn-secondary btn-lg" id="pauseTimerBtn" onclick="pauseTimer()" style="display: none;">⏸ Pause</button>
+                                <button class="btn-ghost" onclick="resetTimer()">↻ Reset</button>
                             </div>
                             <div class="timer-presets">
-                                <button class="preset-btn" onclick="setTimer(15)">15 min</button>
-                                <button class="preset-btn active" onclick="setTimer(25)">25 min</button>
-                                <button class="preset-btn" onclick="setTimer(45)">45 min</button>
+                                <button class="preset-btn" onclick="setTimer(5)">5 min 🧪</button>
+                                <button class="preset-btn" onclick="setTimer(15)">15 min ⚡</button>
+                                <button class="preset-btn active" onclick="setTimer(25)">25 min 🍅</button>
+                                <button class="preset-btn" onclick="setTimer(45)">45 min 🔥</button>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Keyboard Shortcuts -->
+                    <div class="shortcuts-hint">
+                        ⌨️ <kbd>Space</kbd> flip · <kbd>←</kbd><kbd>→</kbd> navigate · <kbd>1-4</kbd> answer · <kbd>D</kbd> dark mode · <kbd>Enter</kbd> next
                     </div>
                 </div>
 
-                <!-- Quiz Selection View -->
+                <!-- ==================== QUIZ SELECTION VIEW ==================== -->
                 <div id="quizSelectionView" class="view" style="display: none;">
-                    <h2 class="page-title">Choose Your Topic</h2>
+                    <h2 class="page-title">Choose Your Topic 🎯</h2>
+                    <p class="page-hint">No wrong choice here! 🌟</p>
+
+                    <div class="quick-quiz-banner" onclick="startRandomQuiz()">
+                        <span class="quick-quiz-icon">🎲</span>
+                        <div class="quick-quiz-text">
+                            <strong>Can't decide? Random 5!</strong>
+                            <span>5 mixed questions. Quick dopamine hit! ⚡</span>
+                        </div>
+                        <span class="quick-quiz-arrow">→</span>
+                    </div>
+
                     <div class="quiz-grid">
-                        <!-- Adobe Essentials -->
                         <div class="quiz-card adobe-card">
                             <div class="quiz-card-header adobe-header">
-                                <h3 class="quiz-card-title">Adobe Essentials</h3>
+                                <h3 class="quiz-card-title">🎨 Adobe Essentials</h3>
                             </div>
                             <div class="quiz-card-body">
-                                <div class="quiz-badge adobe-badge">27 Flashcards</div>
-                                <div class="quiz-badge adobe-badge">45 Questions</div>
+                                <div class="badge-row">
+                                    <div class="quiz-badge adobe-badge">🗂️ 27 Cards</div>
+                                    <div class="quiz-badge adobe-badge">📝 45 Qs</div>
+                                </div>
                                 <p class="quiz-description">Master Illustrator, InDesign, and Photoshop basics</p>
                                 <div class="quiz-topics">
                                     <span class="topic-tag">Illustrator</span>
@@ -117,20 +180,22 @@
                                 </div>
                             </div>
                             <div class="quiz-card-footer">
-                                <button class="btn-primary adobe-btn" onclick="startQuiz('adobe')">Start Quiz</button>
-                                <button class="btn-secondary adobe-btn-outline" onclick="startFlashcards('adobe')">Flashcards</button>
+                                <button class="btn-primary adobe-btn" onclick="startQuiz('adobe')">📝 Full Quiz</button>
+                                <button class="btn-secondary adobe-btn-outline" onclick="startFlashcards('adobe')">🗂️ Cards</button>
+                                <button class="btn-ghost" onclick="startMiniQuiz('adobe')">⚡ Quick 5</button>
                             </div>
                         </div>
 
-                        <!-- Module 1: Point Line Plane (Pages 32-47) -->
                         <div class="quiz-card plp-card">
                             <div class="quiz-card-header plp-header">
-                                <h3 class="quiz-card-title">📖 Module 1: Point Line Plane</h3>
+                                <h3 class="quiz-card-title">�� Module 1: Point Line Plane</h3>
                             </div>
                             <div class="quiz-card-body">
-                                <div class="quiz-badge plp-badge">19 Flashcards</div>
-                                <div class="quiz-badge plp-badge">43 Questions</div>
-                                <p class="quiz-description">Pages 32-47: The grammar of visual design — Points, Lines, Planes & more!</p>
+                                <div class="badge-row">
+                                    <div class="quiz-badge plp-badge">🗂️ 19 Cards</div>
+                                    <div class="quiz-badge plp-badge">📝 43 Qs</div>
+                                </div>
+                                <p class="quiz-description">Pages 32-47: The grammar of visual design!</p>
                                 <div class="quiz-topics">
                                     <span class="topic-tag">Points</span>
                                     <span class="topic-tag">Lines</span>
@@ -140,19 +205,21 @@
                                 </div>
                             </div>
                             <div class="quiz-card-footer">
-                                <button class="btn-primary plp-btn" onclick="startQuiz('plp')">Start Quiz</button>
-                                <button class="btn-secondary plp-btn-outline" onclick="startFlashcards('plp')">Flashcards</button>
+                                <button class="btn-primary plp-btn" onclick="startQuiz('plp')">📝 Full Quiz</button>
+                                <button class="btn-secondary plp-btn-outline" onclick="startFlashcards('plp')">🗂️ Cards</button>
+                                <button class="btn-ghost" onclick="startMiniQuiz('plp')">⚡ Quick 5</button>
                             </div>
                         </div>
 
-                        <!-- Module 2: Design Principles (Pages 48-67) -->
                         <div class="quiz-card mod2-card">
                             <div class="quiz-card-header mod2-header">
-                                <h3 class="quiz-card-title">📖 Module 2: Design Principles</h3>
+                                <h3 class="quiz-card-title">⚖️ Module 2: Design Principles</h3>
                             </div>
                             <div class="quiz-card-body">
-                                <div class="quiz-badge mod2-badge">20 Flashcards</div>
-                                <div class="quiz-badge mod2-badge">32 Questions</div>
+                                <div class="badge-row">
+                                    <div class="quiz-badge mod2-badge">🗂️ 20 Cards</div>
+                                    <div class="quiz-badge mod2-badge">📝 32 Qs</div>
+                                </div>
                                 <p class="quiz-description">Pages 48-67: Rhythm, Balance, Scale, Texture, Color & Figure/Ground!</p>
                                 <div class="quiz-topics">
                                     <span class="topic-tag">Rhythm</span>
@@ -164,40 +231,53 @@
                                 </div>
                             </div>
                             <div class="quiz-card-footer">
-                                <button class="btn-primary mod2-btn" onclick="startQuiz('mod2')">Start Quiz</button>
-                                <button class="btn-secondary mod2-btn-outline" onclick="startFlashcards('mod2')">Flashcards</button>
+                                <button class="btn-primary mod2-btn" onclick="startQuiz('mod2')">📝 Full Quiz</button>
+                                <button class="btn-secondary mod2-btn-outline" onclick="startFlashcards('mod2')">🗂️ Cards</button>
+                                <button class="btn-ghost" onclick="startMiniQuiz('mod2')">⚡ Quick 5</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Flashcards View -->
+                <!-- ==================== FLASHCARDS VIEW ==================== -->
                 <div id="flashcardsView" class="view" style="display: none;">
                     <div class="flashcard-header">
                         <h2 class="page-title" id="flashcardTitle">Flashcards</h2>
                         <div class="flashcard-progress">
                             <span id="flashcardCounter">1 / 10</span>
                         </div>
+                        <div class="flashcard-progress-bar">
+                            <div class="flashcard-progress-fill" id="flashcardProgressFill"></div>
+                        </div>
                     </div>
+
+                    <div class="tap-hint" id="tapHint">👆 Tap the card to flip!</div>
 
                     <div class="flashcard-container">
                         <div class="flashcard" id="flashcard" onclick="flipCard()">
                             <div class="flashcard-inner" id="flashcardInner">
                                 <div class="flashcard-front">
-                                    <div class="card-label">Question</div>
+                                    <div class="card-label">❓ Question</div>
                                     <div class="card-content" id="flashcardQuestion">Click to start</div>
+                                    <div class="card-tap-hint">tap to flip</div>
                                 </div>
                                 <div class="flashcard-back">
-                                    <div class="card-label">Answer</div>
+                                    <div class="card-label">💡 Answer</div>
                                     <div class="card-content" id="flashcardAnswer">Answer appears here</div>
+                                    <div class="card-tap-hint">tap to flip back</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="flashcard-controls">
-                        <button class="btn-secondary" id="prevFlashcard" onclick="previousFlashcard()">← Previous</button>
-                        <button class="btn-primary" id="nextFlashcard" onclick="nextFlashcard()">Next →</button>
+                        <button class="btn-secondary btn-lg" id="prevFlashcard" onclick="previousFlashcard()">← Prev</button>
+                        <div class="flashcard-confidence">
+                            <button class="confidence-btn confidence-hard" onclick="markConfidence('hard')" title="Hard">😅</button>
+                            <button class="confidence-btn confidence-ok" onclick="markConfidence('ok')" title="Okay">🤔</button>
+                            <button class="confidence-btn confidence-easy" onclick="markConfidence('easy')" title="Easy!">😎</button>
+                        </div>
+                        <button class="btn-primary btn-lg" id="nextFlashcard" onclick="nextFlashcard()">Next →</button>
                     </div>
 
                     <div class="topic-filter">
@@ -206,10 +286,17 @@
                     </div>
                 </div>
 
-                <!-- Quiz View -->
+                <!-- ==================== QUIZ VIEW ==================== -->
                 <div id="quizView" class="view" style="display: none;">
                     <div class="quiz-header">
-                        <h2 class="page-title" id="quizTitle">Quiz</h2>
+                        <div class="quiz-header-top">
+                            <h2 class="quiz-title-small" id="quizTitle">Quiz</h2>
+                            <div class="combo-display" id="comboDisplay" style="display: none;">
+                                <span class="combo-fire">🔥</span>
+                                <span class="combo-count" id="comboCount">0</span>
+                                <span class="combo-label">COMBO!</span>
+                            </div>
+                        </div>
                         <div class="quiz-progress-bar">
                             <div class="progress-fill" id="quizProgressFill"></div>
                         </div>
@@ -223,9 +310,8 @@
                         <div class="question-card">
                             <div class="question-topic" id="questionTopic">Topic</div>
                             <div class="question-text" id="questionText">Question appears here</div>
-                            <div class="options-container" id="optionsContainer">
-                                <!-- Options will be inserted here -->
-                            </div>
+                            <div class="options-container" id="optionsContainer"></div>
+                            <div class="answer-hint">💡 Press <kbd>1</kbd>-<kbd>4</kbd> to answer!</div>
                         </div>
 
                         <div class="explanation-card" id="explanationCard" style="display: none;">
@@ -234,12 +320,14 @@
                                 <span class="explanation-title" id="explanationTitle">Correct!</span>
                             </div>
                             <div class="explanation-text" id="explanationText">Explanation appears here</div>
-                            <button class="btn-primary" onclick="nextQuestion()">Next Question →</button>
+                            <button class="btn-primary btn-lg btn-next" onclick="nextQuestion()">
+                                Next Question → <span class="btn-shortcut">Enter ↵</span>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Quiz Results View -->
+                <!-- ==================== RESULTS VIEW ==================== -->
                 <div id="resultsView" class="view" style="display: none;">
                     <div class="results-container">
                         <div class="results-header">
@@ -259,26 +347,29 @@
                                 <div class="result-stat-value incorrect" id="resultsIncorrect">0</div>
                             </div>
                             <div class="result-stat">
-                                <div class="result-stat-label">Points Earned</div>
+                                <div class="result-stat-label">XP Earned</div>
                                 <div class="result-stat-value points" id="resultsPoints">0</div>
                             </div>
                         </div>
+
+                        <div class="results-badges" id="resultsBadges"></div>
 
                         <div class="results-message" id="resultsMessage">
                             Keep up the great work!
                         </div>
 
                         <div class="results-actions">
-                            <button class="btn-primary" onclick="navigateTo('quizSelection')">Take Another Quiz</button>
-                            <button class="btn-secondary" onclick="navigateTo('dashboard')">Back to Dashboard</button>
+                            <button class="btn-primary btn-lg" id="retryMissedBtn" onclick="retryMissed()" style="display:none;">🔄 Retry Missed Questions</button>
+                            <button class="btn-secondary btn-lg" onclick="navigateTo('quizSelection')">📝 Another Quiz</button>
+                            <button class="btn-ghost" onclick="navigateTo('dashboard')">🏠 Dashboard</button>
                         </div>
                     </div>
                 </div>
+
             </div>
         </main>
     </div>
 
-    <!-- JavaScript -->
     <script src="data.js"></script>
     <script src="apps.js"></script>
 </body>
