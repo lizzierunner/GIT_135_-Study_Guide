@@ -935,6 +935,112 @@ const mod2Flashcards = [
     question: "What is RADIAL balance? (p.51)",
     answer: "Radial balance = elements radiate outward from a CENTER point, like a sunburst ☀️ or a flower 🌸. It naturally draws your eye to the middle. Think: mandalas, clock faces, pizza slices. It's a third type of balance beyond symmetrical and asymmetrical!",
     color: "#8b5cf6"
+  },
+  // ===== LECTURE: The Design Desk — Rhythm, Balance, Scale Examples =====
+  {
+    id: "m2_21",
+    topic: "Rhythm (Lecture)",
+    question: "How does Jules Chéret's poster for Les Girard demonstrate rhythm?",
+    answer: "The dancers' legs and coattails create IMPLIED RHYTHM through line work — a visual syncopation like off-beat/on-beat 🎵. The legs & coattails alternate so you almost 'hear' a boop-boop-boop rhythm. Art Nouveau was the KING of rhythm through flowing line work!",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_22",
+    topic: "Rhythm (Lecture)",
+    question: "How does Will H. Bradley's 'The Chap-Book' show rhythm AND balance?",
+    answer: "RHYTHM: Large flowy lines & flowery color planes create a serene, wave-like rhythm (like long violin bow strokes 🎻). BALANCE: The billowy robe/dress is SO large it feels like negative space, while the small typography & blue background field COUNTERBALANCE it. Clever use of scale too!",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_23",
+    topic: "Balance (Lecture)",
+    question: "Why is Fritz Ehler's 'Jugend' magazine cover (1896) a masterful example of visual balance?",
+    answer: "Only TWO things on the page: a figure and a word mark with a flower illustration. ALL the negative space counterbalances the graphic. You could draw a perfect DIAGONAL — the visual weight of the content equals the 'weight' of the empty space on the other side! ⚖️",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_24",
+    topic: "Balance (Lecture)",
+    question: "What was Sachplakat and what does the Priester matches ad show about balance?",
+    answer: "Sachplakat (1905) = a movement that valued SIMPLICITY after the overly decorative Art Nouveau era. The Priester matches ad is just a logo + match illustration on a big dark field. The black space ISN'T just empty — it acts like a CONTAINER that makes the illustration FLOAT in space! 🕳️",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_25",
+    topic: "Balance (Lecture)",
+    question: "What is the key principle about WHITE SPACE placement from the lecture?",
+    answer: "White space on the OUTSIDE = anti-gravity! 🚀 It propels content UP and INTO the center. It makes things feel suspended and floating. White space on the INSIDE = blown apart, disparate, disconnected. Push white space to the EDGES to hold content together in the center!",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_26",
+    topic: "Balance & Scale (Lecture)",
+    question: "How does Josef Müller-Brockmann's Beethoven poster (1955) demonstrate rhythm, balance, AND scale?",
+    answer: "RHYTHM: Spinning, flowing black bars match Beethoven's musical crescendos 🎵. BALANCE: White space 'locks' perfectly into the fingers of black space. SCALE: Big rotating bars are dominant → then typography is tiny at center → guides eye from big to small for a focused reading experience! International Style masterclass. 🇨🇭",
+    color: "#ec4899"
+  },
+  {
+    id: "m2_27",
+    topic: "Balance & Scale (Lecture)",
+    question: "How does the 'Silence = Death' poster (1987) use scale and balance?",
+    answer: "Only TWO pieces: a pink triangle + 'Silence = Death' text with small attribution. The vast BLACK field counterbalances the simple form and single line of text. The EMPTINESS is what makes it SO powerful — minimal elements + maximum negative space = maximum emotional impact! 🔺 Social resistance design at its finest.",
+    color: "#ec4899"
+  },
+  {
+    id: "m2_28",
+    topic: "Scale (Lecture)",
+    question: "How does Paula Scher's Public Theater poster (1995) show scale in a MAXIMALIST approach?",
+    answer: "Tons of text + one big jumping figure, but scale creates clear HIERARCHY: 1️⃣ 'The Public Theater' (biggest = read first) → 2️⃣ 'Bring in da Noise, Bring in da Funk' → 3️⃣ Details work down in size → 4️⃣ Location/membership info (smallest). Scale GUIDES THE EYE even when there's a LOT going on! Maximalist ≠ chaotic.",
+    color: "#ec4899"
+  },
+  {
+    id: "m2_29",
+    topic: "Scale (Lecture)",
+    question: "According to the lecture, which is usually HARDER to balance — minimalist or maximalist design?",
+    answer: "MINIMALIST is harder! 🤯 With only 2-3 elements, every placement matters enormously. Maximalist designs with many elements are often EASIER to balance because you have more 'weight' to distribute. The Jugend cover (2 elements) is harder to nail than the Public Theater poster (tons of elements)!",
+    color: "#ec4899"
+  },
+  {
+    id: "m2_30",
+    topic: "Rhythm (Lecture)",
+    question: "How does rhythm work across MULTI-PAGE documents? (Photo book example)",
+    answer: "Rhythm = syncopation across spreads! 📖 Pattern: large 2-page photo → breaks into smaller images pushing toward page edge → turn page → rewarded with NEGATIVE SPACE/breathing room → builds up again → visual break. This growth & rest cycle keeps readers ENGAGED because no two spreads are identical, but consistent margins/grids/typography create continuity!",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_31",
+    topic: "Rhythm (Lecture)",
+    question: "How does the Monster Children magazine demonstrate multi-page rhythm?",
+    answer: "Similar layouts create EXPECTED rhythm in photo sections → then editorial sections BREAK the pattern with expressive typography (Ray Gun-inspired 🤘). Crazy/unhinged spreads are COUNTERBALANCED by clean, grounded ones. A grid UNDERNEATH allows expressive moments that can be grounded by stable layouts. Full-page spreads = reader REST moments, info-rich spreads = reader SPEED UP moments!",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_32",
+    topic: "Rhythm (Lecture)",
+    question: "What makes multi-page rhythm work WITHOUT losing the reader?",
+    answer: "SELF-SUSTAINED RULES: same margins, same typography, same image grid across pages 📐. This creates UNIFORMITY/CONTINUITY so readers aren't lost. But WITHIN those rules, varying how elements fill the grid creates SURPRISE & DELIGHT. Consistent structure + varied content = engaged reader who doesn't put the book down!",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_33",
+    topic: "Rhythm (Lecture)",
+    question: "What is a 'dos-à-dos' (do-si-do) book design?",
+    answer: "A book that reads from BOTH ends toward the MIDDLE! 📚↔️📚 The lecture's France photo book was dos-à-dos: French from the front to the middle, English from the back to the middle. A unique reading experience enabled by intentional design structure!",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_34",
+    topic: "Rhythm (Lecture)",
+    question: "How does visual rhythm appear in DIGITAL interfaces? (iPhone News app example)",
+    answer: "Cards sorted in syncopated rhythm: big wide cards with edge-to-edge images → section banners break rhythm → switch to title-left/image-right cards → another section → pattern changes again. Rhythm also shifts from VERTICAL (up/down scrolling) to HORIZONTAL (left/right swiping). Visual rhythm isn't just for print — it's in every app you use! 📱",
+    color: "#8b5cf6"
+  },
+  {
+    id: "m2_35",
+    topic: "Design History (Lecture)",
+    question: "Match these design eras/movements to their approximate time periods!",
+    answer: "Art Nouveau = 1890s (flowery, decorative, organic lines 🌿). Sachplakat = 1905 (simple, direct product advertising 📦). Russian Suprematism = 1920 (bold geometric, centered compositions 🔴). International Style = 1950s (grid-based, clean Swiss design 🇨🇭). Postmodern/Social Resistance = 1987+ (powerful minimal messaging ✊). Postmodern Maximalist = 1990s (expressive, layered typography 🎨).",
+    color: "#f59e0b"
   }
 ];
 
@@ -1832,5 +1938,240 @@ const mod2QuizQuestions = [
     correctAnswer: 1,
     explanation: "Since screens are smooth/flat, almost all texture in digital design is VISUAL texture — it looks textured but you can't feel it. Actual texture (tactile) is mainly for print!",
     topic: "Texture"
+  },
+  // ===== LECTURE: The Design Desk — Rhythm, Balance, Scale Examples =====
+  {
+    id: "m2q_lec1",
+    question: "In Jules Chéret's Art Nouveau poster for Les Girard, what creates the sense of visual rhythm?",
+    options: [
+      "Bold typography and color blocks",
+      "The dancers' legs and coattails creating implied syncopation through line work",
+      "Geometric shapes arranged in a grid",
+      "Repeated photographs of dancers"
+    ],
+    correctAnswer: 1,
+    explanation: "The legs and coattails of the dancers create an alternating visual 'beat' — like syncopation in music! Art Nouveau was masterful at creating implied rhythm through flowing line work.",
+    topic: "Rhythm (Lecture)"
+  },
+  {
+    id: "m2q_lec2",
+    question: "Will H. Bradley's 'The Chap-Book' cover uses balance in an unusual way. What makes it clever?",
+    options: [
+      "It uses a perfectly symmetrical layout",
+      "The large billowy robe/dress feels like negative space, counterbalanced by the small typography and blue background",
+      "It has equal amounts of text and image",
+      "It uses a standard grid system"
+    ],
+    correctAnswer: 1,
+    explanation: "The illustration's robe is SO large it starts to feel like negative space itself. Then the small typography and blue field serve as the visual anchor — a really clever inversion of typical figure/ground!",
+    topic: "Balance (Lecture)"
+  },
+  {
+    id: "m2q_lec3",
+    question: "Fritz Ehler's 'Jugend' magazine cover (1896) has only two elements. What makes it a masterful example of balance?",
+    options: [
+      "The two elements are the same size and weight",
+      "The extensive negative space counterbalances the graphic — you could draw a diagonal where content weight equals empty space weight",
+      "It uses radial symmetry to center everything",
+      "It relies on bright colors to create balance"
+    ],
+    correctAnswer: 1,
+    explanation: "With just a figure and a word mark, ALL the negative space serves to counterbalance. You could draw a perfect diagonal where the visual weight of the content equals the weight of the emptiness!",
+    topic: "Balance (Lecture)"
+  },
+  {
+    id: "m2q_lec4",
+    question: "What was the Sachplakat movement (c.1905) a reaction against?",
+    options: [
+      "Minimalism and simplicity",
+      "The Industrial Revolution's mass production",
+      "Art Nouveau's overly decorative, flowery aesthetic",
+      "Abstract expressionism"
+    ],
+    correctAnswer: 2,
+    explanation: "Sachplakat valued SIMPLICITY as a reaction to Art Nouveau's overly flowery, decorative style. Ads became stripped-down: just a logo, an illustration, and a bold color field. Priester matches is a classic example!",
+    topic: "Balance (Lecture)"
+  },
+  {
+    id: "m2q_lec5",
+    question: "According to the lecture, where should white space be placed for effective visual balance?",
+    options: [
+      "On the inside of the composition, between elements",
+      "Only at the top of the page",
+      "On the OUTSIDE/edges, creating a propulsion effect that holds content in the center",
+      "White space should be eliminated entirely"
+    ],
+    correctAnswer: 2,
+    explanation: "White space on the OUTSIDE acts like anti-gravity — it propels content inward and makes it feel suspended/floating. White space on the INSIDE makes designs feel blown apart and disconnected!",
+    topic: "Balance (Lecture)"
+  },
+  {
+    id: "m2q_lec6",
+    question: "Josef Müller-Brockmann's Beethoven poster (1955, International Style) demonstrates all of these EXCEPT:",
+    options: [
+      "Rhythm through spinning, flowing black bars",
+      "Balance through white space interlocking with black forms",
+      "Scale through large graphic bars leading down to small focused typography",
+      "Texture through embossed paper and physical surface treatments"
+    ],
+    correctAnswer: 3,
+    explanation: "The Beethoven poster demonstrates rhythm (spinning bars = musical crescendos), balance (white space locks into black forms), and scale (big bars → tiny type = hierarchy). It does NOT demonstrate physical texture — it's a flat printed poster!",
+    topic: "Balance & Scale (Lecture)"
+  },
+  {
+    id: "m2q_lec7",
+    question: "The 'Silence = Death' poster (1987) is powerful because of its:",
+    options: [
+      "Complex layered typography and many visual elements",
+      "Minimal elements (pink triangle + text) counterbalanced by vast empty black space",
+      "Use of bright, saturated colors across the entire surface",
+      "Photographic imagery of the AIDS epidemic"
+    ],
+    correctAnswer: 1,
+    explanation: "Just a pink triangle + 'Silence = Death' on a vast black field. The EMPTINESS is what makes it powerful — minimal elements + maximum negative space = maximum emotional impact. A masterclass in scale AND balance.",
+    topic: "Balance & Scale (Lecture)"
+  },
+  {
+    id: "m2q_lec8",
+    question: "In Paula Scher's Public Theater poster (1995), how does SCALE guide the viewer's eye?",
+    options: [
+      "All text is the same size so viewers can start anywhere",
+      "Biggest text first → progressively smaller text creates reading order: title → show name → details → location/membership",
+      "Images are larger than text to draw attention",
+      "The poster uses no scale variation"
+    ],
+    correctAnswer: 1,
+    explanation: "'The Public Theater' is biggest (read first) → 'Bring in da Noise, Bring in da Funk' next → details get smaller → location info last. Scale creates a clear hierarchy even in a maximalist design!",
+    topic: "Scale (Lecture)"
+  },
+  {
+    id: "m2q_lec9",
+    question: "According to the lecture, which is usually HARDER to achieve — balance in minimalist or maximalist design?",
+    options: [
+      "Maximalist, because there are more elements to juggle",
+      "They're equally difficult",
+      "Minimalist, because with only 2-3 elements every placement matters enormously",
+      "Neither — balance happens automatically"
+    ],
+    correctAnswer: 2,
+    explanation: "Minimalist is HARDER! With only a few elements, every single placement is critical. Maximalist designs have many elements to distribute and balance, which is often easier to arrange than getting 2-3 things perfect.",
+    topic: "Scale (Lecture)"
+  },
+  {
+    id: "m2q_lec10",
+    question: "What creates effective RHYTHM in multi-page documents like photo books?",
+    options: [
+      "Making every page layout identical",
+      "Alternating between dense visual content and breathing room/negative space across spreads",
+      "Using only text with no images",
+      "Randomizing layouts with no consistent structure"
+    ],
+    correctAnswer: 1,
+    explanation: "Multi-page rhythm = syncopation! Large images → smaller images pushing to the edge → turn page → rewarded with breathing room → builds up again. The growth and rest cycle keeps readers engaged!",
+    topic: "Rhythm (Lecture)"
+  },
+  {
+    id: "m2q_lec11",
+    question: "What makes multi-page rhythm work WITHOUT confusing or losing the reader?",
+    options: [
+      "Using a different font on every page for variety",
+      "Making all pages identical",
+      "Self-sustained rules: consistent margins, typography, and grids — but varying HOW elements fill the grid",
+      "Removing all white space between sections"
+    ],
+    correctAnswer: 2,
+    explanation: "Consistent structure (same margins, type, grid) creates CONTINUITY so readers aren't lost. But varying content WITHIN that structure creates SURPRISE and DELIGHT. Rules + variation = engaged reader!",
+    topic: "Rhythm (Lecture)"
+  },
+  {
+    id: "m2q_lec12",
+    question: "In the Monster Children magazine, what balances the 'unhinged' or expressive editorial spreads?",
+    options: [
+      "Blank white pages between every spread",
+      "Clean, grounded, simple spreads that counterbalance the crazy ones — plus an underlying grid system",
+      "Warning labels telling readers what's coming next",
+      "Identical layouts throughout the entire magazine"
+    ],
+    correctAnswer: 1,
+    explanation: "There's a grid UNDERNEATH that allows expressive moments (Ray Gun-inspired typography) to happen, then clean/simple spreads bring the reader back to stable ground. Full-page images serve as rest moments!",
+    topic: "Rhythm (Lecture)"
+  },
+  {
+    id: "m2q_lec13",
+    question: "How does visual rhythm appear in digital interfaces like the iPhone News app?",
+    options: [
+      "All cards are the same size and layout",
+      "Cards use syncopated rhythms: big cards → section banners → different card layouts → rhythm shifts from vertical to horizontal",
+      "There is no rhythm in digital interfaces",
+      "Only text-based rhythm exists in apps"
+    ],
+    correctAnswer: 1,
+    explanation: "Digital rhythm! Big edge-to-edge cards → section dividers break the pattern → title-left/image-right cards → pattern changes per section → scrolling shifts from vertical to horizontal. Visual rhythm is everywhere in our apps!",
+    topic: "Rhythm (Lecture)"
+  },
+  {
+    id: "m2q_lec14",
+    question: "In the Priester matches Sachplakat ad, the black field of color:",
+    options: [
+      "Is just empty wasted space",
+      "Creates visual noise and distraction",
+      "Acts as a CONTAINER that makes the illustration feel like it's floating in space",
+      "Is meant to represent nighttime"
+    ],
+    correctAnswer: 2,
+    explanation: "The black field isn't just empty — it's almost like a container that holds up and suspends the illustration, making it feel like it's floating in space. Negative space as an active design element!",
+    topic: "Balance (Lecture)"
+  },
+  {
+    id: "m2q_lec15",
+    question: "What is a 'dos-à-dos' (do-si-do) book design?",
+    options: [
+      "A book with fold-out pages",
+      "A book that reads from both ends toward the middle, with different content from each direction",
+      "A book with no page numbers",
+      "A book designed to be read upside down"
+    ],
+    correctAnswer: 1,
+    explanation: "Dos-à-dos means the book reads differently from front and back! In the lecture example, French text read front-to-middle, and English text read back-to-middle. A unique design structure!",
+    topic: "Rhythm (Lecture)"
+  },
+  {
+    id: "m2q_lec16",
+    question: "Nikolai Punin's 1920 Russian Suprematism poster demonstrates balance through:",
+    options: [
+      "Asymmetrical placement of text at different angles",
+      "Centered, justified content with white space on the exterior holding it up",
+      "Overlapping images and text layers",
+      "Bright colors balancing dark backgrounds"
+    ],
+    correctAnswer: 1,
+    explanation: "Content is centered and justified with plenty of white space on the exterior. The white space on the outside acts like anti-gravity — holding the content up and into the center of the composition!",
+    topic: "Balance (Lecture)"
+  },
+  {
+    id: "m2q_lec17",
+    question: "Which design era/movement valued simplicity as a reaction against Art Nouveau's decorative excess?",
+    options: [
+      "Russian Suprematism",
+      "International Style",
+      "Sachplakat",
+      "Postmodernism"
+    ],
+    correctAnswer: 2,
+    explanation: "Sachplakat (c.1905) came out of the industrial revolution and the height of Art Nouveau, valuing simplicity and straightforward product marketing. Simple logo + simple illustration + bold color field!",
+    topic: "Design History (Lecture)"
+  },
+  {
+    id: "m2q_lec18",
+    question: "Match the designer to their work discussed in the lecture:",
+    options: [
+      "Paula Scher → Beethoven poster; Müller-Brockmann → Public Theater",
+      "Jules Chéret → Les Girard poster; Josef Müller-Brockmann → Beethoven poster; Paula Scher → Public Theater poster",
+      "Fritz Ehler → Silence = Death poster; Paula Scher → Jugend magazine",
+      "Will H. Bradley → Priester matches; Jules Chéret → The Chap-Book"
+    ],
+    correctAnswer: 1,
+    explanation: "Jules Chéret designed the Les Girard poster (Art Nouveau rhythm), Müller-Brockmann designed the Beethoven poster (International Style), and Paula Scher designed the Public Theater poster (postmodern maximalism)!",
+    topic: "Design History (Lecture)"
   }
 ];
