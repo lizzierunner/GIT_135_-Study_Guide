@@ -170,6 +170,7 @@ function updateHeader(view) {
     const typeLabels = {
       'adobe': 'Adobe Essentials',
       'mod2': 'Design Principles',
+      'mod3': 'Balance & Alignment',
       'plp': 'Point Line Plane',
       'random': 'Random Mix'
     };
@@ -498,6 +499,7 @@ function startQuiz(type) {
   currentQuizType = type;
   if (type === 'adobe') currentQuizQuestions = shuffleArray([...adobeQuizQuestions]);
   else if (type === 'mod2') currentQuizQuestions = shuffleArray([...mod2QuizQuestions]);
+  else if (type === 'mod3') currentQuizQuestions = shuffleArray([...mod3QuizQuestions]);
   else currentQuizQuestions = shuffleArray([...plpQuizQuestions]);
 
   currentQuestionIndex = 0;
@@ -514,6 +516,7 @@ function startMiniQuiz(type) {
   let pool;
   if (type === 'adobe') pool = [...adobeQuizQuestions];
   else if (type === 'mod2') pool = [...mod2QuizQuestions];
+  else if (type === 'mod3') pool = [...mod3QuizQuestions];
   else pool = [...plpQuizQuestions];
 
   currentQuizQuestions = shuffleArray(pool).slice(0, 5);
@@ -532,7 +535,8 @@ function startRandomQuiz() {
   const allQuestions = [
     ...adobeQuizQuestions,
     ...plpQuizQuestions,
-    ...mod2QuizQuestions
+    ...mod2QuizQuestions,
+    ...mod3QuizQuestions
   ];
   currentQuizQuestions = shuffleArray(allQuestions).slice(0, 5);
   currentQuestionIndex = 0;
@@ -562,6 +566,7 @@ function startFlashcards(type) {
   currentQuizType = type;
   if (type === 'adobe') currentFlashcards = [...adobeFlashcards];
   else if (type === 'mod2') currentFlashcards = [...mod2Flashcards];
+  else if (type === 'mod3') currentFlashcards = [...mod3Flashcards];
   else currentFlashcards = [...plpFlashcards];
 
   filteredFlashcards = [...currentFlashcards];
@@ -592,7 +597,7 @@ function loadFlashcard() {
   document.getElementById('flashcardQuestion').textContent = flashcard.question;
   document.getElementById('flashcardAnswer').textContent = flashcard.answer;
 
-  const typeLabels = { 'adobe': 'Adobe Essentials', 'mod2': 'Design Principles', 'plp': 'Point Line Plane' };
+  const typeLabels = { 'adobe': 'Adobe Essentials', 'mod2': 'Design Principles', 'mod3': 'Balance & Alignment', 'plp': 'Point Line Plane' };
   document.getElementById('flashcardTitle').textContent =
     (typeLabels[currentQuizType] || 'Study') + ' — ' + flashcard.topic;
   document.getElementById('flashcardCounter').textContent =

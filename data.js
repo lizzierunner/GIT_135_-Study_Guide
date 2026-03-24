@@ -2251,3 +2251,373 @@ const mod2QuizQuestions = [
     topic: "Scale"
   }
 ];
+
+// ========== MODULE 3: BALANCE & ALIGNMENT (Thinking with Type pp.218-229) ==========
+const mod3Flashcards = [
+  {
+    id: "m3_1",
+    topic: "Alignment",
+    question: "What is alignment in typography and layout?",
+    answer: "Alignment is the placement of text and objects along a common edge or axis. It creates visual connections between elements, establishing order and reducing chaos. The main types are flush left, flush right, centered, and justified.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_2",
+    topic: "Alignment",
+    question: "What is flush left / ragged right alignment?",
+    answer: "Text aligns to the left margin, while the right edge is uneven (ragged). This is the most common and readable alignment for body text in Western languages because it follows the natural reading direction and provides consistent word spacing.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_3",
+    topic: "Alignment",
+    question: "What is flush right / ragged left alignment?",
+    answer: "Text aligns to the right margin, while the left edge is ragged. Less common for body text because it goes against the natural left-to-right reading flow, but useful for captions, sidebars, and design elements that need to relate to a right edge.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_4",
+    topic: "Alignment",
+    question: "What is centered alignment?",
+    answer: "Text is centered on a middle axis, creating ragged edges on both sides. It conveys formality and elegance (wedding invitations, titles, posters) but can be hard to read in long passages because the reader's eye has no consistent starting point.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_5",
+    topic: "Alignment",
+    question: "What is justified alignment?",
+    answer: "Text aligns to both the left and right margins, creating clean edges on both sides. Achieved by adjusting word and letter spacing. Common in books, newspapers, and magazines. Can create 'rivers' of white space if not carefully managed.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_6",
+    topic: "Alignment",
+    question: "What are 'rivers' in justified text?",
+    answer: "Rivers are distracting vertical gaps of white space that appear in justified text when word spacing is uneven. They flow down through a paragraph like a river. Designers fix them by adjusting tracking, hyphenation, column width, or editing the copy.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_7",
+    topic: "Balance",
+    question: "What is visual balance in page design?",
+    answer: "Visual balance is the distribution of visual weight across a layout. Elements like type, images, and white space all have visual 'weight.' A balanced layout feels stable and intentional, while imbalance can create tension or direct the viewer's eye.",
+    color: "#059669"
+  },
+  {
+    id: "m3_8",
+    topic: "Balance",
+    question: "What is symmetrical balance in layout?",
+    answer: "Symmetrical balance mirrors elements equally on either side of a central axis. It creates a sense of formality, stability, and tradition. Classic book title pages and formal invitations often use symmetrical balance.",
+    color: "#059669"
+  },
+  {
+    id: "m3_9",
+    topic: "Balance",
+    question: "What is asymmetrical balance in layout?",
+    answer: "Asymmetrical balance uses different elements of varying visual weight to achieve equilibrium without mirroring. A large element on one side can be balanced by a smaller, darker, or more colorful element on the other. It feels dynamic and modern.",
+    color: "#059669"
+  },
+  {
+    id: "m3_10",
+    topic: "Alignment",
+    question: "What is a baseline grid and why does it matter?",
+    answer: "A baseline grid is a set of horizontal lines that text sits on, like ruled notebook paper. Aligning text to a baseline grid across columns creates visual harmony, ensures consistent vertical rhythm, and makes multi-column layouts look clean and professional.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_11",
+    topic: "Alignment",
+    question: "How does alignment create hierarchy?",
+    answer: "Alignment helps establish hierarchy by grouping related elements together and separating distinct sections. Consistent alignment signals that items belong together, while a deliberate break in alignment draws attention and indicates a new level of importance.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_12",
+    topic: "Balance",
+    question: "What role does white space play in balance?",
+    answer: "White space (negative space) is an active design element, not just 'empty' space. It provides breathing room, balances heavy elements, directs the eye, and can carry as much visual weight as text and images. Good balance requires thoughtful use of white space.",
+    color: "#059669"
+  },
+  {
+    id: "m3_13",
+    topic: "Alignment",
+    question: "Why should you avoid mixing too many alignment types?",
+    answer: "Mixing alignments weakens the visual structure of a page. Each alignment type creates an invisible line — too many lines create confusion. Sticking to one primary alignment (with intentional exceptions) keeps the layout cohesive and readable.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_14",
+    topic: "Alignment",
+    question: "What is the relationship between alignment and grids?",
+    answer: "Grids provide the underlying structure for alignment. They establish consistent margins, columns, and gutters that text and images align to. A grid-based layout ensures elements relate to each other spatially, creating order across single or multi-page designs.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_15",
+    topic: "Balance",
+    question: "How do optical adjustments relate to alignment and balance?",
+    answer: "Sometimes mathematical alignment doesn't look visually correct — round and pointed shapes need to extend slightly beyond the baseline or cap height to appear aligned. Designers make optical adjustments so elements LOOK balanced, even if measurements aren't exact.",
+    color: "#059669"
+  }
+];
+
+const mod3QuizQuestions = [
+  {
+    id: "m3q1",
+    question: "What is alignment in typography? (pp.218-229)",
+    options: [
+      "The color of the text",
+      "The placement of text along a common edge or axis",
+      "The size of the font",
+      "The weight of the typeface"
+    ],
+    correctAnswer: 1,
+    explanation: "Alignment is all about placing text and objects along a common edge or axis. It creates visual order and connects elements on the page!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q2",
+    question: "Which alignment type is the most common and readable for body text in Western languages?",
+    options: [
+      "Centered",
+      "Justified",
+      "Flush left / ragged right",
+      "Flush right / ragged left"
+    ],
+    correctAnswer: 2,
+    explanation: "Flush left (ragged right) is the most natural and readable alignment for body text because it follows the left-to-right reading direction and maintains consistent word spacing!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q3",
+    question: "What happens when text is justified?",
+    options: [
+      "It aligns to the left margin only",
+      "It aligns to the right margin only",
+      "It is centered on the page",
+      "It aligns to both the left AND right margins"
+    ],
+    correctAnswer: 3,
+    explanation: "Justified text creates clean edges on BOTH sides by adjusting word and letter spacing. It's common in books and newspapers!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q4",
+    question: "What are 'rivers' in typography?",
+    options: [
+      "Decorative wavy lines between paragraphs",
+      "Vertical gaps of white space that flow through justified text",
+      "Curved text that follows a path",
+      "The flow of a reader's eye across the page"
+    ],
+    correctAnswer: 1,
+    explanation: "Rivers are distracting vertical gaps of white space that accidentally form in justified text when word spacing is uneven. They 'flow' down through a paragraph — and designers try to eliminate them!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q5",
+    question: "When is centered alignment most appropriate?",
+    options: [
+      "Long body text in a novel",
+      "Newspaper columns",
+      "Formal or ceremonial designs like invitations and titles",
+      "Spreadsheets and data tables"
+    ],
+    correctAnswer: 2,
+    explanation: "Centered alignment conveys formality and elegance — perfect for wedding invitations, title pages, and posters. But it's hard to read in long passages because the eye has no consistent left starting point!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q6",
+    question: "Why is flush right / ragged left alignment less common for body text?",
+    options: [
+      "It uses too much ink",
+      "It's only available in certain fonts",
+      "It works against the natural left-to-right reading flow",
+      "It makes text appear larger"
+    ],
+    correctAnswer: 2,
+    explanation: "Flush right goes AGAINST our natural left-to-right reading direction, so the eye has to search for the start of each new line. It works great for small bits like captions or sidebars, but not for long body text!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q7",
+    question: "What is visual balance in page design?",
+    options: [
+      "Making sure all text is the same size",
+      "Using only one color per page",
+      "The distribution of visual weight across a layout",
+      "Centering everything on the page"
+    ],
+    correctAnswer: 2,
+    explanation: "Visual balance is about distributing visual WEIGHT — type, images, and white space all carry weight. A balanced layout feels stable and intentional!",
+    topic: "Balance"
+  },
+  {
+    id: "m3q8",
+    question: "What is the difference between symmetrical and asymmetrical balance?",
+    options: [
+      "Symmetrical uses color; asymmetrical uses black and white",
+      "Symmetrical mirrors elements equally; asymmetrical uses different elements to achieve equilibrium",
+      "There is no difference — they are the same thing",
+      "Symmetrical is for digital; asymmetrical is for print"
+    ],
+    correctAnswer: 1,
+    explanation: "Symmetrical balance MIRRORS elements on both sides of an axis (formal, traditional). Asymmetrical balance uses DIFFERENT elements of varying weight to create equilibrium (dynamic, modern)!",
+    topic: "Balance"
+  },
+  {
+    id: "m3q9",
+    question: "What is a baseline grid?",
+    options: [
+      "A grid of colored squares used for backgrounds",
+      "A set of horizontal lines that text sits on for consistent vertical rhythm",
+      "The outline around a text box",
+      "A grid that only applies to images, not text"
+    ],
+    correctAnswer: 1,
+    explanation: "A baseline grid is like ruled notebook paper for your layout — text sits on these horizontal lines, creating consistent vertical rhythm and making multi-column layouts look polished and harmonious!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q10",
+    question: "True or False: White space is just 'empty' space with no design function.",
+    options: [
+      "True",
+      "False"
+    ],
+    correctAnswer: 1,
+    explanation: "FALSE! White space is an ACTIVE design element. It provides breathing room, balances heavy elements, directs the eye, and carries visual weight. Great designers use white space intentionally!",
+    topic: "Balance"
+  },
+  {
+    id: "m3q11",
+    question: "Why should designers avoid mixing too many alignment types on one page?",
+    options: [
+      "It uses too much computer memory",
+      "It weakens visual structure and creates confusion",
+      "It violates copyright laws",
+      "It makes the file size too large"
+    ],
+    correctAnswer: 1,
+    explanation: "Each alignment type creates an invisible line — too many invisible lines = visual chaos! Stick to one primary alignment with intentional exceptions to keep your layout cohesive and readable.",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q12",
+    question: "How can 'rivers' in justified text be fixed?",
+    options: [
+      "By changing the text color",
+      "By adjusting tracking, hyphenation, column width, or editing the copy",
+      "By switching to a serif font",
+      "Rivers cannot be fixed"
+    ],
+    correctAnswer: 1,
+    explanation: "Rivers can be fixed by adjusting tracking (letter spacing), enabling hyphenation, changing column width, or editing the text itself. Good typographers always watch for and eliminate rivers!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q13",
+    question: "What is the relationship between grids and alignment?",
+    options: [
+      "Grids and alignment are unrelated concepts",
+      "Grids replace the need for alignment",
+      "Grids provide the underlying structure for alignment with consistent margins, columns, and gutters",
+      "Alignment only works without grids"
+    ],
+    correctAnswer: 2,
+    explanation: "Grids are the BACKBONE of alignment! They provide consistent margins, columns, and gutters that elements align to, ensuring everything relates spatially across the entire layout.",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q14",
+    question: "What are optical adjustments in alignment?",
+    options: [
+      "Using a magnifying glass to check alignment",
+      "Adjusting elements so they LOOK visually aligned, even if mathematical measurements differ slightly",
+      "Changing the opacity of text",
+      "Printing a test page to verify alignment"
+    ],
+    correctAnswer: 1,
+    explanation: "Optical adjustments = making things LOOK right rather than just measuring right. Round and pointed shapes need to extend slightly past the baseline to appear aligned. The eye is the final judge!",
+    topic: "Balance"
+  },
+  {
+    id: "m3q15",
+    question: "Which alignment type creates clean edges on both sides of a text block?",
+    options: [
+      "Flush left",
+      "Flush right",
+      "Centered",
+      "Justified"
+    ],
+    correctAnswer: 3,
+    explanation: "Justified alignment creates clean, straight edges on BOTH the left and right sides by adjusting word and letter spacing. That's what makes it so popular in books and newspapers!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q16",
+    question: "How does alignment help create visual hierarchy?",
+    options: [
+      "It doesn't — hierarchy is only created by font size",
+      "By grouping related elements together and separating distinct sections",
+      "By making all elements the same size",
+      "By removing all white space"
+    ],
+    correctAnswer: 1,
+    explanation: "Alignment groups related elements together along shared edges, signaling they belong together. A deliberate BREAK in alignment draws attention and indicates a new level of importance — that's hierarchy in action!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q17",
+    question: "A large dark element on the left side of a layout is balanced by a small, brightly colored element on the right. What type of balance is this?",
+    options: [
+      "Symmetrical balance",
+      "Centered balance",
+      "Asymmetrical balance",
+      "Radial balance"
+    ],
+    correctAnswer: 2,
+    explanation: "This is ASYMMETRICAL balance! Different elements (large/dark vs. small/bright) create equilibrium through contrast rather than mirroring. It's dynamic and keeps the design interesting!",
+    topic: "Balance"
+  },
+  {
+    id: "m3q18",
+    question: "Which of the following is NOT a way that white space contributes to balance?",
+    options: [
+      "Provides breathing room between elements",
+      "Directs the viewer's eye",
+      "Adds visual weight to counterbalance heavy elements",
+      "Increases the file size of a document"
+    ],
+    correctAnswer: 3,
+    explanation: "White space provides breathing room, directs the eye, and carries visual weight — but it does NOT increase file size! It's a design tool, not a data-storage issue. 😄",
+    topic: "Balance"
+  },
+  {
+    id: "m3q19",
+    question: "What book are the balance and alignment concepts on pages 218-229 from?",
+    options: [
+      "Graphic Design: The New Basics by Ellen Lupton",
+      "The Elements of Typographic Style by Robert Bringhurst",
+      "Thinking with Type by Ellen Lupton, 3rd Edition",
+      "Grid Systems by Josef Müller-Brockmann"
+    ],
+    correctAnswer: 2,
+    explanation: "These concepts come from 'Thinking with Type' by Ellen Lupton, 3rd Edition — a critical guide for designers, writers, editors, and students. It's one of the go-to typography textbooks!",
+    topic: "Alignment"
+  },
+  {
+    id: "m3q20",
+    question: "Symmetrical balance is often associated with what kind of design feeling?",
+    options: [
+      "Chaotic and edgy",
+      "Formal, stable, and traditional",
+      "Random and playful",
+      "Minimalist and modern"
+    ],
+    correctAnswer: 1,
+    explanation: "Symmetrical balance = formality, stability, and tradition! Think classic book title pages and formal invitations. Asymmetrical balance is the one that feels more dynamic and modern.",
+    topic: "Balance"
+  }
+];
