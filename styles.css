@@ -776,10 +776,6 @@ kbd {
     background: linear-gradient(135deg, #f093fb 0%, #667eea 100%);
 }
 
-.mod3-header {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-}
-
 .quiz-card-title {
     font-size: 1.3rem;
     font-weight: 700;
@@ -808,7 +804,6 @@ kbd {
 .adobe-badge { background: #fce7f3; color: #be185d; }
 .plp-badge { background: #dbeafe; color: #1e40af; }
 .mod2-badge { background: #ede9fe; color: #6d28d9; }
-.mod3-badge { background: #d1fae5; color: #065f46; }
 
 .quiz-description {
     color: #4a5568;
@@ -856,9 +851,6 @@ kbd {
 .mod2-btn { background: linear-gradient(135deg, #f093fb, #667eea); }
 .mod2-btn:hover { background: linear-gradient(135deg, #e082ea, #5a67d8); }
 .mod2-btn-outline { border-color: #8b5cf6; color: #7c3aed; }
-.mod3-btn { background: linear-gradient(135deg, #10b981, #059669); }
-.mod3-btn:hover { background: linear-gradient(135deg, #0ea572, #047857); }
-.mod3-btn-outline { border-color: #10b981; color: #059669; }
 
 /* ========== FLASHCARDS ========== */
 .flashcard-header {
