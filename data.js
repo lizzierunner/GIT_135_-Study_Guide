@@ -2761,5 +2761,16 @@ const mod3QuizQuestions = [
     correctAnswer: 0,
     explanation: "TRUE! Texture is most effective when CONTRASTING surfaces play against each other — rough vs. smooth, organic vs. geometric, detailed vs. flat. This contrast creates visual interest and helps separate elements, making texture a powerful tool for hierarchy and emphasis!",
     topic: "Texture"
+  },
+  {
+    id: "m3q29",
+    question: "True or False: Color is objective and universal.",
+    options: [
+      "True",
+      "False"
+    ],
+    correctAnswer: 1,
+    explanation: "FALSE! Color is SUBJECTIVE and culturally influenced — not objective or universal. How we perceive and interpret color is shaped by personal experience, cultural background, context, and even lighting conditions. For example, white symbolizes purity in Western cultures but mourning in some Eastern cultures!",
+    topic: "Texture"
   }
 ];
