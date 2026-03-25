@@ -2736,5 +2736,19 @@ const mod3QuizQuestions = [
     correctAnswer: 1,
     explanation: "FALSE! Texture can be ACTUAL (physical — you can touch it, like embossed paper) OR VISUAL (simulated — it LOOKS textured but the surface is flat, like a photo of wood grain). In graphic design, most texture is visual!",
     topic: "Texture"
+  },
+  {
+    id: "m3q27",
+    question: "In what ways can a designer use texture? (Select all that apply)",
+    options: [
+      "Convey a sense of physical presence",
+      "Improve scale",
+      "Establish mood",
+      "Convey a point of view",
+      "Create balance"
+    ],
+    correctAnswer: [0, 2, 3],
+    explanation: "Texture lets designers CONVEY A SENSE OF PHYSICAL PRESENCE (making flat surfaces feel tangible), ESTABLISH MOOD (rough textures feel gritty and raw, smooth textures feel sleek and modern), and CONVEY A POINT OF VIEW (texture choices express attitude and perspective about the subject). 'Improve scale' and 'create balance' are separate design principles — NOT direct functions of texture!",
+    topic: "Texture"
   }
 ];
