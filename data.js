@@ -2750,5 +2750,16 @@ const mod3QuizQuestions = [
     correctAnswer: [0, 2, 3],
     explanation: "Texture lets designers CONVEY A SENSE OF PHYSICAL PRESENCE (making flat surfaces feel tangible), ESTABLISH MOOD (rough textures feel gritty and raw, smooth textures feel sleek and modern), and CONVEY A POINT OF VIEW (texture choices express attitude and perspective about the subject). 'Improve scale' and 'create balance' are separate design principles — NOT direct functions of texture!",
     topic: "Texture"
+  },
+  {
+    id: "m3q28",
+    question: "True or False: Texture works best when there is contrast.",
+    options: [
+      "True",
+      "False"
+    ],
+    correctAnswer: 0,
+    explanation: "TRUE! Texture is most effective when CONTRASTING surfaces play against each other — rough vs. smooth, organic vs. geometric, detailed vs. flat. This contrast creates visual interest and helps separate elements, making texture a powerful tool for hierarchy and emphasis!",
+    topic: "Texture"
   }
 ];
