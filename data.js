@@ -2725,5 +2725,16 @@ const mod3QuizQuestions = [
     correctAnswer: 1,
     explanation: "TEXTURAL CONTRAST! The rough concrete (photographic/visual texture) plays against the smooth, clean vector type. This contrast separates figure from ground and creates visual interest through opposing surface qualities!",
     topic: "Texture"
+  },
+  {
+    id: "m3q26",
+    question: "True or False: In design, texture is only physical.",
+    options: [
+      "True",
+      "False"
+    ],
+    correctAnswer: 1,
+    explanation: "FALSE! Texture can be ACTUAL (physical — you can touch it, like embossed paper) OR VISUAL (simulated — it LOOKS textured but the surface is flat, like a photo of wood grain). In graphic design, most texture is visual!",
+    topic: "Texture"
   }
 ];
