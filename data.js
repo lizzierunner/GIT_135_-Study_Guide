@@ -2772,5 +2772,18 @@ const mod3QuizQuestions = [
     correctAnswer: 1,
     explanation: "FALSE! Color is SUBJECTIVE and culturally influenced — not objective or universal. How we perceive and interpret color is shaped by personal experience, cultural background, context, and even lighting conditions. For example, white symbolizes purity in Western cultures but mourning in some Eastern cultures!",
     topic: "Texture"
+  },
+  {
+    id: "m3q30",
+    question: "In Western culture, the color white signifies:",
+    options: [
+      "Virginity and purity",
+      "Royalty",
+      "Life and rebirth",
+      "Death"
+    ],
+    correctAnswer: 0,
+    explanation: "In WESTERN culture, white is traditionally associated with VIRGINITY AND PURITY — think white wedding dresses and white doves. Royalty is typically associated with purple, life and rebirth with green, and death with black in Western culture. However, in some Eastern cultures (like China and India), white is actually associated with death and mourning!",
+    topic: "Texture"
   }
 ];
