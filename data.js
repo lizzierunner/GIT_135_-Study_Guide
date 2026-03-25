@@ -2811,5 +2811,31 @@ const mod3QuizQuestions = [
     correctAnswer: 2,
     explanation: "CMYK is a SUBTRACTIVE color process — it subtracts light by absorbing wavelengths! Cyan + Magenta + Yellow + Key (black) inks are layered in PRINT. Mixing all inks = darker colors. Subtractive = ink-based = printed materials!",
     topic: "Texture"
+  },
+  {
+    id: "m3q33",
+    question: "Categorize: Which color models are used for PRINT? (Select all that apply)",
+    options: [
+      "RGB",
+      "Pantone",
+      "CMYK",
+      "HEX"
+    ],
+    correctAnswer: [1, 2],
+    explanation: "PRINT color models: CMYK (Cyan, Magenta, Yellow, Key/Black — the standard 4-color printing process) and PANTONE (a standardized spot-color matching system used for precise, consistent color in print). RGB and HEX are DIGITAL color models!",
+    topic: "Texture"
+  },
+  {
+    id: "m3q34",
+    question: "Categorize: Which color models are used for DIGITAL? (Select all that apply)",
+    options: [
+      "CMYK",
+      "RGB",
+      "Pantone",
+      "HEX"
+    ],
+    correctAnswer: [1, 3],
+    explanation: "DIGITAL color models: RGB (Red, Green, Blue — used for screens, monitors, and digital displays) and HEX (a 6-digit hexadecimal code used in web/UI design, e.g. #FF5733). CMYK and Pantone are PRINT color models!",
+    topic: "Texture"
   }
 ];
