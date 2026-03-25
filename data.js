@@ -2251,3 +2251,515 @@ const mod2QuizQuestions = [
     topic: "Scale"
   }
 ];
+
+// ========== MODULE 3: SYMMETRY, LAYERS, TRANSPARENCY, MODULARITY, GRID, PATTERN, DIAGRAM, TIME & MOTION, RULES & RANDOMNESS ==========
+// Graphic Design: The New Basics, 2nd Ed. — Ellen Lupton & Jennifer Cole Phillips — pp.69-79, 81-97
+
+const mod3Flashcards = [
+  // --- SYMMETRY (pp.69-73) ---
+  {
+    id: "m3_1",
+    topic: "Symmetry",
+    question: "What is symmetry in design?",
+    answer: "Symmetry is the mirroring of form along a central axis. It creates a sense of stability, order, and formality. Symmetrical designs feel calm and balanced because elements on one side mirror the other.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_2",
+    topic: "Symmetry",
+    question: "What is bilateral symmetry?",
+    answer: "Bilateral symmetry mirrors elements along a single axis (left/right or top/bottom). It's the most common type in nature (human body, butterfly wings) and in traditional design (centered title pages, classical architecture).",
+    color: "#10b981"
+  },
+  {
+    id: "m3_3",
+    topic: "Symmetry",
+    question: "What is radial symmetry?",
+    answer: "Radial symmetry arranges elements around a central point, radiating outward like a starburst or flower. Think of a clock face, a mandala, or a compass rose. It draws the eye to the center.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_4",
+    topic: "Symmetry",
+    question: "What is asymmetry and why is it used in modern design?",
+    answer: "Asymmetry is the absence of symmetry — elements are NOT mirrored. It creates visual tension, energy, and movement. Modern designers favor asymmetry because it feels dynamic and active, while symmetry can feel static or rigid.",
+    color: "#10b981"
+  },
+  {
+    id: "m3_5",
+    topic: "Symmetry",
+    question: "What is crystallographic symmetry?",
+    answer: "Crystallographic symmetry is a pattern that repeats uniformly across a surface with no single focal point — like a wallpaper or textile pattern. It creates an allover texture where no element dominates over others.",
+    color: "#10b981"
+  },
+  // --- LAYERS (pp.74-77) ---
+  {
+    id: "m3_6",
+    topic: "Layers",
+    question: "What are layers in graphic design?",
+    answer: "Layers are simultaneous, overlapping elements in a design. They create depth, complexity, and visual richness. Think of translucent sheets stacked on top of each other — each adds information. Layers can be opaque (hiding what's below) or transparent (letting elements show through).",
+    color: "#059669"
+  },
+  {
+    id: "m3_7",
+    topic: "Layers",
+    question: "How do designers use layers to create depth?",
+    answer: "Overlapping elements, varying opacity, size changes (larger = closer), and blur effects all create a sense of depth. Foreground layers feel closer while background layers recede. This gives a 2D surface the illusion of 3D space.",
+    color: "#059669"
+  },
+  // --- TRANSPARENCY (pp.78-79) ---
+  {
+    id: "m3_8",
+    topic: "Transparency",
+    question: "What is transparency in design?",
+    answer: "Transparency allows elements to be seen through other elements. When two forms overlap with transparency, a third hybrid form is created where they intersect. This produces unexpected colors, shapes, and visual complexity.",
+    color: "#0d9488"
+  },
+  {
+    id: "m3_9",
+    topic: "Transparency",
+    question: "How does transparency differ from opacity?",
+    answer: "Opacity is how solid/opaque an element is (100% = fully solid, 0% = invisible). Transparency is the inverse — it's how see-through something is. Adjusting opacity/transparency controls how much of the layers below show through, creating visual depth and blending.",
+    color: "#0d9488"
+  },
+  // --- MODULARITY (pp.81-85) ---
+  {
+    id: "m3_10",
+    topic: "Modularity",
+    question: "What is modularity in design?",
+    answer: "Modularity is the use of standardized units (modules) that can be combined and recombined to create larger structures. Think LEGO blocks — each piece is simple, but together they create complex forms. It brings efficiency, consistency, and flexibility to design.",
+    color: "#7c3aed"
+  },
+  {
+    id: "m3_11",
+    topic: "Modularity",
+    question: "How is modularity used in typography?",
+    answer: "Modular typefaces are built from a limited set of geometric parts that repeat and combine to form each letter. The alphabet itself is modular — 26 letters combine into infinite words. Grid-based layouts are also modular, using repeating column units.",
+    color: "#7c3aed"
+  },
+  // --- GRID (pp.86-91) ---
+  {
+    id: "m3_12",
+    topic: "Grid",
+    question: "What is a grid in graphic design?",
+    answer: "A grid is a network of horizontal and vertical lines that provides a framework for organizing content. It divides a page into columns, rows, margins, and modules. Grids create consistency across pages and bring order to complex information.",
+    color: "#2563eb"
+  },
+  {
+    id: "m3_13",
+    topic: "Grid",
+    question: "What are the main components of a grid?",
+    answer: "Columns (vertical divisions), rows (horizontal divisions), margins (outer edges), gutters (spaces between columns), modules (individual units formed by column/row intersections), and flowlines (horizontal guides that break the page into bands).",
+    color: "#2563eb"
+  },
+  {
+    id: "m3_14",
+    topic: "Grid",
+    question: "What is a multicolumn grid vs. a modular grid?",
+    answer: "A multicolumn grid divides the page into vertical columns (common in magazines/newspapers). A modular grid adds horizontal divisions too, creating a matrix of cells/modules. Modular grids are used for complex content like newspapers, calendars, and data-heavy layouts.",
+    color: "#2563eb"
+  },
+  {
+    id: "m3_15",
+    topic: "Grid",
+    question: "Why do designers sometimes 'break the grid'?",
+    answer: "Breaking the grid creates emphasis, surprise, and visual drama. An element that violates the grid stands out BECAUSE everything else follows the structure. But breaking only works when a grid exists to break — random placement isn't the same as intentional grid-breaking.",
+    color: "#2563eb"
+  },
+  // --- PATTERN (pp.92-93) ---
+  {
+    id: "m3_16",
+    topic: "Pattern",
+    question: "What is a pattern in design?",
+    answer: "A pattern is a decorative element created through repetition of a motif across a surface. Patterns can be regular (strict repetition) or irregular (varied repetition). They unify a surface, add texture, and can be simple geometric shapes or complex organic forms.",
+    color: "#d97706"
+  },
+  {
+    id: "m3_17",
+    topic: "Pattern",
+    question: "How do patterns relate to modularity?",
+    answer: "Patterns are inherently modular — they're built from a single unit (motif/module) that tiles across a surface. Changing the module, rotation, scale, or spacing creates vastly different patterns from the same basic element.",
+    color: "#d97706"
+  },
+  // --- DIAGRAM (pp.94-95) ---
+  {
+    id: "m3_18",
+    topic: "Diagram",
+    question: "What is a diagram in graphic design?",
+    answer: "A diagram is a graphic representation of a structure, process, or relationship. It uses visual elements (lines, shapes, arrows, icons) to make abstract or complex information concrete and understandable. Examples: flowcharts, org charts, timelines, infographics.",
+    color: "#dc2626"
+  },
+  {
+    id: "m3_19",
+    topic: "Diagram",
+    question: "How do diagrams differ from illustrations?",
+    answer: "Illustrations depict things visually (what something LOOKS like). Diagrams explain HOW something works, is structured, or relates to other things. Diagrams prioritize clarity and information over visual beauty — though great diagrams achieve both.",
+    color: "#dc2626"
+  },
+  // --- TIME AND MOTION (pp.96-97) ---
+  {
+    id: "m3_20",
+    topic: "Time & Motion",
+    question: "How do designers represent time and motion in static media?",
+    answer: "Through sequential images, motion lines, blurred forms, repeated figures showing progression, storyboards, and page sequences. The reader's eye moves through the composition in a designed order, creating an experience of time passing.",
+    color: "#db2777"
+  },
+  {
+    id: "m3_21",
+    topic: "Time & Motion",
+    question: "What role does time play in multi-page design?",
+    answer: "In books, magazines, and websites, the reader experiences pages in sequence — like frames in a film. Designers control pacing through layout changes, visual rhythm, and narrative flow. Fast-paced spreads use many elements; slow-paced ones use minimal elements and white space.",
+    color: "#db2777"
+  },
+  // --- RULES & RANDOMNESS ---
+  {
+    id: "m3_22",
+    topic: "Rules & Randomness",
+    question: "What is the relationship between rules and randomness in design?",
+    answer: "Rules create structure, consistency, and order (grids, type hierarchies, color systems). Randomness introduces surprise, variety, and organic qualities. The best designs balance both — a rule-based system with controlled moments of randomness keeps things organized but alive.",
+    color: "#6366f1"
+  },
+  {
+    id: "m3_23",
+    topic: "Rules & Randomness",
+    question: "How can generative/algorithmic design use rules and randomness?",
+    answer: "Generative design uses coded rules (algorithms) combined with random variables to produce unique outputs. The designer sets the rules (colors, shapes, constraints) and the system generates variations. Each output is different but cohesive because it follows the same underlying logic.",
+    color: "#6366f1"
+  }
+];
+
+const mod3QuizQuestions = [
+  // --- SYMMETRY ---
+  {
+    id: "m3q1",
+    question: "What is bilateral symmetry? (pp.69-73)",
+    options: [
+      "Elements radiating from a central point",
+      "Mirroring of form along a single axis",
+      "Repeating patterns across a surface",
+      "Stacking layers on top of each other"
+    ],
+    correctAnswer: 1,
+    explanation: "Bilateral symmetry mirrors elements along ONE axis (left/right or top/bottom). Think of a butterfly — the left wing mirrors the right!",
+    topic: "Symmetry"
+  },
+  {
+    id: "m3q2",
+    question: "What is radial symmetry?",
+    options: [
+      "Elements mirrored on a vertical axis only",
+      "Elements placed randomly for visual tension",
+      "Elements arranged around a central point, radiating outward",
+      "Elements stacked in layers"
+    ],
+    correctAnswer: 2,
+    explanation: "Radial symmetry radiates from a CENTER POINT — like a starburst, flower, clock face, or mandala. It draws the eye inward!",
+    topic: "Symmetry"
+  },
+  {
+    id: "m3q3",
+    question: "Why do modern designers often prefer asymmetry over symmetry?",
+    options: [
+      "Asymmetry is easier to create",
+      "Symmetry is too expensive to print",
+      "Asymmetry creates visual tension, energy, and movement",
+      "Asymmetry uses fewer colors"
+    ],
+    correctAnswer: 2,
+    explanation: "Asymmetry = energy and dynamism! Symmetry can feel static or rigid, while asymmetry creates visual tension and movement that feels alive and modern.",
+    topic: "Symmetry"
+  },
+  {
+    id: "m3q4",
+    question: "What is crystallographic symmetry?",
+    options: [
+      "A single mirrored axis like a butterfly",
+      "A repeating allover pattern with no single focal point",
+      "Elements radiating from the center",
+      "An asymmetric layout with random placement"
+    ],
+    correctAnswer: 1,
+    explanation: "Crystallographic symmetry = an ALLOVER pattern that repeats uniformly with no single focal point — like wallpaper or textile patterns!",
+    topic: "Symmetry"
+  },
+  {
+    id: "m3q5",
+    question: "True or False: Symmetry always makes a design feel dynamic and modern.",
+    options: [
+      "True",
+      "False"
+    ],
+    correctAnswer: 1,
+    explanation: "FALSE! Symmetry tends to feel FORMAL, STABLE, and CLASSICAL — not dynamic. It's ASYMMETRY that creates dynamic, modern energy!",
+    topic: "Symmetry"
+  },
+  // --- LAYERS ---
+  {
+    id: "m3q6",
+    question: "What are layers in graphic design? (pp.74-77)",
+    options: [
+      "Different versions of a file",
+      "Simultaneous, overlapping elements that create depth and complexity",
+      "The borders around a text box",
+      "The order in which you print colors"
+    ],
+    correctAnswer: 1,
+    explanation: "Layers = overlapping elements that create DEPTH and visual richness. Think of transparent sheets stacked on each other — each adds information!",
+    topic: "Layers"
+  },
+  {
+    id: "m3q7",
+    question: "Which of the following is NOT a way layers create depth?",
+    options: [
+      "Overlapping elements",
+      "Varying opacity",
+      "Using only one font size",
+      "Size changes (larger = closer)"
+    ],
+    correctAnswer: 2,
+    explanation: "Using only one font size does NOT create depth — that creates UNIFORMITY. Overlapping, varying opacity, and size changes all help create the illusion of depth!",
+    topic: "Layers"
+  },
+  // --- TRANSPARENCY ---
+  {
+    id: "m3q8",
+    question: "What happens when two transparent forms overlap? (pp.78-79)",
+    options: [
+      "One form disappears",
+      "A third hybrid form is created at the intersection",
+      "Both forms become opaque",
+      "The colors cancel each other out"
+    ],
+    correctAnswer: 1,
+    explanation: "When transparent forms overlap, a THIRD FORM appears where they intersect — with unexpected colors and shapes. That's the magic of transparency!",
+    topic: "Transparency"
+  },
+  {
+    id: "m3q9",
+    question: "What is the difference between opacity and transparency?",
+    options: [
+      "They are the same thing",
+      "Opacity = how solid something is; transparency = how see-through it is (they're inverses)",
+      "Opacity is for images; transparency is for text",
+      "Opacity is for print; transparency is for digital"
+    ],
+    correctAnswer: 1,
+    explanation: "They're INVERSES! 100% opacity = fully solid. 0% opacity = fully transparent (invisible). Adjusting this controls how much you see through to layers below.",
+    topic: "Transparency"
+  },
+  // --- MODULARITY ---
+  {
+    id: "m3q10",
+    question: "What is modularity in design? (pp.81-85)",
+    options: [
+      "Using only one element per page",
+      "The use of standardized units that combine to create larger structures",
+      "Making everything asymmetrical",
+      "Removing all patterns from a layout"
+    ],
+    correctAnswer: 1,
+    explanation: "Modularity = standardized UNITS (modules) that combine and recombine into complex structures. Think LEGO blocks — simple pieces, infinite possibilities!",
+    topic: "Modularity"
+  },
+  {
+    id: "m3q11",
+    question: "How is the alphabet an example of modularity?",
+    options: [
+      "Each letter has a different color",
+      "26 simple units combine into infinite words and sentences",
+      "Letters can only be used once each",
+      "The alphabet only works in one language"
+    ],
+    correctAnswer: 1,
+    explanation: "The alphabet is the ULTIMATE modular system — just 26 letters combine into infinite words! Same idea applies to modular typefaces built from repeating geometric parts.",
+    topic: "Modularity"
+  },
+  // --- GRID ---
+  {
+    id: "m3q12",
+    question: "What is a grid in graphic design? (pp.86-91)",
+    options: [
+      "A decorative border around the page",
+      "A network of lines that organizes content into columns, rows, margins, and modules",
+      "A color palette system",
+      "The background texture of a page"
+    ],
+    correctAnswer: 1,
+    explanation: "A grid = a framework of horizontal and vertical lines for organizing content. It creates consistency, order, and structure across pages!",
+    topic: "Grid"
+  },
+  {
+    id: "m3q13",
+    question: "What are the main components of a grid?",
+    options: [
+      "Colors, fonts, and images",
+      "Headers, footers, and sidebars",
+      "Columns, rows, margins, gutters, modules, and flowlines",
+      "Points, lines, and planes"
+    ],
+    correctAnswer: 2,
+    explanation: "Grid anatomy: COLUMNS (vertical), ROWS (horizontal), MARGINS (outer edges), GUTTERS (spaces between columns), MODULES (individual cells), and FLOWLINES (horizontal guides)!",
+    topic: "Grid"
+  },
+  {
+    id: "m3q14",
+    question: "What is the difference between a multicolumn grid and a modular grid?",
+    options: [
+      "They are the same thing",
+      "A multicolumn grid has vertical divisions; a modular grid adds horizontal divisions too, creating a matrix of cells",
+      "A modular grid only has one column",
+      "A multicolumn grid is for print; a modular grid is for web"
+    ],
+    correctAnswer: 1,
+    explanation: "Multicolumn = vertical columns only. Modular = columns PLUS horizontal rows, creating a full matrix of cells. Modular grids handle complex content like newspapers, calendars, and data-heavy layouts!",
+    topic: "Grid"
+  },
+  {
+    id: "m3q15",
+    question: "When does 'breaking the grid' work effectively?",
+    options: [
+      "When you don't use any grid at all",
+      "When there's a consistent grid to break — the violation creates emphasis BECAUSE everything else follows the structure",
+      "When every element breaks the grid equally",
+      "Only in digital design, never in print"
+    ],
+    correctAnswer: 1,
+    explanation: "Breaking the grid ONLY works when a grid EXISTS to break! Random placement ≠ intentional grid-breaking. The structure is what gives the break its power and emphasis!",
+    topic: "Grid"
+  },
+  // --- PATTERN ---
+  {
+    id: "m3q16",
+    question: "How do patterns relate to modularity? (pp.92-93)",
+    options: [
+      "They don't relate at all",
+      "Patterns are inherently modular — built from a single motif that tiles across a surface",
+      "Patterns can only be random",
+      "Modularity prevents patterns from forming"
+    ],
+    correctAnswer: 1,
+    explanation: "Patterns ARE modular! They're built from a single unit (motif) that repeats across a surface. Changing the module's rotation, scale, or spacing creates totally different patterns from the same element!",
+    topic: "Pattern"
+  },
+  {
+    id: "m3q17",
+    question: "What is a pattern in design?",
+    options: [
+      "A single unique element that never repeats",
+      "A decorative element created through repetition of a motif across a surface",
+      "The empty space between design elements",
+      "A type of font classification"
+    ],
+    correctAnswer: 1,
+    explanation: "A pattern = a MOTIF repeated across a surface. Patterns unify a design, add texture, and can range from simple geometric shapes to complex organic forms!",
+    topic: "Pattern"
+  },
+  // --- DIAGRAM ---
+  {
+    id: "m3q18",
+    question: "What is the primary purpose of a diagram? (pp.94-95)",
+    options: [
+      "To make something look beautiful",
+      "To depict what something looks like",
+      "To visually represent a structure, process, or relationship",
+      "To fill empty space on a page"
+    ],
+    correctAnswer: 2,
+    explanation: "Diagrams explain HOW something works, is structured, or relates to other things. They make abstract info concrete! Flowcharts, org charts, timelines, and infographics are all diagrams.",
+    topic: "Diagram"
+  },
+  {
+    id: "m3q19",
+    question: "How do diagrams differ from illustrations?",
+    options: [
+      "Diagrams depict what things LOOK like; illustrations explain how things WORK",
+      "They are the same thing",
+      "Illustrations depict what things LOOK like; diagrams explain how things WORK or relate",
+      "Diagrams only use words, never images"
+    ],
+    correctAnswer: 2,
+    explanation: "Illustrations show what things LOOK like. Diagrams show how things WORK, are structured, or RELATE. Diagrams prioritize clarity and information — though great ones are beautiful too!",
+    topic: "Diagram"
+  },
+  // --- TIME & MOTION ---
+  {
+    id: "m3q20",
+    question: "How can designers represent time and motion in static (print) media? (pp.96-97)",
+    options: [
+      "By using only one image per page",
+      "Through sequential images, motion lines, blurred forms, and repeated figures showing progression",
+      "By making all elements the same size",
+      "By removing all white space"
+    ],
+    correctAnswer: 1,
+    explanation: "Even in STATIC media, designers create the feeling of time and motion through sequences, motion lines, blur, repeated figures, and storyboards. The eye moves through the composition in a designed order!",
+    topic: "Time & Motion"
+  },
+  {
+    id: "m3q21",
+    question: "How does a designer control pacing in a multi-page layout?",
+    options: [
+      "By using the same layout on every page",
+      "By using only text, never images",
+      "Through layout changes, visual rhythm, and varying the density of elements across pages",
+      "By making every page a different color"
+    ],
+    correctAnswer: 2,
+    explanation: "Pacing in multi-page design works like film editing — fast-paced spreads use MANY elements, slow-paced ones use MINIMAL elements and white space. Designers control tempo across pages!",
+    topic: "Time & Motion"
+  },
+  // --- RULES & RANDOMNESS ---
+  {
+    id: "m3q22",
+    question: "What is the relationship between rules and randomness in design?",
+    options: [
+      "Good design uses only rules, never randomness",
+      "Good design uses only randomness, never rules",
+      "The best designs balance rule-based systems with controlled moments of randomness",
+      "Rules and randomness are unrelated concepts"
+    ],
+    correctAnswer: 2,
+    explanation: "The BEST designs balance BOTH — rules create structure and consistency, randomness introduces surprise and life. A rule-based system with controlled randomness stays organized but feels alive!",
+    topic: "Rules & Randomness"
+  },
+  {
+    id: "m3q23",
+    question: "What is generative/algorithmic design?",
+    options: [
+      "Design made without any computer",
+      "Design that uses coded rules combined with random variables to produce unique but cohesive outputs",
+      "A design that never changes once created",
+      "Design that only uses photographs"
+    ],
+    correctAnswer: 1,
+    explanation: "Generative design = coded RULES + random VARIABLES = unique outputs every time. The designer sets constraints, the algorithm generates variations. Each result is different but cohesive because it follows the same logic!",
+    topic: "Rules & Randomness"
+  },
+  // --- CROSS-TOPIC ---
+  {
+    id: "m3q24",
+    question: "Which of the following correctly matches the concept to its page range in Graphic Design: The New Basics?",
+    options: [
+      "Symmetry pp.81-85, Grid pp.69-73",
+      "Symmetry pp.69-73, Layers pp.74-77, Transparency pp.78-79, Modularity pp.81-85, Grid pp.86-91",
+      "Modularity pp.96-97, Time & Motion pp.81-85",
+      "Pattern pp.74-77, Diagram pp.69-73"
+    ],
+    correctAnswer: 1,
+    explanation: "The correct order: Symmetry (pp.69-73), Layers (pp.74-77), Transparency (pp.78-79), Modularity (pp.81-85), Grid (pp.86-91), Pattern (pp.92-93), Diagram (pp.94-95), Time & Motion (pp.96-97)!",
+    topic: "General"
+  },
+  {
+    id: "m3q25",
+    question: "A designer uses a repeating square unit across a layout, creating both a structured grid AND a decorative surface. Which TWO concepts does this best demonstrate?",
+    options: [
+      "Time & Motion and Transparency",
+      "Symmetry and Diagram",
+      "Modularity and Pattern",
+      "Layers and Randomness"
+    ],
+    correctAnswer: 2,
+    explanation: "MODULARITY (standardized repeating units) + PATTERN (motif tiling across a surface) — they're deeply connected! Modular units that tile create patterns, and patterns are inherently modular.",
+    topic: "General"
+  }
+];
