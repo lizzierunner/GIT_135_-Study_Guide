@@ -2252,514 +2252,478 @@ const mod2QuizQuestions = [
   }
 ];
 
-// ========== MODULE 3: SYMMETRY, LAYERS, TRANSPARENCY, MODULARITY, GRID, PATTERN, DIAGRAM, TIME & MOTION, RULES & RANDOMNESS ==========
-// Graphic Design: The New Basics, 2nd Ed. — Ellen Lupton & Jennifer Cole Phillips — pp.69-79, 81-97
+// ========== MODULE 3: TEXTURE & SCALE (Deep Dive) ==========
+// Graphic Design: The New Basics, 2nd Ed. — Ellen Lupton & Jennifer Cole Phillips
+// Texture pp.68-79 | Scale pp.80-97
 
 const mod3Flashcards = [
-  // --- SYMMETRY (pp.69-73) ---
+  // --- TEXTURE (pp.68-79) ---
   {
     id: "m3_1",
-    topic: "Symmetry",
-    question: "What is symmetry in design?",
-    answer: "Symmetry is the mirroring of form along a central axis. It creates a sense of stability, order, and formality. Symmetrical designs feel calm and balanced because elements on one side mirror the other.",
-    color: "#10b981"
+    topic: "Texture",
+    question: "What is texture in graphic design? (p.68)",
+    answer: "Texture is the tactile or visual surface quality of a form. It refers to the feel or appearance of a surface — rough, smooth, bumpy, soft, hard, glossy, matte. In 2D design, texture is usually VISUAL (simulated), but in print it can also be ACTUAL (physical, like embossing or textured paper).",
+    color: "#22c55e"
   },
   {
     id: "m3_2",
-    topic: "Symmetry",
-    question: "What is bilateral symmetry?",
-    answer: "Bilateral symmetry mirrors elements along a single axis (left/right or top/bottom). It's the most common type in nature (human body, butterfly wings) and in traditional design (centered title pages, classical architecture).",
-    color: "#10b981"
+    topic: "Texture",
+    question: "What's the difference between actual (tactile) texture and visual texture? (pp.68-69)",
+    answer: "ACTUAL texture = you can physically FEEL it (embossed letterpress, rough paper, fabric, carved wood). VISUAL texture = creates the ILLUSION of texture on a flat surface through patterns, marks, photography, or digital effects. Most graphic design uses visual texture since screens and printed pages are smooth.",
+    color: "#22c55e"
   },
   {
     id: "m3_3",
-    topic: "Symmetry",
-    question: "What is radial symmetry?",
-    answer: "Radial symmetry arranges elements around a central point, radiating outward like a starburst or flower. Think of a clock face, a mandala, or a compass rose. It draws the eye to the center.",
-    color: "#10b981"
+    topic: "Texture",
+    question: "How can designers create visual texture? (pp.69-73)",
+    answer: "Visual texture is created through: repetition of small marks (dots, lines, dashes), patterns (geometric or organic), photographic imagery of real surfaces (wood, stone, fabric), halftone screens, crosshatching, stippling, digital noise/grain, and typographic texture (dense blocks of text). Even TYPE creates texture when viewed from a distance!",
+    color: "#22c55e"
   },
   {
     id: "m3_4",
-    topic: "Symmetry",
-    question: "What is asymmetry and why is it used in modern design?",
-    answer: "Asymmetry is the absence of symmetry — elements are NOT mirrored. It creates visual tension, energy, and movement. Modern designers favor asymmetry because it feels dynamic and active, while symmetry can feel static or rigid.",
-    color: "#10b981"
+    topic: "Texture",
+    question: "How does typography function as texture? (pp.70-71)",
+    answer: "A block of body text, viewed from a distance, becomes a gray textural field rather than readable words. The density, size, weight, and spacing of type all affect this texture. Light typefaces create a lighter texture; bold faces create darker texture. Leading (line spacing) affects how 'airy' or 'dense' the textural field appears.",
+    color: "#22c55e"
   },
   {
     id: "m3_5",
-    topic: "Symmetry",
-    question: "What is crystallographic symmetry?",
-    answer: "Crystallographic symmetry is a pattern that repeats uniformly across a surface with no single focal point — like a wallpaper or textile pattern. It creates an allover texture where no element dominates over others.",
-    color: "#10b981"
+    topic: "Texture",
+    question: "What is a halftone and how does it relate to texture? (p.72)",
+    answer: "A halftone converts a continuous-tone image (like a photo) into a pattern of dots of varying sizes. Large dots = dark areas, small dots = light areas. This dot pattern creates a visible TEXTURE, especially when enlarged. Halftones are the basis of printed photographs — newspapers show this clearly.",
+    color: "#22c55e"
   },
-  // --- LAYERS (pp.74-77) ---
   {
     id: "m3_6",
-    topic: "Layers",
-    question: "What are layers in graphic design?",
-    answer: "Layers are simultaneous, overlapping elements in a design. They create depth, complexity, and visual richness. Think of translucent sheets stacked on top of each other — each adds information. Layers can be opaque (hiding what's below) or transparent (letting elements show through).",
-    color: "#059669"
+    topic: "Texture",
+    question: "How do density and scale affect texture? (pp.73-75)",
+    answer: "DENSITY: Tightly packed elements = dense, dark texture. Loosely spaced elements = open, light texture. SCALE: Small marks viewed at normal distance = smooth texture. The SAME marks enlarged = rougher, more visible pattern. Zooming in on any texture reveals its individual components.",
+    color: "#22c55e"
   },
   {
     id: "m3_7",
-    topic: "Layers",
-    question: "How do designers use layers to create depth?",
-    answer: "Overlapping elements, varying opacity, size changes (larger = closer), and blur effects all create a sense of depth. Foreground layers feel closer while background layers recede. This gives a 2D surface the illusion of 3D space.",
-    color: "#059669"
+    topic: "Texture",
+    question: "What is the relationship between texture and pattern? (pp.74-76)",
+    answer: "Texture and pattern are closely related but not identical. PATTERN = a regular, repeating decorative design (you can see the individual motif). TEXTURE = when the pattern elements are so small or dense they merge into an overall surface quality rather than distinct repeating units. Scale is the key difference — zoom out enough and pattern becomes texture!",
+    color: "#22c55e"
   },
-  // --- TRANSPARENCY (pp.78-79) ---
   {
     id: "m3_8",
-    topic: "Transparency",
-    question: "What is transparency in design?",
-    answer: "Transparency allows elements to be seen through other elements. When two forms overlap with transparency, a third hybrid form is created where they intersect. This produces unexpected colors, shapes, and visual complexity.",
-    color: "#0d9488"
+    topic: "Texture",
+    question: "How does texture create mood and meaning in design? (pp.76-79)",
+    answer: "Texture carries emotional associations: rough/gritty textures feel raw, industrial, or handmade. Smooth/clean textures feel modern, polished, or corporate. Organic textures (wood, stone, leaves) feel natural and warm. Digital/geometric textures feel technological and precise. Designers choose textures to reinforce the message and personality of a design.",
+    color: "#22c55e"
   },
   {
     id: "m3_9",
-    topic: "Transparency",
-    question: "How does transparency differ from opacity?",
-    answer: "Opacity is how solid/opaque an element is (100% = fully solid, 0% = invisible). Transparency is the inverse — it's how see-through something is. Adjusting opacity/transparency controls how much of the layers below show through, creating visual depth and blending.",
-    color: "#0d9488"
+    topic: "Texture",
+    question: "What is figure/ground in relation to texture? (p.77)",
+    answer: "When texture fills both the figure AND the ground, the boundary between object and background can blur or dissolve. Texture can unify figure and ground (camouflage effect) or it can separate them (textured figure on smooth ground). This plays with the viewer's perception of depth and space.",
+    color: "#22c55e"
   },
-  // --- MODULARITY (pp.81-85) ---
   {
     id: "m3_10",
-    topic: "Modularity",
-    question: "What is modularity in design?",
-    answer: "Modularity is the use of standardized units (modules) that can be combined and recombined to create larger structures. Think LEGO blocks — each piece is simple, but together they create complex forms. It brings efficiency, consistency, and flexibility to design.",
-    color: "#7c3aed"
+    topic: "Texture",
+    question: "How do digital tools expand the possibilities of texture? (pp.78-79)",
+    answer: "Digital tools allow designers to: scan real textures and manipulate them, layer multiple textures with transparency/blending modes, generate procedural textures algorithmically, apply textures as masks or overlays, and mix photographic textures with vector graphics. The possibilities are virtually unlimited compared to traditional media.",
+    color: "#22c55e"
   },
+  // --- SCALE (pp.80-97) ---
   {
     id: "m3_11",
-    topic: "Modularity",
-    question: "How is modularity used in typography?",
-    answer: "Modular typefaces are built from a limited set of geometric parts that repeat and combine to form each letter. The alphabet itself is modular — 26 letters combine into infinite words. Grid-based layouts are also modular, using repeating column units.",
-    color: "#7c3aed"
+    topic: "Scale",
+    question: "What is scale in design and why is it relational? (pp.80-81)",
+    answer: "Scale is the size of an element RELATIVE to other elements, to the page, or to the human body. Nothing has a fixed 'big' or 'small' — it depends on context. A 2-inch circle is big on a business card but tiny on a billboard. Scale is always about RELATIONSHIPS, not absolute measurements.",
+    color: "#ec4899"
   },
-  // --- GRID (pp.86-91) ---
   {
     id: "m3_12",
-    topic: "Grid",
-    question: "What is a grid in graphic design?",
-    answer: "A grid is a network of horizontal and vertical lines that provides a framework for organizing content. It divides a page into columns, rows, margins, and modules. Grids create consistency across pages and bring order to complex information.",
-    color: "#2563eb"
+    topic: "Scale",
+    question: "How does scale create visual hierarchy? (pp.82-85)",
+    answer: "Larger elements attract attention FIRST — they dominate the visual field and signal importance. Smaller elements recede and feel secondary. By varying scale, designers create a reading order: the eye goes to the BIGGEST element first, then moves to progressively smaller ones. This is the foundation of typographic hierarchy (headline → subhead → body).",
+    color: "#ec4899"
   },
   {
     id: "m3_13",
-    topic: "Grid",
-    question: "What are the main components of a grid?",
-    answer: "Columns (vertical divisions), rows (horizontal divisions), margins (outer edges), gutters (spaces between columns), modules (individual units formed by column/row intersections), and flowlines (horizontal guides that break the page into bands).",
-    color: "#2563eb"
+    topic: "Scale",
+    question: "What is the difference between scale and proportion? (pp.82-83)",
+    answer: "SCALE = the overall size of something relative to something else (a giant 'A' on a small page). PROPORTION = the internal relationships within an object (the ratio of width to height). You can change an object's SCALE without changing its proportions (scaling up uniformly), or change proportions without changing overall scale (stretching one dimension).",
+    color: "#ec4899"
   },
   {
     id: "m3_14",
-    topic: "Grid",
-    question: "What is a multicolumn grid vs. a modular grid?",
-    answer: "A multicolumn grid divides the page into vertical columns (common in magazines/newspapers). A modular grid adds horizontal divisions too, creating a matrix of cells/modules. Modular grids are used for complex content like newspapers, calendars, and data-heavy layouts.",
-    color: "#2563eb"
+    topic: "Scale",
+    question: "How does manipulating scale create depth and spatial illusion? (pp.86-89)",
+    answer: "In a flat composition, LARGER elements appear CLOSER (foreground) and SMALLER elements appear FARTHER AWAY (background). This mimics atmospheric perspective in the real world. Overlapping scaled elements enhances the illusion. Designers use this to create a sense of 3D space on a 2D surface without any literal perspective drawing.",
+    color: "#ec4899"
   },
   {
     id: "m3_15",
-    topic: "Grid",
-    question: "Why do designers sometimes 'break the grid'?",
-    answer: "Breaking the grid creates emphasis, surprise, and visual drama. An element that violates the grid stands out BECAUSE everything else follows the structure. But breaking only works when a grid exists to break — random placement isn't the same as intentional grid-breaking.",
-    color: "#2563eb"
+    topic: "Scale",
+    question: "What happens when you use unexpected or extreme scale? (pp.84-87)",
+    answer: "Extreme scale shifts create SURPRISE, DRAMA, and VISUAL IMPACT. Making something unexpectedly huge (a giant letter filling a poster) or unexpectedly tiny (a miniature image in vast white space) challenges viewer expectations. It can create surreal effects, humor, emphasis, or conceptual meaning. Scale contrast = visual tension!",
+    color: "#ec4899"
   },
-  // --- PATTERN (pp.92-93) ---
   {
     id: "m3_16",
-    topic: "Pattern",
-    question: "What is a pattern in design?",
-    answer: "A pattern is a decorative element created through repetition of a motif across a surface. Patterns can be regular (strict repetition) or irregular (varied repetition). They unify a surface, add texture, and can be simple geometric shapes or complex organic forms.",
-    color: "#d97706"
+    topic: "Scale",
+    question: "How does scale relate to cropping? (pp.88-89)",
+    answer: "Cropping and scale work together — when you scale an image UP beyond the page edge, it becomes cropped. A tightly cropped, enlarged detail can feel more dramatic and intimate than the full image at smaller scale. Cropping implies that the image continues beyond the frame, creating tension between what's shown and what's hidden.",
+    color: "#ec4899"
   },
   {
     id: "m3_17",
-    topic: "Pattern",
-    question: "How do patterns relate to modularity?",
-    answer: "Patterns are inherently modular — they're built from a single unit (motif/module) that tiles across a surface. Changing the module, rotation, scale, or spacing creates vastly different patterns from the same basic element.",
-    color: "#d97706"
+    topic: "Scale",
+    question: "What is a scale change (or scale shift) and how is it used in layout? (pp.90-91)",
+    answer: "A scale shift is a dramatic change in size between elements. In multi-page layouts, scale shifts control pacing — a full-bleed photo followed by a page of small text creates rhythm. Within a single page, mixing large and small elements creates visual contrast, hierarchy, and energy. Without scale contrast, layouts feel monotonous.",
+    color: "#ec4899"
   },
-  // --- DIAGRAM (pp.94-95) ---
   {
     id: "m3_18",
-    topic: "Diagram",
-    question: "What is a diagram in graphic design?",
-    answer: "A diagram is a graphic representation of a structure, process, or relationship. It uses visual elements (lines, shapes, arrows, icons) to make abstract or complex information concrete and understandable. Examples: flowcharts, org charts, timelines, infographics.",
-    color: "#dc2626"
+    topic: "Scale",
+    question: "How does scale connect to the human body? (pp.80-81)",
+    answer: "Ultimately, all design scale relates back to the HUMAN BODY — we judge size based on our own physical experience. A poster is 'large' relative to our hands; a billboard is 'large' relative to our whole body. Environmental graphics, signage, and architecture all use the human body as the fundamental reference point for scale.",
+    color: "#ec4899"
   },
   {
     id: "m3_19",
-    topic: "Diagram",
-    question: "How do diagrams differ from illustrations?",
-    answer: "Illustrations depict things visually (what something LOOKS like). Diagrams explain HOW something works, is structured, or relates to other things. Diagrams prioritize clarity and information over visual beauty — though great diagrams achieve both.",
-    color: "#dc2626"
+    topic: "Scale",
+    question: "What is scalar contrast in typography? (pp.92-93)",
+    answer: "Scalar contrast = using dramatically DIFFERENT type sizes together (e.g., a 72pt headline with 9pt body text). High scalar contrast creates strong hierarchy and visual drama. Low scalar contrast (similar sizes) creates a quieter, more uniform feel. The RATIO between sizes matters more than the actual point sizes.",
+    color: "#ec4899"
   },
-  // --- TIME AND MOTION (pp.96-97) ---
   {
     id: "m3_20",
-    topic: "Time & Motion",
-    question: "How do designers represent time and motion in static media?",
-    answer: "Through sequential images, motion lines, blurred forms, repeated figures showing progression, storyboards, and page sequences. The reader's eye moves through the composition in a designed order, creating an experience of time passing.",
-    color: "#db2777"
-  },
-  {
-    id: "m3_21",
-    topic: "Time & Motion",
-    question: "What role does time play in multi-page design?",
-    answer: "In books, magazines, and websites, the reader experiences pages in sequence — like frames in a film. Designers control pacing through layout changes, visual rhythm, and narrative flow. Fast-paced spreads use many elements; slow-paced ones use minimal elements and white space.",
-    color: "#db2777"
-  },
-  // --- RULES & RANDOMNESS ---
-  {
-    id: "m3_22",
-    topic: "Rules & Randomness",
-    question: "What is the relationship between rules and randomness in design?",
-    answer: "Rules create structure, consistency, and order (grids, type hierarchies, color systems). Randomness introduces surprise, variety, and organic qualities. The best designs balance both — a rule-based system with controlled moments of randomness keeps things organized but alive.",
-    color: "#6366f1"
-  },
-  {
-    id: "m3_23",
-    topic: "Rules & Randomness",
-    question: "How can generative/algorithmic design use rules and randomness?",
-    answer: "Generative design uses coded rules (algorithms) combined with random variables to produce unique outputs. The designer sets the rules (colors, shapes, constraints) and the system generates variations. Each output is different but cohesive because it follows the same underlying logic.",
-    color: "#6366f1"
+    topic: "Scale",
+    question: "How do designers use scale in conceptual or expressive ways? (pp.94-97)",
+    answer: "Scale can communicate IDEAS beyond just hierarchy: making something huge = importance, power, dominance. Making something tiny = vulnerability, insignificance, intimacy. Juxtaposing scales = irony, surprise, humor. Matching elements at identical scale = equality, repetition. Scale is a meaning-making tool, not just an organizational one!",
+    color: "#ec4899"
   }
 ];
 
 const mod3QuizQuestions = [
-  // --- SYMMETRY ---
+  // --- TEXTURE ---
   {
     id: "m3q1",
-    question: "What is bilateral symmetry? (pp.69-73)",
+    question: "What is texture in graphic design? (p.68)",
     options: [
-      "Elements radiating from a central point",
-      "Mirroring of form along a single axis",
-      "Repeating patterns across a surface",
-      "Stacking layers on top of each other"
+      "The color of a surface",
+      "The tactile or visual surface quality of a form",
+      "The shape of an element",
+      "The alignment of text on a page"
     ],
     correctAnswer: 1,
-    explanation: "Bilateral symmetry mirrors elements along ONE axis (left/right or top/bottom). Think of a butterfly — the left wing mirrors the right!",
-    topic: "Symmetry"
+    explanation: "Texture = the surface quality of a form — how it FEELS (actual) or LOOKS like it would feel (visual). Rough, smooth, bumpy, glossy — it's all texture!",
+    topic: "Texture"
   },
   {
     id: "m3q2",
-    question: "What is radial symmetry?",
+    question: "What is the difference between actual texture and visual texture? (pp.68-69)",
     options: [
-      "Elements mirrored on a vertical axis only",
-      "Elements placed randomly for visual tension",
-      "Elements arranged around a central point, radiating outward",
-      "Elements stacked in layers"
+      "Actual texture is only in photography; visual texture is in illustration",
+      "Actual texture can be physically felt; visual texture is an illusion on a flat surface",
+      "They are the same thing",
+      "Visual texture is more expensive to produce"
     ],
-    correctAnswer: 2,
-    explanation: "Radial symmetry radiates from a CENTER POINT — like a starburst, flower, clock face, or mandala. It draws the eye inward!",
-    topic: "Symmetry"
+    correctAnswer: 1,
+    explanation: "ACTUAL texture = you can TOUCH it (embossed paper, rough canvas). VISUAL texture = LOOKS textured but the surface is flat (a photo of wood grain, a pattern of dots). In digital design, almost all texture is visual!",
+    topic: "Texture"
   },
   {
     id: "m3q3",
-    question: "Why do modern designers often prefer asymmetry over symmetry?",
+    question: "How does a block of body text function as texture? (pp.70-71)",
     options: [
-      "Asymmetry is easier to create",
-      "Symmetry is too expensive to print",
-      "Asymmetry creates visual tension, energy, and movement",
-      "Asymmetry uses fewer colors"
+      "It doesn't — text is always read as words, never as texture",
+      "Only if the text is in a foreign language",
+      "Viewed from a distance, dense text becomes a gray textural field rather than readable words",
+      "Only bold text creates texture"
     ],
     correctAnswer: 2,
-    explanation: "Asymmetry = energy and dynamism! Symmetry can feel static or rigid, while asymmetry creates visual tension and movement that feels alive and modern.",
-    topic: "Symmetry"
+    explanation: "Step back from a page of text and it becomes a GRAY TEXTURE! The weight, size, leading, and density of the type all affect how light or dark that textural field appears. Typography IS texture!",
+    topic: "Texture"
   },
   {
     id: "m3q4",
-    question: "What is crystallographic symmetry?",
+    question: "What is a halftone? (p.72)",
     options: [
-      "A single mirrored axis like a butterfly",
-      "A repeating allover pattern with no single focal point",
-      "Elements radiating from the center",
-      "An asymmetric layout with random placement"
+      "A font that is 50% transparent",
+      "Half of a full-color image",
+      "A pattern of dots of varying sizes that converts continuous-tone images for print",
+      "A design that uses only two colors"
     ],
-    correctAnswer: 1,
-    explanation: "Crystallographic symmetry = an ALLOVER pattern that repeats uniformly with no single focal point — like wallpaper or textile patterns!",
-    topic: "Symmetry"
+    correctAnswer: 2,
+    explanation: "Halftones convert photos into DOTS — large dots = dark areas, small dots = light areas. This dot pattern IS a visible texture, especially in newspapers. It's the foundation of how photographs are printed!",
+    topic: "Texture"
   },
   {
     id: "m3q5",
-    question: "True or False: Symmetry always makes a design feel dynamic and modern.",
+    question: "How does SCALE affect the perception of texture? (pp.73-75)",
+    options: [
+      "Scale has no effect on texture",
+      "Larger scale always makes texture disappear",
+      "Small marks at normal distance = smooth texture; the same marks enlarged = rougher, visible pattern",
+      "Only digital textures are affected by scale"
+    ],
+    correctAnswer: 2,
+    explanation: "Scale transforms texture! Small dots viewed from far away = smooth surface. Zoom in and those same dots become a visible, rough pattern. Scale is what turns PATTERN into TEXTURE and vice versa!",
+    topic: "Texture"
+  },
+  {
+    id: "m3q6",
+    question: "What is the key difference between texture and pattern? (pp.74-76)",
+    options: [
+      "Texture uses color; pattern does not",
+      "Pattern has a visible repeating motif; texture's elements merge into an overall surface quality",
+      "They are completely unrelated concepts",
+      "Patterns are 3D; textures are 2D"
+    ],
+    correctAnswer: 1,
+    explanation: "PATTERN = you can see the individual repeating motif. TEXTURE = the elements are so small or dense they merge into a surface quality. The difference? SCALE! Zoom out enough and pattern becomes texture!",
+    topic: "Texture"
+  },
+  {
+    id: "m3q7",
+    question: "Which of the following is NOT a way to create visual texture in design? (pp.69-73)",
+    options: [
+      "Repeating small marks like dots and lines",
+      "Using photographic imagery of real surfaces",
+      "Making all elements the same size and spacing",
+      "Crosshatching and stippling"
+    ],
+    correctAnswer: 2,
+    explanation: "Making everything the same size and spacing creates UNIFORMITY, not texture! Texture comes from varied marks, photos of surfaces, hatching, stippling, halftones, and typographic density.",
+    topic: "Texture"
+  },
+  {
+    id: "m3q8",
+    question: "How does texture create mood and meaning in design? (pp.76-79)",
+    options: [
+      "Texture has no emotional associations",
+      "All textures convey the same mood",
+      "Rough textures feel raw/industrial; smooth textures feel polished/modern; organic textures feel natural/warm",
+      "Only color affects mood, not texture"
+    ],
+    correctAnswer: 2,
+    explanation: "Texture carries EMOTION! Gritty/rough = raw, handmade, industrial. Smooth/clean = modern, corporate. Organic (wood, stone) = warm, natural. Digital/geometric = technological. Designers choose texture to match the message!",
+    topic: "Texture"
+  },
+  {
+    id: "m3q9",
+    question: "True or False: When texture fills both the figure AND the ground, it can blur the boundary between object and background. (p.77)",
     options: [
       "True",
       "False"
     ],
-    correctAnswer: 1,
-    explanation: "FALSE! Symmetry tends to feel FORMAL, STABLE, and CLASSICAL — not dynamic. It's ASYMMETRY that creates dynamic, modern energy!",
-    topic: "Symmetry"
+    correctAnswer: 0,
+    explanation: "TRUE! When both figure and ground share similar texture, the boundary dissolves — like camouflage. Texture can unify figure/ground or separate them depending on contrast!",
+    topic: "Texture"
   },
-  // --- LAYERS ---
-  {
-    id: "m3q6",
-    question: "What are layers in graphic design? (pp.74-77)",
-    options: [
-      "Different versions of a file",
-      "Simultaneous, overlapping elements that create depth and complexity",
-      "The borders around a text box",
-      "The order in which you print colors"
-    ],
-    correctAnswer: 1,
-    explanation: "Layers = overlapping elements that create DEPTH and visual richness. Think of transparent sheets stacked on each other — each adds information!",
-    topic: "Layers"
-  },
-  {
-    id: "m3q7",
-    question: "Which of the following is NOT a way layers create depth?",
-    options: [
-      "Overlapping elements",
-      "Varying opacity",
-      "Using only one font size",
-      "Size changes (larger = closer)"
-    ],
-    correctAnswer: 2,
-    explanation: "Using only one font size does NOT create depth — that creates UNIFORMITY. Overlapping, varying opacity, and size changes all help create the illusion of depth!",
-    topic: "Layers"
-  },
-  // --- TRANSPARENCY ---
-  {
-    id: "m3q8",
-    question: "What happens when two transparent forms overlap? (pp.78-79)",
-    options: [
-      "One form disappears",
-      "A third hybrid form is created at the intersection",
-      "Both forms become opaque",
-      "The colors cancel each other out"
-    ],
-    correctAnswer: 1,
-    explanation: "When transparent forms overlap, a THIRD FORM appears where they intersect — with unexpected colors and shapes. That's the magic of transparency!",
-    topic: "Transparency"
-  },
-  {
-    id: "m3q9",
-    question: "What is the difference between opacity and transparency?",
-    options: [
-      "They are the same thing",
-      "Opacity = how solid something is; transparency = how see-through it is (they're inverses)",
-      "Opacity is for images; transparency is for text",
-      "Opacity is for print; transparency is for digital"
-    ],
-    correctAnswer: 1,
-    explanation: "They're INVERSES! 100% opacity = fully solid. 0% opacity = fully transparent (invisible). Adjusting this controls how much you see through to layers below.",
-    topic: "Transparency"
-  },
-  // --- MODULARITY ---
   {
     id: "m3q10",
-    question: "What is modularity in design? (pp.81-85)",
+    question: "How do digital tools expand the possibilities of texture? (pp.78-79)",
     options: [
-      "Using only one element per page",
-      "The use of standardized units that combine to create larger structures",
-      "Making everything asymmetrical",
-      "Removing all patterns from a layout"
+      "Digital tools limit texture to only geometric patterns",
+      "Digital tools can only reproduce traditional textures, not create new ones",
+      "Scanning, layering, blending, algorithmic generation, and mixing photo/vector textures",
+      "Digital design cannot use texture at all"
     ],
-    correctAnswer: 1,
-    explanation: "Modularity = standardized UNITS (modules) that combine and recombine into complex structures. Think LEGO blocks — simple pieces, infinite possibilities!",
-    topic: "Modularity"
+    correctAnswer: 2,
+    explanation: "Digital tools EXPLODE the possibilities — scan real textures, layer them with transparency, generate them algorithmically, use them as masks, mix photo + vector... virtually unlimited compared to traditional media!",
+    topic: "Texture"
   },
+  // --- SCALE ---
   {
     id: "m3q11",
-    question: "How is the alphabet an example of modularity?",
+    question: "Why is scale described as 'relational'? (pp.80-81)",
     options: [
-      "Each letter has a different color",
-      "26 simple units combine into infinite words and sentences",
-      "Letters can only be used once each",
-      "The alphabet only works in one language"
+      "Because it only works with relatives in a design",
+      "Because size is always judged RELATIVE to other elements, the page, or the human body",
+      "Because it relates to the cost of printing",
+      "Because scale only applies to typography"
     ],
     correctAnswer: 1,
-    explanation: "The alphabet is the ULTIMATE modular system — just 26 letters combine into infinite words! Same idea applies to modular typefaces built from repeating geometric parts.",
-    topic: "Modularity"
+    explanation: "Nothing is inherently 'big' or 'small' — it depends on CONTEXT! A 2-inch circle is big on a business card but tiny on a billboard. Scale is always about RELATIONSHIPS!",
+    topic: "Scale"
   },
-  // --- GRID ---
   {
     id: "m3q12",
-    question: "What is a grid in graphic design? (pp.86-91)",
+    question: "How does scale create visual hierarchy? (pp.82-85)",
     options: [
-      "A decorative border around the page",
-      "A network of lines that organizes content into columns, rows, margins, and modules",
-      "A color palette system",
-      "The background texture of a page"
+      "Smaller elements attract attention first",
+      "All elements must be the same size for hierarchy to work",
+      "Larger elements attract attention first and signal importance; the eye moves to progressively smaller elements",
+      "Scale doesn't affect hierarchy — only color does"
     ],
-    correctAnswer: 1,
-    explanation: "A grid = a framework of horizontal and vertical lines for organizing content. It creates consistency, order, and structure across pages!",
-    topic: "Grid"
+    correctAnswer: 2,
+    explanation: "BIG = look here FIRST! The eye is drawn to the largest element, then moves to smaller ones. This is why headlines are big and body text is small — scale IS hierarchy!",
+    topic: "Scale"
   },
   {
     id: "m3q13",
-    question: "What are the main components of a grid?",
+    question: "What is the difference between scale and proportion? (pp.82-83)",
     options: [
-      "Colors, fonts, and images",
-      "Headers, footers, and sidebars",
-      "Columns, rows, margins, gutters, modules, and flowlines",
-      "Points, lines, and planes"
+      "They mean the same thing",
+      "Scale = overall size relative to something else; proportion = internal relationships within an object",
+      "Proportion is for large objects; scale is for small objects",
+      "Scale is for print; proportion is for digital"
     ],
-    correctAnswer: 2,
-    explanation: "Grid anatomy: COLUMNS (vertical), ROWS (horizontal), MARGINS (outer edges), GUTTERS (spaces between columns), MODULES (individual cells), and FLOWLINES (horizontal guides)!",
-    topic: "Grid"
+    correctAnswer: 1,
+    explanation: "SCALE = how big/small relative to OTHER things. PROPORTION = the internal ratios WITHIN an object (width-to-height). You can change scale without changing proportion (scaling up uniformly) or vice versa (stretching)!",
+    topic: "Scale"
   },
   {
     id: "m3q14",
-    question: "What is the difference between a multicolumn grid and a modular grid?",
+    question: "How does scale create the illusion of depth on a flat surface? (pp.86-89)",
     options: [
-      "They are the same thing",
-      "A multicolumn grid has vertical divisions; a modular grid adds horizontal divisions too, creating a matrix of cells",
-      "A modular grid only has one column",
-      "A multicolumn grid is for print; a modular grid is for web"
+      "It doesn't — depth requires 3D software",
+      "By making all elements the same size",
+      "Larger elements appear closer (foreground), smaller elements appear farther away (background)",
+      "Only by using shadows"
     ],
-    correctAnswer: 1,
-    explanation: "Multicolumn = vertical columns only. Modular = columns PLUS horizontal rows, creating a full matrix of cells. Modular grids handle complex content like newspapers, calendars, and data-heavy layouts!",
-    topic: "Grid"
+    correctAnswer: 2,
+    explanation: "LARGER = closer, SMALLER = farther away — this mimics how we see the real world! Overlapping scaled elements enhances the illusion. It's atmospheric perspective on a flat page!",
+    topic: "Scale"
   },
   {
     id: "m3q15",
-    question: "When does 'breaking the grid' work effectively?",
+    question: "What effect does extreme or unexpected scale create? (pp.84-87)",
     options: [
-      "When you don't use any grid at all",
-      "When there's a consistent grid to break — the violation creates emphasis BECAUSE everything else follows the structure",
-      "When every element breaks the grid equally",
-      "Only in digital design, never in print"
+      "It makes the design look like an accident",
+      "Surprise, drama, visual impact, and surreal effects",
+      "It makes the design harder to print",
+      "It has no effect on the viewer"
     ],
     correctAnswer: 1,
-    explanation: "Breaking the grid ONLY works when a grid EXISTS to break! Random placement ≠ intentional grid-breaking. The structure is what gives the break its power and emphasis!",
-    topic: "Grid"
+    explanation: "Extreme scale = SURPRISE and DRAMA! A giant letter filling a poster or a tiny image in vast white space challenges expectations and creates visual tension, humor, or conceptual meaning!",
+    topic: "Scale"
   },
-  // --- PATTERN ---
   {
     id: "m3q16",
-    question: "How do patterns relate to modularity? (pp.92-93)",
+    question: "How do scale and cropping work together? (pp.88-89)",
     options: [
-      "They don't relate at all",
-      "Patterns are inherently modular — built from a single motif that tiles across a surface",
-      "Patterns can only be random",
-      "Modularity prevents patterns from forming"
+      "They are unrelated",
+      "Cropping only works at small scale",
+      "Scaling an image up beyond the page edge crops it — a tightly cropped detail can feel more dramatic than the full image",
+      "Cropping eliminates the need for scale"
     ],
-    correctAnswer: 1,
-    explanation: "Patterns ARE modular! They're built from a single unit (motif) that repeats across a surface. Changing the module's rotation, scale, or spacing creates totally different patterns from the same element!",
-    topic: "Pattern"
+    correctAnswer: 2,
+    explanation: "Scale UP past the edge = CROP! A tightly cropped, enlarged detail creates drama and intimacy. Cropping implies the image continues beyond the frame — tension between shown and hidden!",
+    topic: "Scale"
   },
   {
     id: "m3q17",
-    question: "What is a pattern in design?",
+    question: "What is a scale shift and why does it matter in layout? (pp.90-91)",
     options: [
-      "A single unique element that never repeats",
-      "A decorative element created through repetition of a motif across a surface",
-      "The empty space between design elements",
-      "A type of font classification"
-    ],
-    correctAnswer: 1,
-    explanation: "A pattern = a MOTIF repeated across a surface. Patterns unify a design, add texture, and can range from simple geometric shapes to complex organic forms!",
-    topic: "Pattern"
-  },
-  // --- DIAGRAM ---
-  {
-    id: "m3q18",
-    question: "What is the primary purpose of a diagram? (pp.94-95)",
-    options: [
-      "To make something look beautiful",
-      "To depict what something looks like",
-      "To visually represent a structure, process, or relationship",
-      "To fill empty space on a page"
+      "A gradual, barely noticeable size change",
+      "Using the same scale for every element",
+      "A dramatic change in size between elements that controls pacing, creates contrast, and adds energy",
+      "Only relevant in web design"
     ],
     correctAnswer: 2,
-    explanation: "Diagrams explain HOW something works, is structured, or relates to other things. They make abstract info concrete! Flowcharts, org charts, timelines, and infographics are all diagrams.",
-    topic: "Diagram"
+    explanation: "Scale shifts = DRAMATIC size changes! In multi-page layouts, they control PACING (full-bleed photo → small text = rhythm). On a single page, they create contrast and energy. Without scale shifts, layouts feel flat and monotonous!",
+    topic: "Scale"
+  },
+  {
+    id: "m3q18",
+    question: "How does scale ultimately relate to the human body? (pp.80-81)",
+    options: [
+      "It doesn't — scale is purely mathematical",
+      "All design scale relates back to the human body as the fundamental reference point",
+      "Only architecture uses the body as a scale reference",
+      "The human body is irrelevant to graphic design scale"
+    ],
+    correctAnswer: 1,
+    explanation: "We judge ALL scale based on our own bodies! A poster is 'big' relative to our hands; a billboard is 'big' relative to our whole body. The human body is the ultimate reference for scale in design!",
+    topic: "Scale"
   },
   {
     id: "m3q19",
-    question: "How do diagrams differ from illustrations?",
+    question: "What is scalar contrast in typography? (pp.92-93)",
     options: [
-      "Diagrams depict what things LOOK like; illustrations explain how things WORK",
-      "They are the same thing",
-      "Illustrations depict what things LOOK like; diagrams explain how things WORK or relate",
-      "Diagrams only use words, never images"
+      "Using the same type size throughout a document",
+      "Using dramatically different type sizes together to create hierarchy and visual drama",
+      "Only using fonts above 72pt",
+      "The contrast between serif and sans-serif fonts"
     ],
-    correctAnswer: 2,
-    explanation: "Illustrations show what things LOOK like. Diagrams show how things WORK, are structured, or RELATE. Diagrams prioritize clarity and information — though great ones are beautiful too!",
-    topic: "Diagram"
+    correctAnswer: 1,
+    explanation: "Scalar contrast = dramatically DIFFERENT type sizes (72pt headline + 9pt body). HIGH contrast = strong hierarchy and drama. LOW contrast = quieter, more uniform. The RATIO between sizes matters more than actual point sizes!",
+    topic: "Scale"
   },
-  // --- TIME & MOTION ---
   {
     id: "m3q20",
-    question: "How can designers represent time and motion in static (print) media? (pp.96-97)",
+    question: "How can scale communicate conceptual meaning beyond hierarchy? (pp.94-97)",
     options: [
-      "By using only one image per page",
-      "Through sequential images, motion lines, blurred forms, and repeated figures showing progression",
-      "By making all elements the same size",
-      "By removing all white space"
+      "It can't — scale only creates hierarchy",
+      "Making something huge = importance/power; tiny = vulnerability/intimacy; juxtaposing scales = irony/surprise",
+      "Scale only has visual effects, never conceptual ones",
+      "Conceptual meaning requires words, not scale"
     ],
     correctAnswer: 1,
-    explanation: "Even in STATIC media, designers create the feeling of time and motion through sequences, motion lines, blur, repeated figures, and storyboards. The eye moves through the composition in a designed order!",
-    topic: "Time & Motion"
-  },
-  {
-    id: "m3q21",
-    question: "How does a designer control pacing in a multi-page layout?",
-    options: [
-      "By using the same layout on every page",
-      "By using only text, never images",
-      "Through layout changes, visual rhythm, and varying the density of elements across pages",
-      "By making every page a different color"
-    ],
-    correctAnswer: 2,
-    explanation: "Pacing in multi-page design works like film editing — fast-paced spreads use MANY elements, slow-paced ones use MINIMAL elements and white space. Designers control tempo across pages!",
-    topic: "Time & Motion"
-  },
-  // --- RULES & RANDOMNESS ---
-  {
-    id: "m3q22",
-    question: "What is the relationship between rules and randomness in design?",
-    options: [
-      "Good design uses only rules, never randomness",
-      "Good design uses only randomness, never rules",
-      "The best designs balance rule-based systems with controlled moments of randomness",
-      "Rules and randomness are unrelated concepts"
-    ],
-    correctAnswer: 2,
-    explanation: "The BEST designs balance BOTH — rules create structure and consistency, randomness introduces surprise and life. A rule-based system with controlled randomness stays organized but feels alive!",
-    topic: "Rules & Randomness"
-  },
-  {
-    id: "m3q23",
-    question: "What is generative/algorithmic design?",
-    options: [
-      "Design made without any computer",
-      "Design that uses coded rules combined with random variables to produce unique but cohesive outputs",
-      "A design that never changes once created",
-      "Design that only uses photographs"
-    ],
-    correctAnswer: 1,
-    explanation: "Generative design = coded RULES + random VARIABLES = unique outputs every time. The designer sets constraints, the algorithm generates variations. Each result is different but cohesive because it follows the same logic!",
-    topic: "Rules & Randomness"
+    explanation: "Scale = MEANING-MAKING! Huge = power, dominance. Tiny = vulnerability, intimacy. Juxtaposed scales = irony, surprise, humor. Same scale = equality. Scale communicates IDEAS, not just visual order!",
+    topic: "Scale"
   },
   // --- CROSS-TOPIC ---
   {
-    id: "m3q24",
-    question: "Which of the following correctly matches the concept to its page range in Graphic Design: The New Basics?",
+    id: "m3q21",
+    question: "What concept connects texture and pattern? (pp.74-76)",
     options: [
-      "Symmetry pp.81-85, Grid pp.69-73",
-      "Symmetry pp.69-73, Layers pp.74-77, Transparency pp.78-79, Modularity pp.81-85, Grid pp.86-91",
-      "Modularity pp.96-97, Time & Motion pp.81-85",
-      "Pattern pp.74-77, Diagram pp.69-73"
+      "Color theory",
+      "Typography rules",
+      "Scale — zoom out enough and pattern becomes texture; zoom in and texture reveals individual pattern elements",
+      "They are completely unrelated concepts"
+    ],
+    correctAnswer: 2,
+    explanation: "SCALE is the bridge! Pattern = visible repeating motif. Texture = elements merged into a surface quality. Zoom OUT on a pattern → texture. Zoom IN on a texture → pattern. Scale transforms one into the other!",
+    topic: "Texture & Scale"
+  },
+  {
+    id: "m3q22",
+    question: "A designer creates a poster with a massive 300pt letter 'A' filling the entire page, with small 8pt text at the bottom. Which concepts are at work?",
+    options: [
+      "Only color theory",
+      "Scale contrast, hierarchy, cropping, and scalar contrast in typography",
+      "Only texture",
+      "Only proportion"
     ],
     correctAnswer: 1,
-    explanation: "The correct order: Symmetry (pp.69-73), Layers (pp.74-77), Transparency (pp.78-79), Modularity (pp.81-85), Grid (pp.86-91), Pattern (pp.92-93), Diagram (pp.94-95), Time & Motion (pp.96-97)!",
-    topic: "General"
+    explanation: "This uses SCALE CONTRAST (massive vs tiny), HIERARCHY (eye goes to big 'A' first), CROPPING (letter likely extends past edges), and SCALAR CONTRAST in typography (300pt vs 8pt). Scale is doing ALL the work here!",
+    topic: "Texture & Scale"
+  },
+  {
+    id: "m3q23",
+    question: "True or False: In digital design, ALL texture is visual (simulated) because screens are smooth surfaces.",
+    options: [
+      "True",
+      "False"
+    ],
+    correctAnswer: 0,
+    explanation: "TRUE! Screens are flat and smooth — you can't feel texture on them. All texture in digital/screen design is VISUAL (it LOOKS textured but IS flat). Actual/tactile texture only exists in physical media like print!",
+    topic: "Texture"
+  },
+  {
+    id: "m3q24",
+    question: "Which of the following BEST describes why a headline set at 72pt and body text at 9pt work together? (pp.92-93)",
+    options: [
+      "They are the same font",
+      "The high scalar contrast creates clear hierarchy — the eye reads the large headline first, then the small body text",
+      "Smaller text is easier to read",
+      "Larger text costs less to print"
+    ],
+    correctAnswer: 1,
+    explanation: "HIGH SCALAR CONTRAST (72pt vs 9pt = 8:1 ratio) creates immediate, clear hierarchy. The eye JUMPS to the headline first, then naturally moves to the body text. The ratio between sizes drives the reading order!",
+    topic: "Scale"
   },
   {
     id: "m3q25",
-    question: "A designer uses a repeating square unit across a layout, creating both a structured grid AND a decorative surface. Which TWO concepts does this best demonstrate?",
+    question: "A designer uses a photograph of rough concrete as a background, with clean vector text on top. What principle is at work? (pp.76-79)",
     options: [
-      "Time & Motion and Transparency",
-      "Symmetry and Diagram",
-      "Modularity and Pattern",
-      "Layers and Randomness"
+      "Scale only",
+      "Textural contrast — the rough photographic texture separates from the smooth vector type",
+      "Color theory only",
+      "Grid systems"
     ],
-    correctAnswer: 2,
-    explanation: "MODULARITY (standardized repeating units) + PATTERN (motif tiling across a surface) — they're deeply connected! Modular units that tile create patterns, and patterns are inherently modular.",
-    topic: "General"
+    correctAnswer: 1,
+    explanation: "TEXTURAL CONTRAST! The rough concrete (photographic/visual texture) plays against the smooth, clean vector type. This contrast separates figure from ground and creates visual interest through opposing surface qualities!",
+    topic: "Texture"
   }
 ];

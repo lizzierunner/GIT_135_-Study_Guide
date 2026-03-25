@@ -170,7 +170,7 @@ function updateHeader(view) {
     const typeLabels = {
       'adobe': 'Adobe Essentials',
       'mod2': 'Design Principles',
-      'mod3': 'Structure & Systems',
+      'mod3': 'Texture & Scale',
       'plp': 'Point Line Plane',
       'random': 'Random Mix'
     };
@@ -597,7 +597,7 @@ function loadFlashcard() {
   document.getElementById('flashcardQuestion').textContent = flashcard.question;
   document.getElementById('flashcardAnswer').textContent = flashcard.answer;
 
-  const typeLabels = { 'adobe': 'Adobe Essentials', 'mod2': 'Design Principles', 'mod3': 'Structure & Systems', 'plp': 'Point Line Plane' };
+  const typeLabels = { 'adobe': 'Adobe Essentials', 'mod2': 'Design Principles', 'mod3': 'Texture & Scale', 'plp': 'Point Line Plane' };
   document.getElementById('flashcardTitle').textContent =
     (typeLabels[currentQuizType] || 'Study') + ' — ' + flashcard.topic;
   document.getElementById('flashcardCounter').textContent =
