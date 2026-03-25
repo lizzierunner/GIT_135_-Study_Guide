@@ -2785,5 +2785,31 @@ const mod3QuizQuestions = [
     correctAnswer: 0,
     explanation: "In WESTERN culture, white is traditionally associated with VIRGINITY AND PURITY — think white wedding dresses and white doves. Royalty is typically associated with purple, life and rebirth with green, and death with black in Western culture. However, in some Eastern cultures (like China and India), white is actually associated with death and mourning!",
     topic: "Texture"
+  },
+  {
+    id: "m3q31",
+    question: "Match the color model: RGB is a(n) ________ color process.",
+    options: [
+      "Subtractive",
+      "Additive",
+      "Neutral",
+      "Reflective"
+    ],
+    correctAnswer: 1,
+    explanation: "RGB is an ADDITIVE color process — it adds light together! Red + Green + Blue light combines to create colors on SCREENS. Adding all three at full intensity = WHITE. Additive = light-based = digital displays!",
+    topic: "Texture"
+  },
+  {
+    id: "m3q32",
+    question: "Match the color model: CMYK is a(n) ________ color process.",
+    options: [
+      "Additive",
+      "Reflective",
+      "Subtractive",
+      "Neutral"
+    ],
+    correctAnswer: 2,
+    explanation: "CMYK is a SUBTRACTIVE color process — it subtracts light by absorbing wavelengths! Cyan + Magenta + Yellow + Key (black) inks are layered in PRINT. Mixing all inks = darker colors. Subtractive = ink-based = printed materials!",
+    topic: "Texture"
   }
 ];
